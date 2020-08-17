@@ -1,0 +1,256 @@
+<!-- Adapted from https://www.evl.uic.edu/aej/424/ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>CS CS5331-004 Students</title>
+      <script src="https://d3js.org/d3.v4.js"></script>
+      <style>
+          td{
+              text-align: center;
+          }
+          table{
+              border-collapse: collapse;
+          }
+      </style>
+  </head>
+  <body bgcolor="white" text="black">
+    
+    <div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Enrolled Students:</font></div>
+        <div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="3">The table lists all students for this class (Simple Student Profile)</font></div>
+
+    <table style="width:90%;">
+      <tr>
+        <td>
+
+          <table id="targettable" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
+            <tbody style="text-align:center">
+              <tr bgcolor="#aaa">
+                  <td>No</td>
+                <td>Photo</td>
+              <td>Full Name</td>
+                <td>Program</td>
+                <!--<td>Level of Education</td>-->
+                <td>Experience (Yrs)</td>
+                <!--<td>Web Links</td>-->
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td  style="width:4%;">
+        </td>
+        <td>
+          <table id="targettable2" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
+            <tbody style="text-align:center">
+            <tr bgcolor="#aaa">
+              <td>No</td>
+              <td>Photo</td>
+              <td>Full Name</td>
+              <td>Program</td>
+              <!--<td>Level of Education</td>-->
+              <td>Experience (Yrs)</td>
+              <!--<td>Email</td>-->
+              <!--<td>Web Links</td>-->
+            </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table id="targettable3" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
+            <tbody style="text-align:center">
+            <tr bgcolor="#aaa">
+              <td>No</td>
+              <td>Photo</td>
+              <td>Full Name</td>
+              <td>Program</td>
+              <!--<td>Level of Education</td>-->
+              <td>Experience (Yrs)</td>
+              <!--<td>Email</td>-->
+              <!--<td>Web Links</td>-->
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="width: 100%; height: 1px;">
+      <div align="right"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: Feb 6, 2018  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</font></div>
+     
+    </ul>
+     <script>
+         var table = document.getElementById("targettable");
+         var table2 = document.getElementById("targettable2");
+         var table3 = document.getElementById("targettable3");
+  d3.csv('grade/data/Students.csv',function (data) {
+    data.forEach(function (t,i) {
+        if (i>=14)
+            return;
+        var tr = document.createElement("tr");
+
+        var index = document.createElement('td')
+        var index_text = document.createTextNode(i+1);
+        index.appendChild(index_text);
+
+        var photocontainer = document.createElement("td");
+        var photo = document.createElement("img");
+        var photo_url = document.createAttribute('src');
+        photo_url.value='photos/'+ t.Photoname;
+        photo.setAttributeNode(photo_url);
+        photo.setAttribute('style','height:90px')
+        photocontainer.appendChild(photo);
+
+
+        var fullname = document.createElement("td");
+        var fullname_text = document.createTextNode(t.Fullname);
+        fullname.appendChild(fullname_text);
+
+        var program = document.createElement("td");
+        var program_text = document.createTextNode(t.Program);
+        program.appendChild(program_text);
+
+        var level = document.createElement("td");
+        var level_text = document.createTextNode(t.Level);
+        level.appendChild(level_text);
+
+
+        var experience = document.createElement("td");
+        var experience_text = document.createTextNode(t.ProgrammingYears);
+        experience.appendChild(experience_text);
+
+
+        //var email = document.createElement("td");
+        //var email_text = document.createTextNode(t.Email);
+        //email.appendChild(email_text);
+
+        var github = document.createElement("td");
+        var github_text = document.createTextNode(t.ResearchInterest)
+        github.appendChild(github_text);
+
+        tr.appendChild(index);
+        tr.appendChild(photocontainer);
+        tr.appendChild(fullname);
+        tr.appendChild(program);
+        //tr.appendChild(level);
+        tr.appendChild(experience);
+        //tr.appendChild(email);
+        //tr.appendChild(github);
+        table.appendChild(tr);
+    })
+    data.forEach(function (t,i) {
+        if (i<14 || i>=28)
+            return;
+        var tr = document.createElement("tr");
+
+        var index = document.createElement('td')
+        var index_text = document.createTextNode(i+1);
+        index.appendChild(index_text);
+
+        var photocontainer = document.createElement("td");
+        var photo = document.createElement("img");
+        var photo_url = document.createAttribute('src');
+        photo_url.value='photos/'+ t.Photoname;
+        photo.setAttributeNode(photo_url);
+        photo.setAttribute('style','height:90px')
+        photocontainer.appendChild(photo);
+
+
+        var fullname = document.createElement("td");
+        var fullname_text = document.createTextNode(t.Fullname);
+        fullname.appendChild(fullname_text);
+
+        var program = document.createElement("td");
+        var program_text = document.createTextNode(t.Program);
+        program.appendChild(program_text);
+
+        var level = document.createElement("td");
+        var level_text = document.createTextNode(t.Level);
+        level.appendChild(level_text);
+
+
+        var experience = document.createElement("td");
+        var experience_text = document.createTextNode(t.ProgrammingYears);
+        experience.appendChild(experience_text);
+
+
+       // var email = document.createElement("td");
+       // var email_text = document.createTextNode(t.Email);
+       // email.appendChild(email_text);
+
+        var github = document.createElement("td");
+        var github_text = document.createTextNode(t.ResearchInterest)
+        github.appendChild(github_text);
+
+        tr.appendChild(index);
+        tr.appendChild(photocontainer);
+        tr.appendChild(fullname);
+        tr.appendChild(program);
+        //tr.appendChild(level);
+        tr.appendChild(experience);
+        //tr.appendChild(email);
+        //tr.appendChild(github);
+        table2.appendChild(tr);
+    })
+
+      data.forEach(function (t,i) {
+          if (i<28)
+              return;
+          var tr = document.createElement("tr");
+
+          var index = document.createElement('td')
+          var index_text = document.createTextNode(i+1);
+          index.appendChild(index_text);
+
+          var photocontainer = document.createElement("td");
+          var photo = document.createElement("img");
+          var photo_url = document.createAttribute('src');
+          photo_url.value='photos/'+ t.Photoname;
+          photo.setAttributeNode(photo_url);
+          photo.setAttribute('style','height:90px')
+          photocontainer.appendChild(photo);
+
+
+          var fullname = document.createElement("td");
+          var fullname_text = document.createTextNode(t.Fullname);
+          fullname.appendChild(fullname_text);
+
+          var program = document.createElement("td");
+          var program_text = document.createTextNode(t.Program);
+          program.appendChild(program_text);
+
+          var level = document.createElement("td");
+          var level_text = document.createTextNode(t.Level);
+          level.appendChild(level_text);
+
+
+          var experience = document.createElement("td");
+          var experience_text = document.createTextNode(t.ProgrammingYears);
+          experience.appendChild(experience_text);
+
+
+          // var email = document.createElement("td");
+          // var email_text = document.createTextNode(t.Email);
+          // email.appendChild(email_text);
+
+          var github = document.createElement("td");
+          var github_text = document.createTextNode(t.ResearchInterest)
+          github.appendChild(github_text);
+
+          tr.appendChild(index);
+          tr.appendChild(photocontainer);
+          tr.appendChild(fullname);
+          tr.appendChild(program);
+          //tr.appendChild(level);
+          tr.appendChild(experience);
+          //tr.appendChild(email);
+          //tr.appendChild(github);
+          table3.appendChild(tr);
+      })
+})
+
+     </script>
+  </body>
+</html>

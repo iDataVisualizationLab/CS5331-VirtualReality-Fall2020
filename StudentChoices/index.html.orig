@@ -1,0 +1,792 @@
+<!-- Adapted from https://www.evl.uic.edu/aej/424/ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Virtual Reality</title>
+    <link rel="shortcut icon" href="../styles/oculus.png">
+
+</head>
+<body bgcolor="white" text="black">
+
+
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Student's Choice Presentation</font></div>
+
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="4">
+    <ul>
+        <li style="margin-left: 30px"> This presentation is <b>10%</b> of your final grade:<br>
+        <li style="margin-left: 80px"><b>5%</b> for in-class presentation.</li>
+        <li style="margin-left: 80px"><b>5%</b> for project report on Github.</li>
+        </li>
+        <li style="margin-left: 30px"> Topic selection is due at <font color="#e00">11:00am Tuesday, Jan 30 </font> to
+            the TA: <b>vinh.nguyen[at]ttu.edu</b></li>
+        <li style="margin-left: 30px"> Presentation screenshot (a 1200 x 600 <b>jpg</b> image of your talk which should
+            be named talk.&lt;your_last_name&gt;.jpg, and web link are due at <font color="#e00">11am Tuesday, Feb
+                13</font> to the TA: <b>vinh.nguyen[at]ttu.edu</b>.
+            <br>The presentation schedule should look like <a
+                    href="http://www.myweb.ttu.edu/tnhondan/CS5331/Presentations/index.html"> this</a>.
+
+            <ul>
+</font></div>
+
+
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Requirements:</font></div>
+
+
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="4">
+    <ul>
+        <li style="margin-left: 30px"> The talk and report need to answer the following questions:<br>
+
+        <li style="margin-left: 80px"> Overview: What is it? History of the technique/device?</li>
+        <li style="margin-left: 80px"> Where is it used? What are best suited applications?</li>
+        <li style="margin-left: 80px"> The basics: How does it work?</li>
+        <li style="margin-left: 80px"> Why is it a good use of VR? Why is it unique? What’s cool about it?</li>
+        <li style="margin-left: 80px"> Critique on strengths and <b>weaknesses/issues</b> such as tesign flaws or
+            technical flaws. Is there still more to do?
+        </li>
+        <li style="margin-left: 80px"> Can this lead to varying degrees of simulator sickness including nausea, fatigue,
+            headache, eyestrain, vertigo, and dizziness? What is your rating on the scale from 0 to 10?
+        </li>
+        <li style="margin-left: 130px"> 0: Normal (no motion sickness at all)</li>
+        <li style="margin-left: 130px"> 5: Average (lead to dizziness) -> can not use it for more than a few minutes
+        </li>
+        <li style="margin-left: 130px"> 10: Max (can be dangerous)</li>
+
+        <li style="margin-left: 80px"> What are the similar/related applications?</li>
+        <li style="margin-left: 80px"> Are there any other potential applications of the technique/device?</li>
+        <li style="margin-left: 80px"> Conclusion</li>
+        <li style="margin-left: 80px"> Refrences. Please also incluce a link to your slides (you can use <a
+                href="https://github.com/hakimel/reveal.js/wiki/Example-Presentations" target="_blank">Reveal.js</a> for
+            your slides)
+        </li>
+        <ul>
+</font></div>
+
+
+<hr style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Approved topics:</font> <font color="#e00">Last updated:
+    3:00pm, Wed Feb 14 </font></div>
+<table style="width: 50%;" border="1" cellpadding="3" cellspacing="0">
+    <tbody>
+    <tr bgcolor="#aaa">
+        <td>Student</td>
+        <td>Topic</td>
+        <td>Scheduled presentation</td>
+        <td>Link presentation</td>
+    </tr>
+    <tr>
+        <td>Jonathan Bouligny</td>
+<<<<<<< HEAD
+        <td><a href="https://www.youtube.com/watch?time_continue=236&v=RAZidk_mPc8">Gloveone</a> : Feel Virtual Reality</td><td><font color="#aaa">Feb 6</font></td>
+=======
+        <td><a href="https://www.youtube.com/watch?time_continue=236&v=RAZidk_mPc8">Gloveone</a> : Feel Virtual Reality
+        </td>
+        <td><font color="#888">Feb 6</font></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+    </tr>
+
+    <tr>
+        <td>Jakob Dozier</td>
+        <td><a href="https://developer.apple.com/videos/play/wwdc2017/602/"> ARKit</a>: Augmented Reality for iOS</td>
+        <td><font color="#aaa">Feb 6</font></td>
+        <td><a href="https://github.com/JakobDozier/StudentChoice">
+            <img  height="100" src="../images/ARKit-main.jpg" alt="">
+
+        </a></td>
+
+    </tr>
+    <tr>
+        <td>Fox Bolduc</td>
+        <td><a href="http://projects.ict.usc.edu/mxr/rdwt/"> The Redirected Walking Toolkit</a></td>
+        <td><font color="#aaa">Feb 6</font></td>
+    </tr>
+    <tr>
+        <td>Simon Woldemichael</td>
+        <td><a href="https://www.nvidia.com/en-us/design-visualization/technologies/holodeck/">Nvidia's Holodeck</a>:
+            Photorealistic collaborative design environment in virtual reality
+        </td>
+        <td><font color="#aaa">Feb 6</font></td>
+    </tr>
+    <tr>
+        <td>Mayur Bhakta</td>
+        <td><a href="http://immersivevreducation.com/engage-education-platform/"> ENGAGE</a>: social education and
+            presentation platform
+        </td>
+        <td><font color="#888">Feb 8</font></td>
+    </tr>
+    <tr>
+        <td>Coe, Jordan J</td>
+        <td><a href="https://nextvr.com/">NextVR </a>
+        </td>
+        <td><font color="#888">Feb 8</font></td>
+        <td><a href="http://slides.com/jordancoe/deck/fullscreen">
+            <img  height="100" src="../images/talk.coe.jpg" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Darien Sokolov</td>
+        <td><a href="http://www.soundstagevr.com/">SoundStage </a></td>
+        </td>
+        <td><font color="#888">Feb 8</font></td>
+    </tr>
+    <tr>
+        <td>Ge, Wenhao</td>
+        <td><a href="https://www.youtube.com/watch?v=KGo7vdmW2G8#action=share">ImmersiveTouch</a>: The Future of
+            Surgical Planning and Training
+        </td>
+        </td>
+        <td><font color="#888">Feb 8</font></td>
+    </tr>
+    <tr>
+        <td>Myers, Trent</td>
+        <td><a href="https://youtu.be/pppkQ4jIrMU">Oculus Touch </a>- Hand Presence Technology</td>
+        <td><font color="#666">Feb 13</font></td>
+        <td><a href="https://trentm95.github.io/CS4331-VR/Student'sChoice/">
+            <img  height="100" src="../images/myer_oculus.png" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Prerit Datta</td>
+<<<<<<< HEAD
+        <td><a href="https://augmented.reality.news/news/is-big-business-cities-native-american-tribes-are-leveraging-power-ar-via-daqri-headsets-0182241/ ">DAQRI Headsets  </a></td>
+        <td><font color="#666">Feb 13</font></td>
+=======
+        <td>
+            <a href="https://augmented.reality.news/news/is-big-business-cities-native-american-tribes-are-leveraging-power-ar-via-daqri-headsets-0182241/ ">DAQRI
+                Headsets </a></td>
+        <td><font color="#f00">Feb 13</font></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+        <td><a href="www.slides.com/prd90/daqri">
+            <img  height="100" src="../images/Datta.jpg" alt="">
+
+        </a></td>
+    </tr>
+
+    <tr>
+        <td>Athaa Bader M Alotaibi</td>
+        <td><a href="https://youtu.be/bqra7wslwCM">Osso VR </a></td>
+<<<<<<< HEAD
+        <td><font color="#666">Feb 13</font></td>
+        <td><a href="https://sites.google.com/site/athaaalotaibi/vr-course"><img  height="100" src="../images/athaa_alotaibi.jpg" alt=""></a> </td>
+=======
+        <td><font color="#f00">Feb 13</font></td>
+        <td><a href="https://sites.google.com/site/athaaalotaibi/vr-course"><img width="120" height="100"
+                                                                                 src="../images/athaa_alotaibi.jpg"
+                                                                                 alt=""></a></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+    </tr>
+    <tr>
+        <td>Im, Cheol Hwan</td>
+        <td><a href="https://www.mirareality.com/">Mira Prism AR Headset</a></td>
+<<<<<<< HEAD
+        <td><font color="#666">Feb 13</font></td>
+        <td><a href="https://docs.google.com/presentation/d/1YF9UhuGy3EFQ7b1rm2biz1XCd9J0eQahhphc7crmpqY/edit?usp=sharing">
+            <img  height="100" src="../images/Im.png" alt="">
+=======
+        <td><font color="#f00">Feb 13</font></td>
+        <td>
+            <a href="https://docs.google.com/presentation/d/1YF9UhuGy3EFQ7b1rm2biz1XCd9J0eQahhphc7crmpqY/edit?usp=sharing">
+                <img width="120" height="100" src="../images/Im.png" alt="">
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+
+            </a></td>
+    </tr>
+
+    <tr>
+<<<<<<< HEAD
+        <td>Jessica Hao</td>
+        <td><a href="https://vrscout.com/news/vr-ar-2018-winter-olympics/#">VR & AR </a>- Goes For Gold At 2018 Winter Olympic Games</td>
+        <td><font color="#666">Feb 13</font></td>
+        <td><a href="https://slides.com/jjh/deck/edit">
+            <img height="100" src="../images/Hao.PNG" alt="">
+        </a> </td>
+=======
+        <td>Cody Otterbine</td>
+        <td>
+            <a href="https://www.forbes.com/sites/zarastone/2017/08/02/the-business-of-virtual-reality-arcades-a-future-45-billion-industry/#331e27ab7fc6">The
+                Business of Virtual Reality Arcades</a></td>
+        <td><font color="#f00">Feb 13</font></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+    </tr>
+
+    <tr>
+        <td>Wesley Scott</td>
+        <td>A Walk Through Dementia.</td>
+        <td><font color="#f00">Feb 15</font></td>
+        <td><a href="https://slides.com/wesleyscott-1/a-walk-through-dementia">
+<<<<<<< HEAD
+            <img  height="100" src="../images/AWtD.jpg" alt=""/></a></td>>
+=======
+            <img width="120" height="100" src="../images/AWtD.jpg" alt=""/></a></td>
+        >
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+    </tr>
+    <tr>
+        <td>Travis, Ahlberg</td>
+        <td>Google's Tilt Brush</td>
+<<<<<<< HEAD
+        <td><font color="#f00">Feb 15</font></td>
+=======
+        <td><font color="#fa0">Feb 15</font></td>
+        <td><a href="https://docs.google.com/presentation/u/0/">
+            <img width="120" height="100" src="../images/talk.ahlberg.jpg" alt=""/>
+
+        </a></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+    </tr>
+    <tr>
+        <td>Reynaldo Garcia</td>
+        <td><a href="https://youtu.be/AJDf_HRNo54">Sketch AR</a> Art with Mixed Reality</td>
+        <td><font color="#f00">Feb 15</font></td>
+        <td><a href="https://slides.com/vraccount/deck/live#/">
+            <img  height="100" src="../images/talk.garcia.jpg" alt=""/>
+
+        </a></td>
+        >
+    </tr>
+
+    <tr>
+<<<<<<< HEAD
+        <td>Acosta, Michael </td>
+        <td><a href="https://www.tomsguide.com/us/meta-2-ar-haptics,news-26417.html">Meta 2 AR Headset Let Us Touch and Feel Holograms </a></td>
+        <td><font color="#f00">Feb 15</font></td>
+=======
+        <td>Acosta, Michael</td>
+        <td><a href="https://www.tomsguide.com/us/meta-2-ar-haptics,news-26417.html">Meta 2 AR Headset Let Us Touch and
+            Feel Holograms </a></td>
+        <td><font color="#fa0">Feb 15</font></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+        <td><a href="https://slides.com/michaelacosta/deck/edit#">
+            <img  height="100" src="../images/talk.Acosta.jpg" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Gantaphon Chalumporn</td>
+        <td><a href="https://www.youtube.com/watch?v=MeKRVo7hfZ4">Vive Tracker</a></td>
+        <td><font color="#f00">Feb 15</font></td>
+        <td><a href="http://slides.com/gantaphonchalumporn/deck#/">
+            <img  height="100" src="../images/VIVETracker.Chalumporn.jpg" alt="">
+
+        </a></td>
+    </tr>
+
+<<<<<<< HEAD
+=======
+    <tr>
+        <td>Jessica Hao</td>
+        <td><a href="https://vrscout.com/news/vr-ar-2018-winter-olympics/#">VR & AR </a>- Goes For Gold At 2018 Winter
+            Olympic Games
+        </td>
+        <td><font color="#0a0">Feb 13</font></td>
+        <td><a href="https://slides.com/jjh/deck/edit">
+            <img width="120" height="100" src="../images/Hao.PNG" alt="">
+
+        </a></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+
+
+
+    <tr>
+        <td>xujia wu</td>
+        <td><a href="https://www.youtube.com/watch?v=_QIbI4Wtgug">Ghostbusters</a>: Dimension Hyper-Reality Gameplay
+            Trailer - THE VOID
+        </td>
+    </tr>
+
+    <tr>
+        <td>Blechman, Scott</td>
+        <td><a href="https://qz.com/app/">Quartz: News Stories in AR </a></td>
+    </tr>
+    <tr>
+        <td>Taylor, Megan</td>
+        <td><a href="https://youtu.be/N3ywcoqR4Co">Tribemix </a>Virtual Reality for Dementia Care</td>
+        <td></td>
+        <td><a href="https://slides.com/megantaylor/tribemix/live#/">
+            <img  height="100" src="../images/megan.png" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Garcia, Eddie</td>
+        <td><a href="https://www.avegant.com/">Avegant </a>Headset</td>
+    </tr>
+    <tr>
+        <td>Lino Abiel Virgen Gracia</td>
+<<<<<<< HEAD
+        <td><a href="https://www.getfove.com/">Home</a>- FOVE Eye Tracking Virtual Reality Headset</td> <td></td>
+
+        <td><a href="https://docs.google.com/presentation/d/14em7L2hOkxQNCQeoT6wNA4lxLmxQqNYd86f7qhgEH3I/edit?usp=sharing">
+            <img  height="100" src="../images/foveVirgen.jpg" alt="">
+        </a> </td>
+=======
+        <td><a href="https://www.getfove.com/">Home</a>- FOVE Eye Tracking Virtual Reality Headset</td>
+        <td><font color="#fa0">Feb 15</font></td>
+
+        <td>
+            <a href="https://docs.google.com/presentation/d/14em7L2hOkxQNCQeoT6wNA4lxLmxQqNYd86f7qhgEH3I/edit?usp=sharing">
+                <img width="120" height="100" src="../images/foveVirgen.jpg" alt="">
+
+            </a></td>
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+    </tr>
+
+    <tr>
+        <td>Cody Otterbine</td>
+        <td><a href="https://www.forbes.com/sites/zarastone/2017/08/02/the-business-of-virtual-reality-arcades-a-future-45-billion-industry/#331e27ab7fc6">The Business of Virtual Reality Arcades</a></td>
+        <td><font color="#666"></font></td>
+    </tr>
+
+    <tr>
+        <td>Wolff, Luciano</td>
+        <td><a href="https://youtu.be/943NZj_SSWQ">BraveMind VR </a></td>
+        <td></td>
+        <td><a href="https://drive.google.com/open?id=1hYoJmmEYgffSIJP6gh45rZtCu7JHQ_jD7_MvL5f2AE4">
+            <img  height="100" src="../images/talk.Wolff.jpg" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Omekam, Olisa</td>
+        <td><a href="https://youtu.be/47WHqDNckI8">Neurable</a>: control VR with your mind</td>
+    </tr>
+    <tr>
+        <td>Huber, Christine</td>
+        <td><a href="https://www.etc.cmu.edu/projects/music-everywhere/#">AR-Assisted Piano Improvisation</a></td>
+        <td></td>
+<<<<<<< HEAD
+        <td><a href="https://docs.google.com/presentation/d/1mKsdByLSbi_xtr7-XJyoB43yKRcqd1UZr6FMnr_P1TU/edit?usp=sharing">
+            <img  height="100" src="../images/talk.Huber.jpg" alt="">
+=======
+        <td>
+            <a href="https://docs.google.com/presentation/d/1mKsdByLSbi_xtr7-XJyoB43yKRcqd1UZr6FMnr_P1TU/edit?usp=sharing">
+                <img width="120" height="100" src="../images/talk.Huber.jpg" alt="">
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+
+            </a></td>
+    </tr>
+    <tr>
+        <td>Tien Dang</td>
+        <td><a href="https://varjo.com/">Varjo</a>: The Resolution Revolution is on</td>
+        <td>Mar 20</td>
+    </tr>
+    <tr>
+        <td>Derek Fritz</td>
+        <td><a href="http://looxidlabs.com/device/">LooxidVR</a></td>
+        <td></td>
+        <td><a href="https://defritz.github.io/VirtualRealityProjects/">
+            <img  height="100" src="../images/fritz.jpg" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Amitsingh Pardeshi</td>
+<<<<<<< HEAD
+        <td><a href="https://youtu.be/WHN-ZGncQhY">360 Degree (Omnidirectional) Treadmills from Virtuix</a></td><td></td>
+        <td><a href="https://docs.google.com/presentation/d/1JlfR9LC_srCoiCcPTJqeTtlcRpqrc5zhXwE408GF7Rw/edit?usp=sharing">
+            <img  height="100" src="../images/Amitsingh_pardeshi.jpg" alt="">
+=======
+        <td><a href="https://youtu.be/WHN-ZGncQhY">360 Degree (Omnidirectional) Treadmills from Virtuix</a></td>
+        <td></td>
+        <td>
+            <a href="https://docs.google.com/presentation/d/1JlfR9LC_srCoiCcPTJqeTtlcRpqrc5zhXwE408GF7Rw/edit?usp=sharing">
+                <img width="120" height="100" src="../images/Amitsingh_pardeshi.jpg" alt="">
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+
+            </a></td>
+    </tr>
+    <tr>
+        <td>Manahan, Kevon</td>
+        <td>
+            <a href="https://www.smartcitiesdive.com/ex/sustainablecitiescollective/friday-fun-using-virtual-reality-create-safer-drivers/1090332/">Smart
+                Cities Dive</a></td>
+    </tr>
+
+    <tr>
+        <td>Thomas Sanchez</td>
+        <td><a href="https://vrzone-pic.com/en/activity/mariocart.html">Mario Kart Arcade GP VR</a></td>
+        <td></td>
+        <td><a href="http://slides.com/thomas245166/student-choice-presentation/fullscreen">
+            <img  height="100" src="../images/Mario-Kart-VR-featured.jpg" alt="">
+
+        </a></td>
+    </tr>
+    <tr>
+        <td>Luis Rausseo</td>
+        <td><a href="https://www.labster.com/">Laboratory Simulations for Educators to Empower their STEM Students</a>
+        </td>
+        <td></td>
+        <td><a href="https://luisrausseo.github.io/Presentation/index.html">
+            <img  height="100" src="../images/talk.Rausseo.jpg" alt="">
+
+        </a></td>
+    </tr>
+
+    <tr>
+        <td>Emre Unal</td>
+        <td><a href="https://glass.aero/">Aero Glass</a></td>
+    </tr>
+    <tr>
+        <td>Jijun Sui</td>
+        <td><a href="https://www.leapmotion.com/">Leap Motion</a></td>
+        <td></td>
+<<<<<<< HEAD
+        <td><a href="https://docs.google.com/presentation/d/1az1b5f8w-yF9y3SO0R-bxXRd_5KloU8vFRRhPyr46qE/edit?usp=sharing">
+            <img  height="100" src="../images/talk.Sui.jpg" alt="">
+=======
+        <td>
+            <a href="https://docs.google.com/presentation/d/1az1b5f8w-yF9y3SO0R-bxXRd_5KloU8vFRRhPyr46qE/edit?usp=sharing">
+                <img width="120" height="100" src="../images/talk.Sui.jpg" alt="">
+>>>>>>> 47f1fdb86ea2c3002a2125be255d30908c678f30
+
+            </a></td>
+
+    </tr>
+    <tr>
+        <td>David Cooper</td>
+        <td><a href="https://developers.google.com/ar/">Google ARCore </a></td>
+        <td></td>
+        <td><a href="https://davidcooper1.github.io/presentation-report.html">
+            <img  height="100" src="../images/talk.cooper.jpg" alt="">
+
+        </a></td>
+    </tr>
+
+    <tr>
+        <td>Matthew Jordan</td>
+        <td><a href="https://www.microsoft.com/en-us/hololens">Microsoft HoloLens</a></td>
+        <td></td>
+        <td><a href="http://slides.com/mjordan29/deck/fullscreen">
+            <img  height="100" src="../images/talk.jordan.jpg" alt="">
+
+        </a></td>
+
+    </tr>
+
+    <tr>
+        <td>Joyelle A. Woodson</td>
+        <td><a href="https://vrgluv.com/">VRgluv</a>: Force Feedback Gloves for Virtual Reality</td>
+    </tr>
+
+    <tr>
+        <td>Justin, Wright</td>
+        <td>VVR Teleoperation</td>
+    </tr>
+    <tr>
+        <td>Alexandre Soares da Silva</td>
+        <td><a href="http://first-vr.com/">First VR</a> and <a href="http://unlimitedhand.com/en/">Touch and feel the
+            game world with UnlimitedHand.</a></td>
+    </tr>
+
+    </tbody>
+</table>
+<br>
+<br>
+
+
+<hr style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Example Student Choices:</font></div>
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="4">Here are some example topics that students can select from
+    for their presentations:</font></div>
+
+<table style="width: 100%;" border="1" cellpadding="3" cellspacing="0">
+    <tbody>
+    <tr bgcolor="#aaa">
+        <td>Topic</td>
+        <td>Link</td>
+    </tr>
+    <tr>
+        <td><b>Roto VR – Interactive Virtual Reality Chair</b><br>
+            Roto VR enables its users to explore in all possible directions and discover the gravitational presence in a
+            VR environment. Roto has been specifically designed for all HMDs. Instead of just using the headset to
+            navigate around a space, the motorized chair allows one to rotate and turn in the virtual environment. This
+            feature makes it perfect for coordination meetings or navigating through a space.
+        </td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/H3MOUuKwq2E" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>360 Degree (Omnidirectional) Treadmills</b><br>
+            The treadmill I will be covering in depth is the Virtuix Omni, while comparing it to other existing
+            treadmill solutions. The idea behind these treadmills in general is that a user is held (usually at the
+            waist /chest) to insure they don't fall over when moving around. The Omni treadmill has little friction to
+            enable the user to walk/run in any direction when used with the appropriate shoes and shoe trackers. The
+            curvature of the treadmill makes it so that the user is moved towards the center when they are moving
+            around. It simulates the movements in games/applications, even when the movements are running, walking or
+            just crouching. Other systems such as Vue VR even support jumping on top of the other movements. The nice
+            thing about the Virtuix Omni and similar systems is how little room they consume, just like treadmills at a
+            gym, where you can have multiple side by side (as shown below).
+        </td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/WHN-ZGncQhY" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Birdly – Ultimate Dream of Flying</b><br>
+            a full-body virtual reality flight simulator that uses multi-hinged flaps and motion feedback to give you a
+            taste of flying like a bird.
+            Birdly includes a fan in front of the user that regulates the speed of the headwind based on how fast you’re
+            flying.
+        </td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/gHE6H62GHoM" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Magic Bench</b><br>
+            Magic Bench allows for a group to share the same augmented environment with any computer-generated graphics
+            and interact in a shared story sequence through a third-person POV. It’s a combined augmented and mixed
+            reality experience. But, what makes this experience interesting is that it does not involve wearing a
+            head-mounted display (HMD) or using a handheld device. Instead, the surroundings are instrumented rather
+            than the individual, allowing people to share the magical experience as a group.
+        </td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/JnLk2_Xbr90" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Osso VR</b><br>
+            Osso VR is a virtual reality application that uses the Oculus Rift to simulate device procedures and try to
+            replace the current methods. As stated in the video, it’s common for an orthopaedic surgeon to go to a
+            training seminar where demoes are provided by the device manufacturers and the surgeons get to use the
+            device on a cadaver. Then, if the surgeon likes it, the next time they’ll interact with the device will
+            usually be in surgery 4-6 months down the line. By having a VR environment, a surgeon would not only be able
+            to cut out the 2 day seminar to try out the device, as the training would be available to them with the
+            software, but it would also allow them to repeat the procedure many times to help them overcome the learning
+            curve of the complicated procedure.
+            <br> Note: <font style="font-family:
+                                 Helvetica,Arial,sans-serif;" color="red" size="3">Software</font></td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/bqra7wslwCM" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Sketch AR | Art with Mixed Reality</b><br>
+            SketchAR is an application that applied Augmented Reality to create art works in real world. When the user
+            is using the device, he will be able to draw images, just like tracing. The image outline is projected on
+            the selected space, which will be used as the canvas. This app is a very simple but effective usage of
+            augmented reality. While this can be used as a fun application, it can also help people to create high
+            quality copies of existing art and also reproduce them easily on a massive scale. This application is also
+            available for other platforms such as iOS, Android, etc. But among all these, Hololens seems to be the most
+            suitable place to use this app.
+            <br> Note: <font style="font-family:
+                                 Helvetica,Arial,sans-serif;" color="red" size="3">Software</font></td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/AJDf_HRNo54" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td><b>eSight</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/RHRxiuxP3QU" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Vive Tracker</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/MeKRVo7hfZ4" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>BraveMind VR</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/943NZj_SSWQ" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>VR Teleoperation</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/AJllD3AiSqs" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Mira Prism AR Headset </b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/Ij6vpXhiLp4" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>NOLO VR</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/MkMHXbsj90s" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>ZephVR</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/vxfklqHhY04" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td><b>Tribemix Virtual Reality for Dementia Care</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/N3ywcoqR4Co" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Hyperbolic Space in Virtual (Un)reality</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/jfSTwqmrQDc" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>LiveMap</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/le3v-RpUjLM" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Snapchat Spectacles</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/9WLV17Bb4CU" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>ImmersiveTouch: The Future of Surgical Planning and Training</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/KGo7vdmW2G8" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Aero glass:</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/TMRNMLFlfP0" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Gloveone: Feel Virtual Reality</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/RAZidk_mPc8" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Neurable: control VR with your mind</b><br>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/47WHqDNckI8" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Why Virtual Reality Could Help Treat Alzheimer's and Chronic Pain</b></td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/xAhuVEQRJs8" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Facial Performance Sensing Head-Mounted Display </b> (SIGGRAPH 2015)<br>
+            Note: <font style="font-family:
+                                 Helvetica,Arial,sans-serif;" color="red" size="3">Research paper</font></td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/rgKkEnaaSDc" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td><b>High-Fidelity Facial and Speech Animation for VR HMDs</b> (SIGGRAPH Asia 2016)<br>
+            Note: <font style="font-family:
+                                 Helvetica,Arial,sans-serif;" color="red" size="3">Research paper</font></td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/eOjzC_NPCv8" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>FINEXUS finger tracking in VR</b> (CHI '16)<br>
+            Note: <font style="font-family:
+                                 Helvetica,Arial,sans-serif;" color="red" size="3">Research paper</font></td>
+        <td>
+            <iframe width="600" height="352" src="https://www.youtube.com/embed/9dFHmUjWW14" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>FOVE</b><br>
+        <td><a href="https://www.getfove.com/">https://www.getfove.com/</a></td>
+    </tr>
+    <tr>
+        <td><b>Leap Motion</b><br>
+        <td><a href="https://www.leapmotion.com/#112">https://www.leapmotion.com/</a></td>
+    </tr>
+    <tr>
+        <td><b>Varjo: The Resolution Revolution is on</b><br>
+        <td><a href="https://varjo.com/">https://varjo.com/</a></td>
+    </tr>
+    <tr>
+        <td><b>NextVR </b><br>
+        <td><a href="https://nextvr.com/">https://nextvr.com/</a></td>
+    </tr>
+    <tr>
+        <td><b> Google Tango</b></td>
+        <td><a href="https://developers.google.com/tango/"> https://developers.google.com/tango/</a></td>
+    </tr>
+    <tr>
+        <td><b>Google ARCore </b><br>
+            "The Google ARCore is the answer to Apple's ARKit"
+        </td>
+        <td><a href="https://developers.google.com/ar/"> https://developers.google.com/ar/</a></td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+
+</tbody>
+</table>
+<hr style="width: 100%; height: 1px;">
+<div align="right"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: Feb 14, 2017 &nbsp; &nbsp;
+    &nbsp;</font></div>
+
+</ul>
+
+</body>
+</html>
