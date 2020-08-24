@@ -1,6 +1,6 @@
 ## CS4331 and CS5331.003 Virtual-Reality Website
 
-Course website: https://idatavisualizationlab.github.io/CS5331-VirtualReality
+Course website: https://idatavisualizationlab.github.io/CS5331-VirtualReality-Fall2020/
 
 ## Textbooks
 
