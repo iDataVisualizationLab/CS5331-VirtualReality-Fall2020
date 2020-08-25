@@ -86,6 +86,7 @@
          var table2 = document.getElementById("targettable2");
          var table3 = document.getElementById("targettable3");
   d3.csv('grade/data/Students.csv',function (data) {
+    console.log(data)
     data.forEach(function (t,i) {
         if (i>=14)
             return;

@@ -1,42 +1,11 @@
 Fullname,Nickname,P1_code,P1_talk,P1_report,P1_survey,P2_group_id,P2_feedback,P2_group_score,P2_code,P2_talk,P2_report,P2_review,P2_reviewForOthers,P3_group,P3_code,P3_talk,P3_report,P3_review,P3_reviewForOthers,Program,Level,ProgrammingYears,Email,Photoname,ResearchInterest,StudentTalk,StudentReport
-Alexandre Soares da Silva,big_Al,-1,-1,-1,-100,-1,,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,BS,Undegraduate,1.5,Alexandre.Soares-Da-Silva@ttu.edu,Soares_da_Silva_Alexandre.JPG,https://github.com/alexandresoaresilva/VR_class,,0
-Wesley Scott,Wes,-1,-1,-1,-100,-1,,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,BS,Undegraduate,4.5,Wesley.Scott@ttu.edu,Wesley.jpg,https://github.com/WesScott,,5
-Wesley W. Wheeler,Wulfe,-1,-1,-1,-100,-1,,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,BS,Undegraduate,3,Wesley.Wheeler@ttu.edu,no-image-icon-11.PNG,https://github.com/WinterWulfe,,0
-Cheol Hwan Im,Andrew,10,5,5,1,1,No abstract,13.21,13.21,5,5,2,1.86,14.89,14.89,5,4.5,2,1.625,BS,Undegraduate,4,Cheol-Hwan.Im@ttu.edu,Cheol.JPG,,5,5
-Cody Otterbine,Dauntless,9,5,4,0,1,No abstract,13.21,13.21,5,5,2,1.86,14.89,14.89,5,4.5,2,0.25,BS,Undegraduate,7,Cody.Otterbine@ttu.edu,Cody.jpg,https://dauntlessdash.github.io/Personal-Website/,5,4
-Megan Taylor,MKT,12,5,5,2,1,No abstract,13.21,13.21,5,5,2,1.86,14.89,14.89,5,4.5,2,1.75,BS,Undegraduate,4,Megan.Taylor@ttu.edu,Megan.png,https://github.com/mktaylor5,4.5,4.5
-Thomas Sanchez,Blue Leader,10,5,5,2,1,No abstract,13.21,13.71,5,5,2,1.57,14.89,14.89,5,4.5,2,1.5,BS,Undegraduate,3,Thomas.Sanchez@ttu.edu,Thomas_Sanchez.JPG,https://github.com/Thomas245166,5,5
-Luciano Wolff,Lucho,9.5,5,3,2,2,No picture,12.2,12.2,5,4.5,2,1.86,12.5,12.5,5,4.5,2,0.875,BS,Undegraduate,6,Luciano.Wolff@ttu.edu,LucianoWolffPhoto.jpg,https://github.com/SpeedyRacoon/Luciano_Wolff_Virtual_Reality_CS4331.git,4.5,4
-Reynaldo Garcia,qcf4,8,4.5,3.5,2,2,,12.2,12.2,5,4.5,2,1.86,12.5,12.5,5,4.5,2,1.75,BS,Undegraduate,4,Reynaldo.Garcia@ttu.edu,Reynaldo.png,https://raygar.github.io/,5,3
-Amitsingh Pardeshi,Amit,9.5,5,4.5,2,3,,12.35,12.35,5,5,2,1.86,13.02,13.02,5,5,2,1.875,MSCS,Graduate,6,Amitsingh.Pardeshi@ttu.edu,Amit.jpg,https://github.com/pardeshiamitsingh,5,4.5
-Jonathan Bouligny,Jon,9,4.5,4.5,2,3,,12.35,12.85,5,5,0,1.71,13.02,13.02,5,5,2,1.125,BS,Undegraduate,6,Jonathan.Bouligny@ttu.edu,Jonathan.jpg,JonathanBouligny.github.io,5,5
-Prerit Datta,predat,9.5,5,4.5,2,3,,12.35,11.85,5,5,2,1.86,13.02,13.02,5,5,2,1.75,PhD,PhD,8,Prerit.Datta@ttu.edu,Prerit_Datta.jpg,https://github.com/prd90/CS-5331-Virtual-Reality,5,5
-Michael Acosta,M1221,10,5,3,2,4,,13.078,12.6,5,5,2,1.86,14.17,14.17,5,5,2,1.62,BS,Undegraduate,2,Michael.Acosta@ttu.edu,Michael.png,https://www.linkedin.com/in/michael-acosta-b8472414a/,5,4.5
-Christine Huber,C,12,5,5,2,4,,13.078,13.3,5,5,2,1.86,14.17,14.17,5,5,2,0.75,BS,Undegraduate,5.5,Christine.Huber@ttu.edu,Christine.jpg,https://github.com/christine-elise,5,4.5
-Trent Myers,Rusty Shackleford,12,5,5,2,4,,13.078,13.3,5,5,2,1.86,14.17,14.17,5,5,2,1.75,BS,Undegraduate,4,Trent.Myers@ttu.edu,Trent.jpg,https://github.com/Trentm95,5,5
-Derek Fritz,DJ,9,5,4,2,5,Does not anwser questions from survey,23.5,13.8,5,4.5,2,1.86,14.1,14.1,5,5,2,1.625,BS,Undegraduate,3.5,Derek.Fritz@ttu.edu,Derek.png,https://github.com/defritz,5,5
-Joyelle Woodson,Joy,9,5,4,2,5,,23.5,13.8,5,4.5,2,1.86,14.1,14.1,5,5,2,1.625,BS,Undegraduate,5,Joyelle.Woodson@ttu.edu,JoyelleWoodson.jpg,joyellealina.github.io,5,4.5
-Jakob Dozier,Ezio,8.5,4.5,3.5,2,6,,11.5,11.5,5,5,2,1.86,13.63,14.4,5,5,2,1.75,BS,Undegraduate,2,Jakob.Dozier@ttu.edu,JakobDozier.JPEG,https://github.com/JakobDozier,4.5,5
-Mayur Maheshkumar Bhakta,MBK,9,5,5,2,6,,11.5,11,5,5,2,1.86,13.9,13.9,5,4.5,2,1.75,BS,Undegraduate,4,mayur.bhakta@ttu.edu,Mayur.jpg,https://github.com/mBhakta95/Virtual-Reality,5,5
-Simon Menbere Woldemichael,Sy,9.5,5,5,2,6,,11.5,13.5,5,5,2,1.86,14.23,14.23,5,5,2,1.625,BS,Undegraduate,4,Simon.Woldemichael@ttu.edu,Simon Woldemichael.jpg,swoldemi.github.io,4.5,5
-xujia wu,Carolyn,9,4,5,2,6,,11.5,10.5,5,5,2,1.86,14.23,14.23,5,5,2,1.75,BS,Undegraduate,2,Xujia.Wu@ttu.edu,xujia.jpg,https://github.com/carolynwu,4.5,5
-Benjamin Fox Bolduc,Fox,10.5,5,4,2,7,No video,12.8,12.8,5,4,2,1.86,13.65,12.41,5,4.5,2,1.75,BS,Undegraduate,4,Fox.Bolduc@ttu.edu,Benjamin.jpg,foxbolduc.github.io,5,4.5
-Scott Blechman,Scott,8.5,4.5,2.5,2,7,,12.8,12.8,5,4,2,1.7,13.65,12.41,5,4.5,2,1.75,BS,Undegraduate,5,Scott.Blechman@ttu.edu,Scott.jpg,http://scottblechman.me/cs5331/,4.5,4.5
-David Cooper,David,8.5,4.5,3.5,2,8,No abstract,12.3,12.3,5,5,2,1.29,14.3,13.26,4.5,4,2,1.5,BS,Undegraduate,8,David.P.Cooper@ttu.edu,David.JPG,,5,5
-Olisa Omekam,Oo,9.5,5,1.5,0,8,,12.3,11.3,5,5,1,1.1,14.3,13.26,4.5,4,2,1.75,BS,Undegraduate,3,Olisa.Omekam@ttu.edu,omekam.png,Olisa.Omekam@ttu.edu,4,0
-Tien Dang,Rin,9,5,5,2,8,,12.3,13.3,5,5,2,0,14.3,13.76,4.5,4,1,0.625,BS,Undegraduate,2,tien.dang@ttu.edu,Tien.JPG,https://sksdow.github.io/Projects-and-Qualifications/,4.5,5
-Darien Sokolov,Darien,9,4.5,3.5,2,9,,12.83,13.83,5,5,2,1.29,13.22,13.22,5,5,2,1.75,BS,Undegraduate,5,darien.sokolov@ttu.edu,Darien.jpg,https://github.com/XT3RM1N8R,5,5
-Jordan Coe,JJC,9,5,5,2,9,,12.83,12.83,5,5,2,1.86,13.22,13.22,5,5,2,1.75,BS,Undegraduate,4,Jordan.J.Coe@ttu.edu,Jordan.jpg,https://github.com/JuJoCoe/Virtual-Reality-CS-4331.git,5,5
-Matthew Jordan,R11033860,9,5,3,2,9,,12.83,12.83,5,5,2,1.86,13.22,13.22,5,5,2,1.75,BS,Undegraduate,3,Matt.Jordan@ttu.edu,Matthew.png,https://github.com/Mattjordan29,5,5
-Jessica Hao,JJJJ,8.5,5,4.5,2,10,,10.87,10.87,3.5,3,2,1.4,10.6,10.6,3.5,3.5,2,1.375,BS,Undegraduate,4.5,Yanan.Hao@ttu.edu,Jessica.jpeg,https://github.com/hujiku9/VR-Designing.git,4.5,4.5
-Emre Unal,Emrrr,8.5,4.5,3.5,2,11,No abstract,13.96,12.9,5,4,2,1.29,9.46,10.46,3,2,2,1.75,BS,Undegraduate,4,Emre.Unal@ttu.edu,Emre_Unal.jpg,https://github.com/emreunal93/CS-4331---Virtual-Reality,5,5
-Eddie Garcia,gar37012,8,4.5,3,2,11,,13.96,11.9,5,4,1,1.29,9.46,10.46,3,2,2,0.875,BS,Undegraduate,2,Eddie.Garcia@ttu.edu,EddieGarcia.PNG,github: gar37012,5,4.5
-Justin Wright,Ghidorah,8.5,4.5,4,2,11,,13.96,13.96,5,4,2,1.86,9.46,10.46,3,2,2,1.825,BS,Undegraduate,4,,no-image-icon-11.PNG,https://github.com/justinmwright,4.5,3.5
-Travis Ahlberg,Travis,8.5,4.5,4,2,11,,13.96,15,5,4,2,1.71,9.46,11.46,3,2,2,1.625,BS,Undegraduate,3,Travis.Ahlberg@ttu.edu,Travis Ahlberg.jpeg,https://github.com/ahlbergta,5,4
-Gantaphon Chalumporn,Golf,9.5,5,5,2,12,No video,13.05,13,5,4,2,1.85,12.51,12.51,4,4,1,1.75,PhD,PhD,6,G.Chalumporn@ttu.edu,Chalumporn.jpg,https://github.com/gchalump/CS5331-Virtual-Reality-TTU,5,5
-Jijun Sui,Jay,8,4.5,5,2,12,,13.05,12,5,4,2,1.86,12.51,12.01,4,4,2,1.75,BS,Undegraduate,2,Jijun.Sui@ttu.edu,sui.png,https://github.com/Tih1st,5,1
-Luis Rausseo,lrausseo,10,5,4,2,12,,13.05,15,5,4,2,0.71,12.51,14.51,4,4,2,1.75,BS,Undegraduate,6,Luis.Rausseo@ttu.edu,Luis-Rausseo.png,https://github.com/luisrausseo,5,5
-Kevon Manahan,SuperKev,9,5,3.5,0,13,,13.2,11.2,4.5,4,2,2,11.66,11.66,4.5,5,2,1.875,BS,Undegraduate,4,Kevon.Manahan@ttu.edu,Kevon.JPG,http://www.myweb.ttu.edu/kemanaha,5,2
-Lino Abiel Virgen Gracia,L12,8,4,2.5,2,13,,13.2,14.2,4.5,4,2,2,11.66,14.66,4.5,5,1,1.875,MSSE,MSSE,5,Lino.Virgen@ttu.edu,VirgenGraciaLino_1.jpg,github.com/lvrg12,4.5,3.5
-Wenhao Ge,Wen,7,4,3,2,13,,13.2,12.2,4.5,4,2,2,11.66,11.66,4.5,5,2,1.875,BS,Undegraduate,2.5,Wenhao.Ge@ttu.edu,Wenhao.jpeg,http://github.com/WenhaoGe,4,3
-Athaa Bader M Alotaibi,3tb,6.5,3.5,3.5,2,14,,9,9,3,3,0.5,0.5,8.11,8.11,3.5,3,0.5,0.5,MSCS,Graduate,5,Athaa.Alotaibi@ttu.edu,no-image-icon-11.PNG,https://github.com/Abdrotb,4,5
+Evan Kyle Boone,EvanB,,,,,,,,,,,,,,,,,,,BS,Undegraduate,3,Evan.Boone@ttu.edu,EvanBoone.jpg,https://github.com/EvanBooneTTU,,
+Bao Dien Quoc Nguyen,ndqbao,,,,,,,,,,,,,,,,,,,PhD,PhD,2,Bao.D.Nguyen@ttu.edu,BaoNguyen.jpg,,,
+Robert Emery Porter,Blue,,,,,,,,,,,,,,,,,,,BS,Undegraduate,8,Emery.Porter@ttu.edu,Emery.jpg,https://github.com/Bluepuff71,,
+Cristiano Eleutherio Caon,Cristiano Caon,,,,,,,,,,,,,,,,,,,BS,Undegraduate,4,Cristiano.Caon@ttu.edu,Caon.jpg,Cristiano.Caon@ttu.edu,Caon.jpg,
+Schafer Cunningham,Animus,,,,,,,,,,,,,,,,,,,BS,Undegraduate,5,Schafer.Cunningham@ttu.edu,Schafer.jpg,https://www.linkedin.com/in/schafer-cunningham-261313170/,,
+John Valeriano,GulagGary,,,,,,,,,,,,,,,,,,,BS,Undegraduate,5,John-Wynne-Angelo.Valeriano@ttu.edu,Valeriano.jpg,https://jovaleri.github.io/resume.html,,
+Luke McDougal,RedBear,,,,,,,,,,,,,,,,,,,BS,Undegraduate,4,Luke.Mcdougal@ttu.edu,luke.jpg,https://github.com/lukemcdougalttu,,
+Breanae Campbell,XMA584,,,,,,,,,,,,,,,,,,,BS,Undegraduate,4,Breanae.Campbell-Rivera@ttu.edu,Breanae.jpg,,,
+Madhuri Gangadharan,Maddy,,,,,,,,,,,,,,,,,,,MSCS,Graduate,3.5,mgangadh@ttu.edu,Madhuri.jpg,https://github.com/Madhuri-Gangadharan,,
+Rishabh Tewari,Bnuuy,,,,,,,,,,,,,,,,,,,BS,Undegraduate,5,Rishabh.Tewari@ttu.edu,Rishabh.jpg,https://freeshabh.github.io/blog/,,
