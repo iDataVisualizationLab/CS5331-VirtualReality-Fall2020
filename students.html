@@ -12,6 +12,17 @@
           table{
               border-collapse: collapse;
           }
+          .avatar{
+            object-position: center;
+          }
+          .crop{
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
       </style>
   </head>
   <body bgcolor="white" text="black">
@@ -21,58 +32,9 @@
         <div align="left"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="black" size="3">The table lists all students for this class (Simple Student Profile)</font></div>
 
-    <table style="width:90%;">
+    <table style="width:90%;" id="Maintable">
       <tr>
-        <td>
 
-          <table id="targettable" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
-            <tbody style="text-align:center">
-              <tr bgcolor="#aaa">
-                  <td>No</td>
-                <td>Photo</td>
-              <td>Full Name</td>
-                <td>Program</td>
-                <!--<td>Level of Education</td>-->
-                <td>Experience (Yrs)</td>
-                <!--<td>Web Links</td>-->
-              </tr>
-            </tbody>
-          </table>
-        </td>
-        <td  style="width:4%;">
-        </td>
-        <td>
-          <table id="targettable2" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
-            <tbody style="text-align:center">
-            <tr bgcolor="#aaa">
-              <td>No</td>
-              <td>Photo</td>
-              <td>Full Name</td>
-              <td>Program</td>
-              <!--<td>Level of Education</td>-->
-              <td>Experience (Yrs)</td>
-              <!--<td>Email</td>-->
-              <!--<td>Web Links</td>-->
-            </tr>
-            </tbody>
-          </table>
-        </td>
-        <td>
-          <table id="targettable3" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
-            <tbody style="text-align:center">
-            <tr bgcolor="#aaa">
-              <td>No</td>
-              <td>Photo</td>
-              <td>Full Name</td>
-              <td>Program</td>
-              <!--<td>Level of Education</td>-->
-              <td>Experience (Yrs)</td>
-              <!--<td>Email</td>-->
-              <!--<td>Web Links</td>-->
-            </tr>
-            </tbody>
-          </table>
-        </td>
       </tr>
     </table>
 
@@ -82,173 +44,84 @@
      
     </ul>
      <script>
-         var table = document.getElementById("targettable");
-         var table2 = document.getElementById("targettable2");
-         var table3 = document.getElementById("targettable3");
-  d3.csv('grade/data/Students.csv',function (data) {
+         function maketable(table,i, t) {
+           var tr = document.createElement("tr");
+
+           var index = document.createElement('td')
+           var index_text = document.createTextNode(i + 1);
+           index.appendChild(index_text);
+
+           var photocontainertd = document.createElement("td");
+           var photocontainer = document.createElement('div');
+           photocontainertd.appendChild(photocontainer);
+           photocontainer.setAttribute('class','crop');
+
+           photocontainer.style['background-image']= `url('photos/${t.Photoname}')`;
+
+
+
+           var fullname = document.createElement("td");
+           var fullname_text = document.createTextNode(t.Fullname);
+           fullname.appendChild(fullname_text);
+
+           var program = document.createElement("td");
+           var program_text = document.createTextNode(t.Program);
+           program.appendChild(program_text);
+
+           var level = document.createElement("td");
+           var level_text = document.createTextNode(t.Level);
+           level.appendChild(level_text);
+
+
+           var experience = document.createElement("td");
+           var experience_text = document.createTextNode(t.ProgrammingYears);
+           experience.appendChild(experience_text);
+
+
+           //var email = document.createElement("td");
+           //var email_text = document.createTextNode(t.Email);
+           //email.appendChild(email_text);
+
+           var github = document.createElement("td");
+           var github_text = document.createTextNode(t.ResearchInterest)
+           github.appendChild(github_text);
+
+           tr.appendChild(index);
+           tr.appendChild(photocontainertd);
+           tr.appendChild(fullname);
+           tr.appendChild(program);
+           //tr.appendChild(level);
+           tr.appendChild(experience);
+           //tr.appendChild(email);
+           //tr.appendChild(github);
+           table.appendChild(tr);
+         }
+
+         d3.csv('grade/data/Students.csv',function (data) {
     data.forEach(function (t,i) {
-        if (i>=14)
-            return;
-        var tr = document.createElement("tr");
-
-        var index = document.createElement('td')
-        var index_text = document.createTextNode(i+1);
-        index.appendChild(index_text);
-
-        var photocontainer = document.createElement("td");
-        var photo = document.createElement("img");
-        var photo_url = document.createAttribute('src');
-        photo_url.value='photos/'+ t.Photoname;
-        photo.setAttributeNode(photo_url);
-        photo.setAttribute('style','height:90px')
-        photocontainer.appendChild(photo);
-
-
-        var fullname = document.createElement("td");
-        var fullname_text = document.createTextNode(t.Fullname);
-        fullname.appendChild(fullname_text);
-
-        var program = document.createElement("td");
-        var program_text = document.createTextNode(t.Program);
-        program.appendChild(program_text);
-
-        var level = document.createElement("td");
-        var level_text = document.createTextNode(t.Level);
-        level.appendChild(level_text);
-
-
-        var experience = document.createElement("td");
-        var experience_text = document.createTextNode(t.ProgrammingYears);
-        experience.appendChild(experience_text);
-
-
-        //var email = document.createElement("td");
-        //var email_text = document.createTextNode(t.Email);
-        //email.appendChild(email_text);
-
-        var github = document.createElement("td");
-        var github_text = document.createTextNode(t.ResearchInterest)
-        github.appendChild(github_text);
-
-        tr.appendChild(index);
-        tr.appendChild(photocontainer);
-        tr.appendChild(fullname);
-        tr.appendChild(program);
-        //tr.appendChild(level);
-        tr.appendChild(experience);
-        //tr.appendChild(email);
-        //tr.appendChild(github);
-        table.appendChild(tr);
+      let tableid = Math.floor(i/14);
+      let table = document.getElementById("targettable"+tableid);
+      if(!table){
+        let td = document.createElement('td');
+        td.innerHTML =`<table id="${"targettable"+tableid}" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
+            <tbody style="text-align:center">
+            <tr bgcolor="#aaa">
+              <td>No</td>
+              <td>Photo</td>
+              <td>Full Name</td>
+              <td>Program</td>
+              <!--<td>Level of Education</td>-->
+              <td>Experience (Yrs)</td>
+              <!--<td>Email</td>-->
+              <!--<td>Web Links</td>-->
+            </tr>
+            </tbody>
+          </table>`;
+        table = td.querySelector('table')
+        document.getElementById('Maintable').querySelector('tr').appendChild(td);
+      }
+      maketable(table,i, t);
     })
-    data.forEach(function (t,i) {
-        if (i<14 || i>=28)
-            return;
-        var tr = document.createElement("tr");
-
-        var index = document.createElement('td')
-        var index_text = document.createTextNode(i+1);
-        index.appendChild(index_text);
-
-        var photocontainer = document.createElement("td");
-        var photo = document.createElement("img");
-        var photo_url = document.createAttribute('src');
-        photo_url.value='photos/'+ t.Photoname;
-        photo.setAttributeNode(photo_url);
-        photo.setAttribute('style','height:90px')
-        photocontainer.appendChild(photo);
-
-
-        var fullname = document.createElement("td");
-        var fullname_text = document.createTextNode(t.Fullname);
-        fullname.appendChild(fullname_text);
-
-        var program = document.createElement("td");
-        var program_text = document.createTextNode(t.Program);
-        program.appendChild(program_text);
-
-        var level = document.createElement("td");
-        var level_text = document.createTextNode(t.Level);
-        level.appendChild(level_text);
-
-
-        var experience = document.createElement("td");
-        var experience_text = document.createTextNode(t.ProgrammingYears);
-        experience.appendChild(experience_text);
-
-
-       // var email = document.createElement("td");
-       // var email_text = document.createTextNode(t.Email);
-       // email.appendChild(email_text);
-
-        var github = document.createElement("td");
-        var github_text = document.createTextNode(t.ResearchInterest)
-        github.appendChild(github_text);
-
-        tr.appendChild(index);
-        tr.appendChild(photocontainer);
-        tr.appendChild(fullname);
-        tr.appendChild(program);
-        //tr.appendChild(level);
-        tr.appendChild(experience);
-        //tr.appendChild(email);
-        //tr.appendChild(github);
-        table2.appendChild(tr);
-    })
-
-      data.forEach(function (t,i) {
-          if (i<28)
-              return;
-          var tr = document.createElement("tr");
-
-          var index = document.createElement('td')
-          var index_text = document.createTextNode(i+1);
-          index.appendChild(index_text);
-
-          var photocontainer = document.createElement("td");
-          var photo = document.createElement("img");
-          var photo_url = document.createAttribute('src');
-          photo_url.value='photos/'+ t.Photoname;
-          photo.setAttributeNode(photo_url);
-          photo.setAttribute('style','height:90px')
-          photocontainer.appendChild(photo);
-
-
-          var fullname = document.createElement("td");
-          var fullname_text = document.createTextNode(t.Fullname);
-          fullname.appendChild(fullname_text);
-
-          var program = document.createElement("td");
-          var program_text = document.createTextNode(t.Program);
-          program.appendChild(program_text);
-
-          var level = document.createElement("td");
-          var level_text = document.createTextNode(t.Level);
-          level.appendChild(level_text);
-
-
-          var experience = document.createElement("td");
-          var experience_text = document.createTextNode(t.ProgrammingYears);
-          experience.appendChild(experience_text);
-
-
-          // var email = document.createElement("td");
-          // var email_text = document.createTextNode(t.Email);
-          // email.appendChild(email_text);
-
-          var github = document.createElement("td");
-          var github_text = document.createTextNode(t.ResearchInterest)
-          github.appendChild(github_text);
-
-          tr.appendChild(index);
-          tr.appendChild(photocontainer);
-          tr.appendChild(fullname);
-          tr.appendChild(program);
-          //tr.appendChild(level);
-          tr.appendChild(experience);
-          //tr.appendChild(email);
-          //tr.appendChild(github);
-          table3.appendChild(tr);
-      })
 })
 
      </script>
