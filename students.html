@@ -12,6 +12,9 @@
           table{
               border-collapse: collapse;
           }
+          #Maintable td.top{
+            vertical-align: top;
+          }
           .avatar{
             object-position: center;
           }
@@ -103,6 +106,7 @@
       let table = document.getElementById("targettable"+tableid);
       if(!table){
         let td = document.createElement('td');
+        td.setAttribute('class','top')
         td.innerHTML =`<table id="${"targettable"+tableid}" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
             <tbody style="text-align:center">
             <tr bgcolor="#aaa">
