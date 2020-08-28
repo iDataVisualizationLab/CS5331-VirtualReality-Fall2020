@@ -101,33 +101,33 @@
          }
 
          d3.csv('grade/data/Students.csv',function (data) {
-    data.forEach(function (t,i) {
-      let tableid = Math.floor(i/14);
-      let table = document.getElementById("targettable"+tableid);
-      if(!table){
-        let td = document.createElement('td');
-        td.setAttribute('class','top')
-        td.innerHTML =`<table id="${"targettable"+tableid}" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
-            <thead>
-               <tr bgcolor="#aaa">
-                <th>No</th>
-                <th style="width: 80px">Photo</th>
-                <th>Full Name</th>
-                <th>Program</th>
-                <!--<td>Level of Education</td>-->
-                <th>Experience (Yrs)</th>
-                <!--<td>Email</td>-->
-                <!--<td>Web Links</td>-->
-              </tr>
-            </thead>
-            <tbody style="text-align:center">
+            data.forEach(function (t,i) {
+              let tableid = Math.floor(i/15);
+              let table = document.getElementById("targettable"+tableid);
+              if(!table){
+                let td = document.createElement('td');
+                td.setAttribute('class','top')
+                td.innerHTML =`<table id="${"targettable"+tableid}" style="width: 96%;" border="1" cellpadding="0" cellspacing="0">
+                    <thead>
+                       <tr bgcolor="#aaa">
+                        <th>No</th>
+                        <th style="width: 80px">Photo</th>
+                        <th>Full Name</th>
+                        <th>Program</th>
+                        <!--<td>Level of Education</td>-->
+                        <th>Experience (Yrs)</th>
+                        <!--<td>Email</td>-->
+                        <!--<td>Web Links</td>-->
+                      </tr>
+                    </thead>
+                    <tbody style="text-align:center">
 
-            </tbody>
-          </table>`;
-        table = td.querySelector('table')
-        document.getElementById('Maintable').querySelector('tr').appendChild(td);
-      }
-      maketable(table,i, t);
+                    </tbody>
+                  </table>`;
+                table = td.querySelector('table')
+                document.getElementById('Maintable').querySelector('tr').appendChild(td);
+              }
+              maketable(table,i, t);
     })
 })
 
