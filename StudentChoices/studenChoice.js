@@ -4,10 +4,10 @@ let key = ['Timestamp','Your name','Your topic','Professor']
 d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv').then(function(dataRaw){
     let data = dataRaw;
     let interested_level = d3.scaleLinear().domain([0,4]) .range(["white", "#6ece58"]);
-
+    let approve = new RegExp('Approved');
     d3.select('#currentTopic tbody').selectAll('tr').data(data)
         .join('tr')
-        .style('background-color',d=>d['Professor']==='Approve'?interested_level(d['Interested level']):'#ffc4c4')
+        .style('background-color',d=>approve.test(d['Professor'])?interested_level(d['Interested level']):'#ffc4c4')
         .selectAll('td')
         .data(d=>key.map(k=>d[k]))
         .join('td')
