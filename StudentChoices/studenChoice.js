@@ -8,7 +8,7 @@ d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv').t
     let approve = new RegExp('Approve');
     d3.select('#currentTopic tbody').selectAll('tr').data(data)
         .join('tr')
-        .style('background-color',d=>approve.test(d['Professor'])?interested_level(d['Interested level']):'#ffc4c4')
+        .style('background-color',d=>approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4'))
         .selectAll('td')
         .data(d=>key.map(k=>d[k]))
         .join('td')
