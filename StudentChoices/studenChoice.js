@@ -24,7 +24,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     dataCell
         .filter(d=>d.key==="Image")
         .selectAll('a')
-            .data(d=>[d])
+            .data(d=>d.value?[d]:[])
             .join('a')
             .attr('href',d=>d.data['Link']===''?'#':d.data['Link'])
             .selectAll('img')
