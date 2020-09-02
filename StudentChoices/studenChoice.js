@@ -32,10 +32,11 @@ Promise.all([d3.csv('../grade/data/Students.csv')
                 .join('img')
                 .style('width','200px')
                 .attr("src", function(d){
-                    return d.value===''?"https://via.placeholder.com/300x200":d.value;
+                    // return d.value===''?"https://via.placeholder.com/300x200":d.value;
+                    return d.value;
                 })
-                .on("error", function(d){
-                    this.setAttribute("href", "https://via.placeholder.com/300x100");
-                })
+                // .on("error", function(d){
+                //     this.setAttribute("href", "https://via.placeholder.com/300x100");
+                // })
 
 });
