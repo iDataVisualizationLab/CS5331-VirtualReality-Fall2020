@@ -1,7 +1,11 @@
 lastTime = new Date('8/30/2020');
 let key = ['ID','Timestamp','Your name','Your topic','Schedual','Image','Professor'];
-d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv').then(function(dataRaw){
-    let data = dataRaw;
+Promise.all([d3.csv('../grade/data/Students.csv')
+,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
+.then(function(dataRaw){
+    let data = dataRaw[1];
+    let dataPeople = dataRaw[0];
+    debugger
     data.forEach((d,i)=>d.ID=i+1)
     let interested_level = d3.scaleLinear().domain([0,4]) .range(["white", "#6ece58"]);
     let approve = new RegExp('Approve');
