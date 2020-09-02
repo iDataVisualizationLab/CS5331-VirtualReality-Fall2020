@@ -10,7 +10,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     // Student miss profile
     data.filter(d=>!people[d['Email Address'].toLowerCase()])
 
-    
+
     data.forEach((d,i)=>d.ID=i+1)
     let interested_level = d3.scaleLinear().domain([0,4]) .range(["white", "#6ece58"]);
     let approve = new RegExp('Approve');
