@@ -3,7 +3,18 @@ let key = ['ID','Timestamp','Your name','Your topic','Schedual','Image'];
 Promise.all([d3.csv('../grade/data/Students.csv')
 ,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
 .then(function(dataRaw){
+    // date for highlight
+    let limit_time = new Date();
+    limit_time.setHours(16);
+    limit_time.setMinutes(50);
+    limit_time.setSeconds(0);
+
     let data = dataRaw[1];
+    let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedual']+'/2020'), d.date>limit_time));
+    let thresholdDate = new Date(+d3.min(notPresentyet,d=>d.date));
+    thresholdDate.setHours(16);
+    notPresentyet.filter(d=>d.date<thresholdDate).forEach(d=>d.isHighlight = true);
+
     let dataPeople = dataRaw[0];
     let people={};
     dataPeople.forEach(d=>people[d.Email.toLowerCase()]=d);
@@ -16,6 +27,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     let approve = new RegExp('Approve');
     let dataCell = d3.select('#currentTopic tbody').selectAll('tr').data(data)
         .join('tr')
+        .classed('highlight',d=>d.isHighlight)
         .style('background-color',d=>approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4'))
         .selectAll('td')
         .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
