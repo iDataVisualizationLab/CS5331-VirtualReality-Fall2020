@@ -35,6 +35,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
         .text(d=>d.value);
     dataCell
         .filter(d=>d.key==="Image")
+        .text(()=>'')
         .selectAll('a')
             .data(d=>d.value?[d]:[])
             .join('a')
