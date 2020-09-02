@@ -1,6 +1,5 @@
 lastTime = new Date('8/30/2020');
-let key = ['ID','Timestamp','Your name','Your topic','Professor']
-// let key = ['Your name','Your topic','Note','Scheduled','Link','Report']
+let key = ['ID','Timestamp','Your name','Your topic','Schedual','Image','Professor'];
 d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv').then(function(dataRaw){
     let data = dataRaw;
     data.forEach((d,i)=>d.ID=i+1)
