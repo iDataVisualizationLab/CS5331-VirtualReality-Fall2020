@@ -24,7 +24,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     //sort by presentation day
     data.sort((a,b)=>a.date-b.date);
     //adjust image link
-    data.forEach(d=>d['Image']=`http://drive.google.com/uc?export=view&id=${d['Image'].split('id=')[1]}`)
+    data.forEach(d=>d['Image']=d['Image']===''?'':`http://drive.google.com/uc?export=view&id=${d['Image'].split('id=')[1]}`)
 
     data.forEach((d,i)=>d.ID=i+1)
     let interested_level = d3.scaleLinear().domain([0,4]) .range(["white", "#6ece58"]);
