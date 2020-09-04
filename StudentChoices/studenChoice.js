@@ -5,9 +5,9 @@ Promise.all([d3.csv('../grade/data/Students.csv')
 .then(function(dataRaw){
     // date for highlight
     let limit_time = new Date();
-    limit_time.setHours(16);
-    limit_time.setMinutes(0);
-    limit_time.setSeconds(0);
+    // limit_time.setHours(16);
+    // limit_time.setMinutes(0);
+    // limit_time.setSeconds(0);
 
     let data = dataRaw[1];
     let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedule']+'/2020 16:55'), d.date>=limit_time));
