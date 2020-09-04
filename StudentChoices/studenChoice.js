@@ -1,5 +1,5 @@
 lastTime = new Date('8/30/2020');
-let key = ['ID','Timestamp','Your name','Your topic','Schedule','Image'];
+let key = ['ID','Timestamp','Your name','Program','Your topic','Schedule','Image'];
 Promise.all([d3.csv('../grade/data/Students.csv')
 ,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
 .then(function(dataRaw){
@@ -18,7 +18,10 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     let people={};
     dataPeople.forEach(d=>people[d.Email.toLowerCase()]=d);
     // Student miss profile
-    data.filter(d=>!people[d['Email Address'].toLowerCase()])
+    // data.filter(d=>!people[d['Email Address'].toLowerCase()])
+    //mapping people and presentation
+    data.forEach(d=>d['Program'] = (people[d['Email Address'].toLowerCase()]||{Level:'--no data--'}).Level)
+
 
     //sort by presentation day
     data.sort((a,b)=>a.date-b.date);
