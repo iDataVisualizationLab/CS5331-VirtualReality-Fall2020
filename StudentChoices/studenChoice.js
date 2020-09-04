@@ -20,7 +20,8 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     // Student miss profile
     // data.filter(d=>!people[d['Email Address'].toLowerCase()])
     //mapping people and presentation
-    data.forEach(d=>d['Program'] = (people[d['Email Address'].toLowerCase()]||{Level:'--no data--'}).Level)
+    data.forEach(d=>{d['Program'] = (people[d['Email Address'].toLowerCase()]||{Level:'--no data--'}).Level;
+    d['Student Image']= '../photos/'+(people[d['Email Address'].toLowerCase()]||{Level:'--no data--'})['Photoname'];});
 
 
     //sort by presentation day
@@ -40,23 +41,22 @@ Promise.all([d3.csv('../grade/data/Students.csv')
         .join('td')
         .text(d=>d.value);
     dataCell
+        .filter(d=>d.key==="Your name")
+        .html(d=>`<img class="avatar" src="${d.data['Student Image']}"></img>${d.value}`)
+    dataCell
         .filter(d=>d.key==="Image")
         .text(()=>'')
         .selectAll('a')
-            .data(d=>d.value?[d]:[])
-            .join('a')
-            .attr('href',d=>d.data['Link']===''?'#':d.data['Link'])
-            .attr('target','_blank')
-            .selectAll('img')
-            .data(d=>[d])
-                .join('img')
-                .style('width','200px')
-                .attr("src", function(d){
-                    // return d.value===''?"https://via.placeholder.com/300x200":d.value;
-                    return d.value;
-                })
-                // .on("error", function(d){
-                //     this.setAttribute("href", "https://via.placeholder.com/300x100");
-                // })
-
+        .data(d=>d.value?[d]:[])
+        .join('a')
+        .attr('href',d=>d.data['Link']===''?'#':d.data['Link'])
+        .attr('target','_blank')
+        .selectAll('img')
+        .data(d=>[d])
+        .join('img')
+        .style('width','200px')
+        .attr("src", function(d){
+            // return d.value===''?"https://via.placeholder.com/300x200":d.value;
+            return d.value;
+        })
 });
