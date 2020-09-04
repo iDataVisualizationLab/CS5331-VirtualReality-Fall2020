@@ -1,25 +1,33 @@
 lastTime = new Date('8/30/2020');
-let key = ['ID','Timestamp','Your name','Your topic','Schedule','Image'];
+let key = ['ID','Timestamp','Your name','Program','Your topic','Schedule','Image'];
 Promise.all([d3.csv('../grade/data/Students.csv')
 ,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
 .then(function(dataRaw){
     // date for highlight
     let limit_time = new Date();
-    limit_time.setHours(16);
-    limit_time.setMinutes(50);
-    limit_time.setSeconds(0);
 
     let data = dataRaw[1];
+<<<<<<< HEAD
     let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedule']+'/2020'), d.date>limit_time));
     let thresholdDate = new Date(+d3.min(notPresentyet,d>d.date));
+=======
+    let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedule']+'/2020 16:55'), d.date>=limit_time));
+    let thresholdDate = new Date(+d3.min(notPresentyet,d=>d.date));
+    console.log(thresholdDate)
+>>>>>>> 046cb68949feb0aace4d59b7f044bfd8441469c9
     thresholdDate.setHours(16);
-    notPresentyet.filter(d=>d.date<thresholdDate).forEach(d=>d.isHighlight = true);
+    debugger
+    notPresentyet.filter(d=>d.date<=thresholdDate).forEach(d=>d.isHighlight = true);
 
     let dataPeople = dataRaw[0];
     let people={};
     dataPeople.forEach(d=>people[d.Email.toLowerCase()]=d);
     // Student miss profile
-    data.filter(d=>!people[d['Email Address'].toLowerCase()])
+    // data.filter(d=>!people[d['Email Address'].toLowerCase()])
+    //mapping people and presentation
+    data.forEach(d=>{d['Program'] = (people[d['Email Address'].toLowerCase()]||{Level:'--no data--'}).Level;
+    d['Student Image']= '../photos/'+(people[d['Email Address'].toLowerCase()]||{Level:'--no data--'})['Photoname'];});
+
 
     //sort by presentation day
     data.sort((a,b)=>a.date-b.date);
@@ -38,22 +46,22 @@ Promise.all([d3.csv('../grade/data/Students.csv')
         .join('td')
         .text(d=>d.value);
     dataCell
+        .filter(d=>d.key==="Your name")
+        .html(d=>`<img class="avatar" src="${d.data['Student Image']}"></img>${d.value}`)
+    dataCell
         .filter(d=>d.key==="Image")
         .text(()=>'')
         .selectAll('a')
-            .data(d=>d.value?[d]:[])
-            .join('a')
-            .attr('href',d=>d.data['Link']===''?'#':d.data['Link'])
-            .selectAll('img')
-            .data(d=>[d])
-                .join('img')
-                .style('width','200px')
-                .attr("src", function(d){
-                    // return d.value===''?"https://via.placeholder.com/300x200":d.value;
-                    return d.value;
-                })
-                // .on("error", function(d){
-                //     this.setAttribute("href", "https://via.placeholder.com/300x100");
-                // })
-
+        .data(d=>d.value?[d]:[])
+        .join('a')
+        .attr('href',d=>d.data['Link']===''?'#':d.data['Link'])
+        .attr('target','_blank')
+        .selectAll('img')
+        .data(d=>[d])
+        .join('img')
+        .style('width','200px')
+        .attr("src", function(d){
+            // return d.value===''?"https://via.placeholder.com/300x200":d.value;
+            return d.value;
+        })
 });
