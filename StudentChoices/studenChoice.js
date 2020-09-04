@@ -34,7 +34,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     let approve = new RegExp('Approve');
     let dataCell = d3.select('#currentTopic tbody').selectAll('tr').data(data)
         .join('tr')
-        .classed('highlight',d=>d.isHighlight)
+        .classed('pluse-red',d=>d.isHighlight)
         .style('background-color',d=>approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4'))
         .selectAll('td')
         .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
@@ -42,6 +42,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
         .text(d=>d.value);
     dataCell
         .filter(d=>d.key==="Your name")
+        .classed('name',true)
         .html(d=>`<img class="avatar" src="${d.data['Student Image']}"></img>${d.value}`)
     dataCell
         .filter(d=>d.key==="Image")
