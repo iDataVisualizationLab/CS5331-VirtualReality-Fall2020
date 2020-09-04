@@ -6,14 +6,16 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     // date for highlight
     let limit_time = new Date();
     limit_time.setHours(16);
-    limit_time.setMinutes(50);
+    limit_time.setMinutes(0);
     limit_time.setSeconds(0);
 
     let data = dataRaw[1];
-    let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedule']+'/2020'), d.date>limit_time));
-    let thresholdDate = new Date(+d3.min(notPresentyet,d>d.date));
+    let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedule']+'/2020 16:50'), d.date>=limit_time));
+    let thresholdDate = new Date(+d3.min(notPresentyet,d=>d.date));
+    console.log(thresholdDate)
     thresholdDate.setHours(16);
-    notPresentyet.filter(d=>d.date<thresholdDate).forEach(d=>d.isHighlight = true);
+    debugger
+    notPresentyet.filter(d=>d.date<=thresholdDate).forEach(d=>d.isHighlight = true);
 
     let dataPeople = dataRaw[0];
     let people={};
