@@ -79,7 +79,7 @@ var nodesP1=[];
 var linksP1=[];
 var nodesP2=[];
 var linksP2=[];
-var startDate = new Date("9/2/2020");
+var startDate = new Date("8/24/2020");
 var today = d3.timeDay(Math.min(new Date(),new Date("12/11/2020")));
 
 function getCategoty(str){
