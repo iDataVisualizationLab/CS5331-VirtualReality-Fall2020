@@ -149,8 +149,8 @@ function main(){
         // Scale the range of the data
         x.domain([startDate,today]);
         xNew.domain([startDate,today]);
-        y.domain([0, 15]);
-        yAxis.domain([0, 0.15]);
+        y.domain([0, 25]);
+        yAxis.domain([0, 0.25]);
         yP1.domain([0, 25]);
 
 
@@ -179,9 +179,9 @@ function main(){
             .attr("stroke-width", 1)
             .style("stroke-dasharray", ("3, 3"))
             .attr("x1", 200)
-            .attr("y1", y(10))
+            .attr("y1", y(20))
             .attr("x2", x(today))
-            .attr("y2", y(10));
+            .attr("y2", y(20));
 
         svg.selectAll(".legendCircle")
             .data(groupCount.filter(d=>d.count)).enter()
