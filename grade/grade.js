@@ -102,7 +102,6 @@ function main(){
             data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
-            debugger
             data[d.Email].array.push({date:today,score:0})
 
             data[d.Email].array.name = data2[d.Email]['Fullname'];
@@ -146,6 +145,7 @@ function main(){
             groupCount[arr.group].count++;
             groupCount[arr.group].program = data2[key].Program;
         }
+        debugger
         // Scale the range of the data
         x.domain([startDate,today]);
         xNew.domain([startDate,today]);
@@ -184,7 +184,7 @@ function main(){
             .attr("y2", y(10));
 
         svg.selectAll(".legendCircle")
-            .data(groupCount).enter()
+            .data(groupCount.filter(d=>d.count)).enter()
             .append("circle")
             .attr("class", "legendCircle")
             .attr("stroke", function(d,i) {
@@ -201,7 +201,7 @@ function main(){
             .on("mouseout", mouseoutLegend);
 
         svg.selectAll(".legendLine")
-            .data(groupCount).enter()
+            .data(groupCount.filter(d=>d.count)).enter()
             .append("line")
             .attr("class", "legendLine")
             .attr("stroke", function(d,i) {
@@ -215,7 +215,7 @@ function main(){
             .attr("y2", function(d, i){ return 30+20*i});
 
         svg.selectAll(".legendText")
-            .data(groupCount).enter()
+            .data(groupCount.filter(d=>d.count)).enter()
             .append("text")
             .attr("class", "legendText")
             .style("font-size", "15px")
