@@ -102,6 +102,9 @@ function main(){
             data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
+            debugger
+            data[d.Email].array.push({date:today,score:0})
+
             data[d.Email].array.name = data2[d.Email]['Fullname'];
             data[d.Email].array.studentTalk = +data2[d.Email].StudentTalk;
             data[d.Email].array.studentReport = +data2[d.Email].StudentReport;
@@ -806,8 +809,7 @@ function main(){
 
 function ticked() {
     for (var i=0;i<nodes.length;i=i+2){
-        if (document.getElementById("checkboxP1").checked &&
-            nodes[i].name.indexOf("Manasa")<0 && nodes[i].name.indexOf("Paul")<0)
+        if (document.getElementById("checkboxP1").checked)
             nodes[i].x = xNew(today);
         else
             nodes[i].x = x(nodes[i].date);
