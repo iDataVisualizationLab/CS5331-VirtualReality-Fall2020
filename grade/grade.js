@@ -98,11 +98,12 @@ var data = {};
 
 function main(){
     d3.csv("data/participation.csv", function(error, data_) {
+        today = d3.max(d3.keys(data_[0]).filter(d=>+new Date(d)),d=>+new Date(d));
         data_.forEach(function(d) {
             data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
-            data[d.Email].array.push({date:today,score:0})
+            // data[d.Email].array.push({date:today,score:0})
 
             data[d.Email].array.name = data2[d.Email]['Fullname'];
             data[d.Email].array.studentTalk = +data2[d.Email].StudentTalk;
