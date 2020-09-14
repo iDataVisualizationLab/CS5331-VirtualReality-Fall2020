@@ -1,5 +1,5 @@
 // Set the dimensions of the canvas / graph
-var margin = {top: 5, right: 30, bottom: 50, left: 70};
+var margin = {top: 5, right: 30, bottom: 100, left: 70};
 var revealIdentity = false;
 var aData = [];
 
