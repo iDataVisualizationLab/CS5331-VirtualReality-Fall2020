@@ -25,7 +25,7 @@ var yP1= d3.scaleLinear().range([height*1.7, 0]);
 
 // Define the line
 var valueline = d3.line()
-    .curve(d3.curveMonotoneX)
+    .curve(d3.curveBasis)
     .x(function(d) {
         if (document.getElementById("checkboxP1").checked)
             return xNew(d.date);
@@ -100,7 +100,7 @@ function main(){
     d3.csv("data/participation.csv", function(error, data_) {
         today = d3.max(d3.keys(data_[0]).filter(d=>+new Date(d)),d=>+new Date(d));
         data_.forEach(function(d) {
-            data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).map(object=>{
+            data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).filter(d=>+d.value).map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
             // data[d.Email].array.push({date:today,score:0})
@@ -135,7 +135,7 @@ function main(){
             }
         }
 
-        // Make a new array
+        // Make a   new array
 
         for (var key in data){
             var arr = data[key].array
