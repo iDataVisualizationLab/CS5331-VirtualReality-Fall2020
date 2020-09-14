@@ -103,6 +103,7 @@ function main(){
             data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).filter(d=>+d.value).map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
+            data[d.Email].array = [{date: startDate,score:0},...data[d.Email].array]
             // data[d.Email].array.push({date:today,score:0})
 
             data[d.Email].array.name = data2[d.Email]['Fullname'];
