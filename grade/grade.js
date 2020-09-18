@@ -37,6 +37,7 @@ var valueline = d3.line()
 var data2 = {};
 var groupCount = [{},{},{},{}];
 d3.csv("data/Students.csv", function(error, data_) {
+    debugger
     data_.forEach(function(d) {
         if (data2[d.Email]==undefined)
             data2[d.Email] = {};
@@ -124,7 +125,6 @@ function main(){
             data[d.Email].array.P2_group_score = +(data2[d.Email].P2_group_score);
             data[d.Email].array.index = data[d.Email].array.length-1;
         });
-
         // Accumulate values
         for (var key in data){
             var arr = data[key].array;
