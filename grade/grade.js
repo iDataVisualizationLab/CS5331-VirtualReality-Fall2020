@@ -38,7 +38,7 @@ var valueline = d3.line()
 
 // Student info data  
 var data2 = {};
-var groupCount = [{},{},{},{}];
+var groupCount = [{id:0},{id:1},{id:2},{id:3}];
 d3.csv("data/Students.csv", function(error, data_) {
     data_.forEach(function(d) {
         if (data2[d.Email]==undefined)
@@ -187,11 +187,11 @@ function main(){
             .append("circle")
             .attr("class", "legendCircle")
             .attr("stroke", function(d,i) {
-                return color(i);
+                return color(d.id);
             })
             .attr("stroke-width", 1)
             .attr("fill", function(d,i) {
-                return color(i);
+                return color(d.id);
             })
             .attr("cx", 60)
             .attr("cy", function(d, i){ return 30+20*i})
@@ -204,7 +204,7 @@ function main(){
             .append("line")
             .attr("class", "legendLine")
             .attr("stroke", function(d,i) {
-                return color(i);
+                return color(d.id);
             })
             .attr("stroke-width", 1)
             .attr("fill", "#fff")
@@ -219,7 +219,7 @@ function main(){
             .attr("class", "legendText")
             .style("font-size", "15px")
             .attr("text-anchor", "left")
-            .attr("fill", function(d,i) {return color(i); })
+            .attr("fill", function(d,i) {return color(d.id); })
             .attr("x", 62+radius)
             .attr("y", function(d, i){ return 36+20*i})
             .text(function(d){
