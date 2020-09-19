@@ -850,7 +850,7 @@ function tickedStudentChoice() {
     for (var i=0;i<nodesCollection["StudentChoice"].length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
             nodesCollection["StudentChoice"][i].x = width*0.6;
-            nodesCollection["StudentChoice"][i].y = yP1((nodesCollection["StudentChoice"][i].studentReport+nodesCollection["StudentChoice"][i].studentTalk)/10*25);
+            nodesCollection["StudentChoice"][i].y = yP1(Math.min((nodesCollection["StudentChoice"][i].studentReport+nodesCollection["StudentChoice"][i].studentTalk)/10*25,aGrades[0]));
         }
         else{
             nodesCollection["StudentChoice"][i].x = x(nodesCollection["StudentChoice"][i].date);
