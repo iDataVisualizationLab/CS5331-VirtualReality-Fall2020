@@ -15,12 +15,15 @@ svg = svg.append("g")
 var parseTime = d3.timeParse("%m/%d/%y");
 
 // Set the ranges
+var aGrades = [23, 16, 12, 8];
+var aText = ["A", "B", "C", "D", "F"];
+
 var x = d3.scaleTime().range([0, width-margin.left*2]);
 var xNew = d3.scaleTime().range([0, width/2-margin.left]);
 
 var y = d3.scaleLinear().range([height, 0]);
 var yAxis= d3.scaleLinear().range([height, 0]);
-var yP1= d3.scaleLinear().range([height*1.7, 0]);
+var yP1= d3.scaleLinear().range([height*1.7, height*0.1]);
 
 
 // Define the line
@@ -37,7 +40,6 @@ var valueline = d3.line()
 var data2 = {};
 var groupCount = [{},{},{},{}];
 d3.csv("data/Students.csv", function(error, data_) {
-    debugger
     data_.forEach(function(d) {
         if (data2[d.Email]==undefined)
             data2[d.Email] = {};
@@ -49,7 +51,7 @@ d3.csv("data/Students.csv", function(error, data_) {
 
 // Force-directed layout
 var simulations = {};
-['general','P1','P2'].forEach(function(k){
+['general',"StudentChoice",'P1','P2'].forEach(function(k){
     simulations[k] = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d) { return d.id; }))
         .force("link", d3.forceLink().distance(1).strength(1))
@@ -75,6 +77,7 @@ var nodesP1=[];
 var linksP1=[];
 var nodesP2=[];
 var linksP2=[];
+let attendanceLimit = 20;
 var startDate = new Date("8/24/2020");
 var today = d3.timeDay(Math.min(new Date(),new Date("12/11/2020")));
 
@@ -142,7 +145,6 @@ function main(){
             groupCount[arr.group].count++;
             groupCount[arr.group].program = data2[key].Program;
         }
-        debugger
         // Scale the range of the data
         x.domain([startDate,today]);
         xNew.domain([startDate,today]);
@@ -524,12 +526,12 @@ function main(){
         var countC =0;
         for (var i=0;i<nodesP2.length;i=i+2){
             var p0 = nodes[i].score;
-            if (p0>10)
-                p0=10;
+            if (p0>attendanceLimit)
+                p0=attendanceLimit;
             var p1 = nodesP1[i].P1_code+nodesP1[i].P1_talk+nodesP1[i].P1_report+nodesP1[i].P1_survey;
             var p2 = nodesP2[i].P2_code+nodesP2[i].P2_talk+nodesP2[i].P2_report
                 +nodesP2[i].P2_review+nodesP2[i].P2_reviewForOthers;
-            var studentChoice =  nodes[i+1].studentTalk +nodes[i+1].studentReport;
+            var studentChoice =  nodesCollection['StudentChoice'][i+1].studentTalk +nodesCollection['StudentChoice'][i+1].studentReport;
 
             var sum= p0+p1+p2+studentChoice;
             var finalGrade = " ";
@@ -566,7 +568,7 @@ function main(){
             nodes[i+1].finalScore = sum;
             nodes[i+1].finalLetter = finalGrade;
 
-            console.log( finalGrade+ " "+nodesP1[i].name+" sum="+sum);
+            // console.log( finalGrade+ " "+nodesP1[i].name+" sum="+sum);
         }
         console.log("countA="+countA+" countB="+countB +" countC="+countC);
         link = svg.selectAll(".links")
@@ -577,10 +579,20 @@ function main(){
                 return color(d.group);
             })
             .attr("stroke-width",0.5);
+
+        linkCollection["StudentChoice"] = svg.selectAll(".linksStudent")
+            .data(linksCollection["StudentChoice"])
+            .enter().append("line")
+            .attr("class", "linksStudent linksEl")
+            .attr("stroke", function(d){
+                return color(d.group);
+            })
+            .attr("stroke-width",0.5);
+
         linkP1 = svg.selectAll(".linksP1")
             .data(linksP1)
             .enter().append("line")
-            .attr("class", "linksP1")
+            .attr("class", "linksP1 linksEl")
             .attr("stroke", function(d){
                 return color(d.group);
             })
@@ -589,35 +601,44 @@ function main(){
         linkP2 = svg.selectAll(".linksP2")
             .data(linksP2)
             .enter().append("line")
-            .attr("class", "linksP2")
+            .attr("class", "linksP2 linksEl")
             .attr("stroke", function(d){
                 return color(d.group);
             })
             .attr("stroke-width",0.5);
 
+        linkCollection["0Student"] = svg.selectAll(".links0Student")
+            .data(links)
+            .enter().append("line")
+            .attr("class", "links0Student links0El")
+            .attr("stroke", function(d){ return color(d.group);})
+            .attr("stroke-width",0.5);
 
         link01 = svg.selectAll(".links01")
             .data(links)
             .enter().append("line")
-            .attr("class", "links01")
+            .attr("class", "links01 links0El")
             .attr("stroke", function(d){ return color(d.group);})
             .attr("stroke-width",0.5);
 
         link02 = svg.selectAll(".links02")
             .data(links)
             .enter().append("line")
-            .attr("class", "links02")
+            .attr("class", "links02 links0El")
             .attr("stroke", function(d){ return color(d.group);})
-            .attr("stroke-width", function(d){
-                // console.log(d.source.name);
-                return d.source.name=="Sara Sartoli" ? 0 : 0.5;
-            });
+            .attr("stroke-width", 0.5);
 
 
         node = svg.selectAll(".nodeCircle")
             .data(nodes)
             .enter().append("circle")
             .attr("class","nodeCircle")
+            .call(updatenode);
+
+        nodeCollection["StudentChoice"] = svg.selectAll(".nodeStudent")
+            .data(nodesCollection['StudentChoice'])
+            .enter().append("circle")
+            .attr("class","nodeStudent nodeEl")
             .call(updatenode);
 
         nodeP1 = svg.selectAll(".nodeP1")
@@ -734,6 +755,8 @@ function main(){
         else{
             node.append("title")
                 .text(function(d) { return d.nickname; });
+            nodeCollection["StudentChoice"].append("title")
+                .text(function(d) { return d.nickname; });
             nodeP1.append("title")
                 .text(function(d) { return d.nickname; });
             nodeP2.append("title")
@@ -760,6 +783,17 @@ function main(){
         }));
         simulations['general'].alpha(0.25);
 
+        simulations['StudentChoice']
+            .nodes(nodesCollection['StudentChoice'])
+            .on("tick", tickedStudentChoice);
+        simulations['StudentChoice'].force("link")
+            .links(linksCollection["StudentChoice"]);
+        simulations['StudentChoice'].force("collide", d3.forceCollide(function(d,i){
+            if (i%2==0)
+                return 0;
+            else
+                return radius+1;
+        }));
 
         simulations['P1']
             .nodes(nodesP1)
@@ -812,6 +846,40 @@ function ticked() {
     }
 }
 
+function tickedStudentChoice() {
+    for (var i=0;i<nodesCollection["StudentChoice"].length;i=i+2){
+        if (document.getElementById("checkboxP1").checked){
+            nodesCollection["StudentChoice"][i].x = width*0.6;
+            nodesCollection["StudentChoice"][i].y = yP1((nodesCollection["StudentChoice"][i].studentReport+nodesCollection["StudentChoice"][i].studentTalk)/10*25);
+        }
+        else{
+            nodesCollection["StudentChoice"][i].x = x(nodesCollection["StudentChoice"][i].date);
+            nodesCollection["StudentChoice"][i].y = y(nodesCollection["StudentChoice"][i].score);
+        }
+
+    }
+    linkCollection["StudentChoice"]
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+    linkCollection["0Student"]
+        .attr("x1", function(d,i) { return nodes[i*2+1].x; })
+        .attr("y1", function(d,i) { return nodes[i*2+1].y; })
+        .attr("x2", function(d,i) { return nodesCollection["StudentChoice"][i*2+1].x; })
+        .attr("y2", function(d,i) { return nodesCollection["StudentChoice"][i*2+1].y; });
+
+    nodeCollection["StudentChoice"]
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+
+    if (revealIdentity){
+        nodeImageP1
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; });
+    }
+}
+
 function tickedP1() {
     for (var i=0;i<nodesP1.length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
@@ -830,8 +898,8 @@ function tickedP1() {
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
     link01
-        .attr("x1", function(d,i) { return nodes[i*2+1].x; })
-        .attr("y1", function(d,i) { return nodes[i*2+1].y; })
+        .attr("x1", function(d,i) { return nodesCollection["StudentChoice"][i*2+1].x; })
+        .attr("y1", function(d,i) { return nodesCollection["StudentChoice"][i*2+1].y; })
         .attr("x2", function(d,i) { return nodesP1[i*2+1].x; })
         .attr("y2", function(d,i) { return nodesP1[i*2+1].y; });
 
@@ -852,7 +920,7 @@ function tickedP2() {
             nodesP2[i].x = width*0.8;
             var yy = nodesP2[i].P2_code+nodesP2[i].P2_talk+nodesP2[i].P2_report
                 +nodesP2[i].P2_review;
-            nodesP2[i].y = yP1(yy*22/27);  // 35% compared to 20%
+            nodesP2[i].y = yP1(yy);  // 35% compared to 20%
         }
         else{
             nodesP2[i].x = x(nodesP2[i].date);
@@ -908,36 +976,20 @@ function showP1(){
                 return (d.name.indexOf("Manasa")<0 && d.name.indexOf("Paul")<0)? 1 : 0;})
             .attr("stroke-opacity",function(d){
                 return (d.name.indexOf("Manasa")<0 && d.name.indexOf("Paul")<0)? 1 : 0;});
-        svg.selectAll(".links01")
+        svg.selectAll(".links0El")
             .transition().duration(400)
-            .attr("stroke-opacity",function(d){
-                return (d.source.name.indexOf("Manasa")<0 && d.source.name.indexOf("Paul")<0)? 1 : 0;
-            });
-
-        // Project 2
-        svg.selectAll(".links02")
-            .transition().duration(400)
-            .attr("stroke-opacity",1);   // 2018 Tommy
-
-        // Project 3
-        svg.selectAll(".links03")
-            .transition().duration(400)
-            .attr("stroke-opacity",1); // 2018 Tommy
+            .attr("stroke-opacity",1);
 
 
         if (!revealIdentity){
-            svg.selectAll(".nodeP1")
+            svg.selectAll(".nodeEl")
                 .transition().duration(400)
                 .attr("fill-opacity",1);
-            svg.selectAll(".nodeP2")
-                .transition().duration(400)
         }
 
 
 
         // Draw grade axis ***********
-        var aGrades = [20, 16, 12, 8];
-        var aText = ["A", "B", "C", "D", "F"];
         for (var i=0; i<aGrades.length-1;i++){
             svg.append("line")
                 .attr("class", "lineGradeP1")
@@ -980,6 +1032,8 @@ function showP1(){
     simulations['general'].alpha(0.3);
     simulations['P1'].restart();
     simulations['P1'].alpha(0.3);
+    simulations['StudentChoice'].restart();
+    simulations['StudentChoice'].alpha(0.3);
     simulations['P2'].restart();
     simulations['P2'].alpha(0.3);
     svg.selectAll(".lineGraph")
@@ -1000,15 +1054,24 @@ function fadeP1(){
         .style("font-size", "14px")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
-    svg.selectAll(".nodeImageP1")
+    // Student Choice
+    svg.selectAll(".nodeImageStudent")
         .transition().duration(1500)
         .attr("fill-opacity",0)
         .attr("stroke-opacity",0);
-    svg.selectAll(".nodeP1")
+    svg.selectAll(".nodeEl")
         .transition().duration(1500)
         .attr("fill-opacity",0);
-    svg.selectAll(".linksP1")
+    svg.selectAll(".linksEl")
         .transition().duration(1500)
+        .attr("stroke-opacity",0);
+    svg.selectAll(".lineGradeStudent")
+        .transition().duration(1500)
+        .remove();
+    // Project 1
+    svg.selectAll(".nodeImageP1")
+        .transition().duration(1500)
+        .attr("fill-opacity",0)
         .attr("stroke-opacity",0);
     svg.selectAll(".lineGradeP1")
         .transition().duration(1500)
@@ -1020,12 +1083,6 @@ function fadeP1(){
     svg.selectAll(".nodeImageP2")
         .transition().duration(1500)
         .attr("fill-opacity",0)
-        .attr("stroke-opacity",0);
-    svg.selectAll(".nodeP2")
-        .transition().duration(1500)
-        .attr("fill-opacity",0);
-    svg.selectAll(".linksP2")
-        .transition().duration(1500)
         .attr("stroke-opacity",0);
     svg.selectAll(".lineGradeP2")
         .transition().duration(1500)
@@ -1076,7 +1133,7 @@ function mouseoverNode(d1){
     }
     else{
         //debugger;
-        svg.selectAll(".nodeEl")
+        svg.selectAll(".nodeCircle")
             .transition().duration(dur)
             .attr("stroke-opacity", function (d2){
                 //  if (!document.getElementById("checkboxP1").checked) return 0;
@@ -1084,33 +1141,32 @@ function mouseoverNode(d1){
             .attr("fill-opacity", function (d2){
                 //  if (!document.getElementById("checkboxP1").checked) return 0;
                 return d1.name==d2.name ? 1 : 0.1; });
+        if (document.getElementById("checkboxP1").checked)
+            svg.selectAll(".nodeEl")
+                .transition().duration(dur)
+                .attr("stroke-opacity", function (d2){
+                    //  if (!document.getElementById("checkboxP1").checked) return 0;
+                    return d1.name==d2.name ? 1 : 0.05; })
+                .attr("fill-opacity", function (d2){
+                    //  if (!document.getElementById("checkboxP1").checked) return 0;
+                    return d1.name==d2.name ? 1 : 0.1; });
 
     }
 
     svg.selectAll(".links")
         .transition().duration(dur)
         .attr("stroke-opacity", function (d2){ return d1.name==d2.source.name ? 1 : 0.1; });
-    svg.selectAll(".linksP1")
+    svg.selectAll(".linksEl")
         .transition().duration(dur)
         .attr("stroke-opacity", function (d2){
             if (!document.getElementById("checkboxP1").checked) return 0;
             return d1.name==d2.source.name ? 1 : 0.1; });
-    svg.selectAll(".links01")
+    svg.selectAll(".links0El")
         .transition().duration(dur)
         .attr("stroke-opacity", function (d2){
             if (!document.getElementById("checkboxP1").checked) return 0;
             return d1.name==d2.source.name ? 1 : 0.1; });
 
-    svg.selectAll(".linksP2")
-        .transition().duration(dur)
-        .attr("stroke-opacity", function (d2){
-            if (!document.getElementById("checkboxP1").checked) return 0;
-            return d1.name==d2.source.name ? 1 : 0.1; });
-    svg.selectAll(".links02")
-        .transition().duration(dur)
-        .attr("stroke-opacity", function (d2){
-            if (!document.getElementById("checkboxP1").checked) return 0;
-            return d1.name==d2.source.name ? 1 : 0.1; });
     if (document.getElementById("checkboxP1").checked){
         textP1(d1.index);
     }
@@ -1128,7 +1184,7 @@ function textContribution(index){
         .attr("y", nodes[index].y+3)
         .text("Participation: "+nodes[index].score+"%");
 
-    if (nodes[index].studentTalk>0){
+    if (nodesCollection["StudentChoice"][index].studentTalk>0){
         svg.append("text")
             .attr("class", "textStudentTalk")
             .style("font-size", "13px")
@@ -1137,7 +1193,7 @@ function textContribution(index){
             .attr("fill", "#000")
             .attr("x", radius+nodes[index].x)
             .attr("y", nodes[index].y+20)
-            .text("SC Talk: "+nodes[index].studentTalk+"%");
+            .text("SC Talk: "+nodesCollection["StudentChoice"][index].studentTalk+"%");
     }
     else{
         svg.append("text")
@@ -1151,7 +1207,7 @@ function textContribution(index){
             .text("SC Talk: not yet presented");
 
     }
-    if (nodes[index].studentReport>=0){
+    if (nodesCollection["StudentChoice"][index].studentReport>=0){
         svg.append("text")
             .attr("class", "textStudentReport")
             .style("font-size", "13px")
@@ -1160,7 +1216,7 @@ function textContribution(index){
             .attr("fill", "#000")
             .attr("x", radius+nodes[index].x)
             .attr("y", nodes[index].y+35)
-            .text("SC Report: "+nodes[index].studentReport+"%");
+            .text("SC Report: "+nodesCollection["StudentChoice"][index].studentReport+"%");
     }
 
 
@@ -1286,11 +1342,7 @@ function mouseoutNode(d1){
         .attr("fill-opacity", 1);
 
     if (document.getElementById("checkboxP1").checked){
-        svg.selectAll(".nodeP1")
-            .transition().duration(dur)
-            .attr("stroke-opacity", 1)
-            .attr("fill-opacity", 1);
-        svg.selectAll(".nodeP2")
+        svg.selectAll(".nodeEl")
             .transition().duration(dur)
             .attr("stroke-opacity", 1)
             .attr("fill-opacity", 1);
@@ -1299,10 +1351,7 @@ function mouseoutNode(d1){
         .transition().duration(dur)
         .attr("stroke-opacity", 1);
     if (document.getElementById("checkboxP1").checked){
-        svg.selectAll(".linksP1")
-            .transition().duration(dur)
-            .attr("stroke-opacity", 1);
-        svg.selectAll(".linksP2")
+        svg.selectAll(".linksEl")
             .transition().duration(dur)
             .attr("stroke-opacity", 1);
 
@@ -1312,17 +1361,7 @@ function mouseoutNode(d1){
                 return (d.name.indexOf("Manasa")<0 && d.name.indexOf("Paul")<0)? 1 : 0;})
             .attr("stroke-opacity",function(d){
                 return (d.name.indexOf("Manasa")<0 && d.name.indexOf("Paul")<0)? 1 : 0;});
-        svg.selectAll(".links01")
-            .transition().duration(400)
-            .attr("stroke-opacity",function(d){
-                return (d.source.name.indexOf("Manasa")<0 && d.source.name.indexOf("Paul")<0)? 1 : 0;
-            });
-        svg.selectAll(".links02")
-            .transition().duration(400)
-            .attr("stroke-opacity",function(d){
-                return (d.source.name.indexOf("Manasa")<0 && d.source.name.indexOf("Paul")<0)? 1 : 0;
-            });
-        svg.selectAll(".links03")
+        svg.selectAll(".links0El")
             .transition().duration(400)
             .attr("stroke-opacity",function(d){
                 return (d.source.name.indexOf("Manasa")<0 && d.source.name.indexOf("Paul")<0)? 1 : 0;
