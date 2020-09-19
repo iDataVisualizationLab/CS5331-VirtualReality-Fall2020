@@ -48,20 +48,13 @@ d3.csv("data/Students.csv", function(error, data_) {
 })
 
 // Force-directed layout
-var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("link", d3.forceLink().distance(1).strength(1))
-    .force("charge", d3.forceManyBody().strength(-0.1));
-//    .force("center", d3.forceCenter(width / 2, height / 2));
-var simulationP1 = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("link", d3.forceLink().distance(1).strength(1))
-    .force("charge", d3.forceManyBody().strength(-0.1));
-var simulationP2 = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("link", d3.forceLink().distance(1).strength(1))
-    .force("charge", d3.forceManyBody().strength(-0.1));
-
+var simulations = {};
+['general','P1','P2'].forEach(function(k){
+    simulations[k] = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function(d) { return d.id; }))
+        .force("link", d3.forceLink().distance(1).strength(1))
+        .force("charge", d3.forceManyBody().strength(-0.1));
+});
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 var radius = 8;
 
@@ -72,6 +65,8 @@ var nodeImage, nodeImageP1;
 
 var dur = 400;  // animation duration
 
+var nodeCollection={}, linkCollection={},
+    nodesCollection={'StudentChoice':[]}, linksCollection={'StudentChoice':[]};
 
 // Force-directed layout
 var nodes=[];
@@ -101,7 +96,7 @@ function main(){
     d3.csv("data/participation.csv", function(error, data_) {
         today = d3.max(d3.keys(data_[0]).filter(d=>+new Date(d)),d=>+new Date(d));
         data_.forEach(function(d) {
-            data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).filter(d=>+d.value).map(object=>{
+            data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).filter(d=>d.value!=="").map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
             data[d.Email].array = [{date: startDate,score:0},...data[d.Email].array]
@@ -263,14 +258,7 @@ function main(){
                 .attr("fill-opacity", function (d2){
                     return getCategoty(d1.program)==d2.group ? 1 : 0.1; });
             if (document.getElementById("checkboxP1").checked) {
-                svg.selectAll(".nodeP1")
-                    .transition().duration(dur)
-                    .attr("stroke-opacity", function (d2){
-                        return getCategoty(d1.program)==d2.group ? 1 : 0.05; })
-                    .attr("fill-opacity", function (d2){
-                        return getCategoty(d1.program)==d2.group ? 1 : 0.1; });
-
-                svg.selectAll(".nodeP2")
+                svg.selectAll(".nodeEl")
                     .transition().duration(dur)
                     .attr("stroke-opacity", function (d2){
                         return getCategoty(d1.program)==d2.group ? 1 : 0.05; })
@@ -279,10 +267,7 @@ function main(){
 
             }
             else{
-                svg.selectAll(".nodeP1")
-                    .transition().duration(dur)
-                    .attr("fill-opacity", 0);
-                svg.selectAll(".nodeP2")
+                svg.selectAll(".nodeEl")
                     .transition().duration(dur)
                     .attr("fill-opacity", 0);
 
@@ -330,7 +315,7 @@ function main(){
                     .transition().duration(dur)
                     .attr("stroke-opacity", 1)
                     .attr("fill-opacity", 1);
-                svg.selectAll(".nodeP1")
+                svg.selectAll(".nodeEl")
                     .transition().duration(dur)
                     .attr("stroke-opacity", 1)
                     .attr("fill-opacity", 1);
@@ -341,10 +326,6 @@ function main(){
                     .transition().duration(dur)
                     .attr("stroke-opacity", 1);
                 svg.selectAll(".nodeImageP2")
-                    .transition().duration(dur)
-                    .attr("stroke-opacity", 1)
-                    .attr("fill-opacity", 1);
-                svg.selectAll(".nodeP2")
                     .transition().duration(dur)
                     .attr("stroke-opacity", 1)
                     .attr("fill-opacity", 1);
@@ -411,6 +392,8 @@ function main(){
             .text("Percentage of participations in student's final grade");
 
         for (var i=0; i<aData.length;i++){
+
+
             var nod1 = {};
             nod1.name = aData[i].name;
             nod1.nickname = aData[i].nickname;
@@ -426,8 +409,8 @@ function main(){
             nod2.group = aData[i].group;
             nod2.score = aData[i].score;
             nod2.date = aData[i].date;
-            nod2.studentTalk = aData[i].studentTalk;
-            nod2.studentReport = aData[i].studentReport;
+            // nod2.studentTalk = aData[i].studentTalk;
+            // nod2.studentReport = aData[i].studentReport;
             nod2.image = aData[i].image;
             nodes.push(nod2);
 
@@ -436,6 +419,34 @@ function main(){
             lin.target = nod2;
             lin.group = nod1.group;
             links.push(lin);
+            // StudentChoice
+            var nodeSC1 = {};
+            nodeSC1.name = aData[i].name;
+            nodeSC1.nickname = aData[i].nickname;
+            nodeSC1.group = aData[i].group;
+            nodeSC1.score = aData[i].score;
+            nodeSC1.studentTalk = aData[i].studentTalk;
+            nodeSC1.studentReport = aData[i].studentReport;
+            nodeSC1.date = aData[i].date;
+            nodeSC1.image = aData[i].image;
+            nodesCollection['StudentChoice'].push(nodeSC1);
+
+            var nodeSC2 = {};
+            nodeSC2.name = aData[i].name;
+            nodeSC2.nickname = aData[i].nickname;
+            nodeSC2.group = aData[i].group;
+            nodeSC2.score = aData[i].score;
+            nodeSC2.studentTalk = aData[i].studentTalk;
+            nodeSC2.studentReport = aData[i].studentReport;
+            nodeSC2.date = aData[i].date;
+            nodeSC2.image = aData[i].image;
+            nodesCollection['StudentChoice'].push(nodeSC2);
+            //
+            var linStudent = {};
+            linStudent.source = nodeSC1;
+            linStudent.target = nodeSC2;
+            linStudent.group = nodeSC1.group;
+            linksCollection["StudentChoice"].push(linStudent);
 
             // PROJECT 1
             var nodeP11 = {};
@@ -607,71 +618,40 @@ function main(){
             .data(nodes)
             .enter().append("circle")
             .attr("class","nodeCircle")
-            .attr("r", function(d,i) {
-                if (i%2==0)
-                    return 0;
-                else
-                    return radius+1;
-            })
-            .attr("fill", function(d,i) {
-                if (i%2==0)
-                    return "#110";
-                else
-                    return color(d.group);
-            })
-            .on("mouseover", mouseoverNode)
-            .on("mouseout", mouseoutNode)
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
+            .call(updatenode);
 
         nodeP1 = svg.selectAll(".nodeP1")
             .data(nodesP1)
             .enter().append("circle")
-            .attr("class","nodeP1")
-            .attr("r", function(d,i) {
-                if (i%2==0)
-                    return 0;
-                else
-                    return radius+1;
-            })
-            .attr("fill", function(d,i) {
-                if (i%2==0)
-                    return "#110";
-                else
-                    return color(d.group);
-            })
-            .on("mouseover", mouseoverNode)
-            .on("mouseout", mouseoutNode)
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
+            .attr("class","nodeP1 nodeEl")
+            .call(updatenode);
 
         nodeP2 = svg.selectAll(".nodeP2")
             .data(nodesP2)
             .enter().append("circle")
-            .attr("class","nodeP2")
-            .attr("r", function(d,i) {
+            .attr("class","nodeP2 nodeEl")
+            .call(updatenode);
+
+        function updatenode(p){
+            return p.attr("r", function(d,i) {
                 if (i%2==0)
                     return 0;
                 else
                     return radius+1;
             })
-            .attr("fill", function(d,i) {
-                if (i%2==0)
-                    return "#110";
-                else
-                    return color(d.group);
-            })
-            .on("mouseover", mouseoverNode)
-            .on("mouseout", mouseoutNode)
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
-
+                .attr("fill", function(d,i) {
+                    if (i%2==0)
+                        return "#110";
+                    else
+                        return color(d.group);
+                })
+                .on("mouseover", mouseoverNode)
+                .on("mouseout", mouseoutNode)
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended))
+        }
 
         for (var i=0;i<nodes.length;i++){
             var imgurl = "http://wallpapers.androlib.com/wallicons/wallpaper.big-pqC.cs.png"
@@ -767,38 +747,38 @@ function main(){
         fadeP1();
 
 
-        simulation
+        simulations['general']
             .nodes(nodes)
             .on("tick", ticked);
-        simulation.force("link")
+        simulations['general'].force("link")
             .links(links);
-        simulation.force("collide", d3.forceCollide(function(d,i){
+        simulations['general'].force("collide", d3.forceCollide(function(d,i){
             if (i%2==0)
                 return 0;
             else
                 return radius+1;
         }));
-        simulation.alpha(0.25);
+        simulations['general'].alpha(0.25);
 
 
-        simulationP1
+        simulations['P1']
             .nodes(nodesP1)
             .on("tick", tickedP1);
-        simulationP1.force("link")
+        simulations['P1'].force("link")
             .links(linksP1);
-        simulationP1.force("collide", d3.forceCollide(function(d,i){
+        simulations['P1'].force("collide", d3.forceCollide(function(d,i){
             if (i%2==0)
                 return 0;
             else
                 return radius+1;
         }));
 
-        simulationP2
+        simulations['P2']
             .nodes(nodesP2)
             .on("tick", tickedP2);
-        simulationP2.force("link")
+        simulations['P2'].force("link")
             .links(linksP2);
-        simulationP2.force("collide", d3.forceCollide(function(d,i){
+        simulations['P2'].force("collide", d3.forceCollide(function(d,i){
             if (i%2==0)
                 return 0;
             else
@@ -996,12 +976,12 @@ function showP1(){
     else{
         fadeP1();
     }
-    simulation.restart();
-    simulation.alpha(0.3);
-    simulationP1.restart();
-    simulationP1.alpha(0.3);
-    simulationP2.restart();
-    simulationP2.alpha(0.3);
+    simulations['general'].restart();
+    simulations['general'].alpha(0.3);
+    simulations['P1'].restart();
+    simulations['P1'].alpha(0.3);
+    simulations['P2'].restart();
+    simulations['P2'].alpha(0.3);
     svg.selectAll(".lineGraph")
         .transition().duration(300)
         .attr("d", function(d) {
@@ -1096,7 +1076,7 @@ function mouseoverNode(d1){
     }
     else{
         //debugger;
-        svg.selectAll(".nodeCircle")
+        svg.selectAll(".nodeEl")
             .transition().duration(dur)
             .attr("stroke-opacity", function (d2){
                 //  if (!document.getElementById("checkboxP1").checked) return 0;
@@ -1104,27 +1084,6 @@ function mouseoverNode(d1){
             .attr("fill-opacity", function (d2){
                 //  if (!document.getElementById("checkboxP1").checked) return 0;
                 return d1.name==d2.name ? 1 : 0.1; });
-        if (document.getElementById("checkboxP1").checked){
-            svg.selectAll(".nodeP1")
-                .transition().duration(dur)
-                .attr("stroke-opacity", function (d2){
-                    //  if (!document.getElementById("checkboxP1").checked) return 0;
-                    return d1.name==d2.name ? 1 : 0.05; })
-                .attr("fill-opacity", function (d2){
-                    //  if (!document.getElementById("checkboxP1").checked) return 0;
-                    return d1.name==d2.name ? 1 : 0.1; });
-
-            // Project 2
-            svg.selectAll(".nodeP2")
-                .transition().duration(dur)
-                .attr("stroke-opacity", function (d2){
-                    //  if (!document.getElementById("checkboxP1").checked) return 0;
-                    return d1.name==d2.name ? 1 : 0.05; })
-                .attr("fill-opacity", function (d2){
-                    //  if (!document.getElementById("checkboxP1").checked) return 0;
-                    return d1.name==d2.name ? 1 : 0.1; });
-
-        }
 
     }
 
@@ -1377,7 +1336,7 @@ function mouseoutNode(d1){
     svg.selectAll(".textFinal").remove();
 }
 function dragstarted(d) {
-    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    if (!d3.event.active) simulations['general'].alphaTarget(0.3).restart();
     d.fx = d.x;
     d.fy = d.y;
 }
@@ -1388,7 +1347,7 @@ function dragged(d) {
 }
 
 function dragended(d) {
-    if (!d3.event.active) simulation.alphaTarget(0);
+    if (!d3.event.active) simulations['general'].alphaTarget(0);
     d.fx = null;
     d.fy = null;
 }
