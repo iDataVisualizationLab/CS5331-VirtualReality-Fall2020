@@ -1,23 +1,35 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Hello, WebVR! • A-Frame</title>
-    <meta name="description" content="Hello, WebVR! • A-Frame">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>ECS - A-Frame School</title>
+    <meta name="description" content="ECS - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #FAFAFA">
-      <a-box src="https://raw.githubusercontent.com/iDataVisualizationLab/CS5331-VirtualReality-Fall2020/master/styles/pattern9.jpg" position="-1 0.5 -3" rotation="0 45 0" color="#FCC3D9" shadow></a-box>
-      <a-sphere src="https://raw.githubusercontent.com/iDataVisualizationLab/CS5331-VirtualReality-Fall2020/master/styles/pattern8.jpg" position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
-      <a-cylinder src="https://raw.githubusercontent.com/iDataVisualizationLab/CS5331-VirtualReality-Fall2020/master/styles/pattern7.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
-      <a-plane src="mYmmbrp.jpg" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+    <a-scene>
+      <a-assets>
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+      </a-assets>
+      
+      <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        
+        <a-entity id="lightSphere" geometry="primitive: sphere; radius: 1.2" material="shader: flat" light="type: point; color: #888" position="-4 3 -4"
+               animation="property: rotation; to: 0 180 0; loop: true; dur:100"></a-entity>
+        </a-entity>
+     
+      <a-entity geometry="primitive: box" material="color: red" position="0 0.5 -10"></a-entity>
+      <a-entity geometry="primitive: box" material="color: orange" position="-2 0.5 -8"></a-entity>
+      <a-entity geometry="primitive: box" material="color: yellow" position="2 0.5 -8"></a-entity>
+      <a-entity geometry="primitive: box" material="color: green" position="-4 0.5 -6"></a-entity>
+      <a-entity geometry="primitive: box" material="color: blue" position="4 0.5 -6"></a-entity>
+      <a-entity id="sky" geometry="primitive: sphere; thetaLength: 90; radius: 30" material="side: back; height: 2048; width: 2048; src: #skyTexture; shader: flat"></a-entity>
+      <a-entity light="type: ambient; color: #222"></a-entity>
+      <a-entity light="type: directional; color: #111" position="-1 1 0"></a-entity>
+      <a-entity id="ground" geometry="primitive: plane; height: 100; width: 100"
+                material="src: #groundTexture" rotation="-90 0 0"></a-entity>
+      <a-entity id="text" text="value: Show us the light!; color: #BBB" 
+                position="2.5 2 -8" scale="8 8 8"></a-entity>
     </a-scene>
   </body>
 </html>
-
-<!-- https://raw.githubusercontent.com/iDataVisualizationLab/CS5331-VirtualReality-Fall2020/master/styles/pattern8.jpg   
-
-
-https://raw.githubusercontent.com/iDataVisualizationLab/CS5331-VirtualReality-Fall2020/master/styles/pattern7.jpg
--->
