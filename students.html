@@ -101,7 +101,7 @@
          }
 
          d3.csv('grade/data/Students.csv',function (data) {
-           data.sort((a,b)=>naturalSort(a.Fullname,b.Fullname))
+           data.sort((a,b)=>a.id-b.id);
             data.forEach(function (t,i) {
               let tableid = Math.floor(i/15);
               let table = document.getElementById("targettable"+tableid);
