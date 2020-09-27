@@ -1,13 +1,13 @@
 id,Fullname,Nickname,StudentTalk,StudentReport,P1_code,P1_talk,P1_report,P1_survey,P2_group_id,P2_feedback,P2_group_score,P2_code,P2_talk,P2_report,P2_review,P2_reviewForOthers,Program,Level,ProgrammingYears,Email,Photoname,ResearchInterest
-1,Aditi Misra,MissA,,,,,,,,,,,,,,,MSCS,Graduate,5,Aditi.Misra@ttu.edu,Misra.png,
+1,Aditi Misra,MissA,5,3,,,,,,,,,,,,,MSCS,Graduate,5,Aditi.Misra@ttu.edu,Misra.png,
 2,Afamefuna Umejiaku,OZONE,,,,,,,,,,,,,,,PhD,PhD,2,Afamefuna.P.Umejiaku@ttu.edu,AFAMEFUNA.jpg,
 3,Ajay Pratap Singh,AJ,,,,,,,,,,,,,,,MSCS,Graduate,2.5,Ajay-Pratap.Singh@ttu.edu,Ajay Pratap Singh.jpg,
 4,Alekhya Satraboina,Alekhya,,,,,,,,,,,,,,,MSCS,Graduate,1,Alekhya.Satraboina@ttu.edu,Alekhya.jpg,
 5,Arthur Jones,blpup,5.5,3.5,,,,,,,,,,,,,BS,Undegraduate,5,Arthur.L.Jones@ttu.edu,XLUQ0160.JPG,https://github.com/blpup
 6,Atharva Raibagi,Banda,,,,,,,,,,,,,,,BS,Undegraduate,3,Atharva.Raibagi@ttu.edu,Atharva.JPG, https://github.com/atharva1107
-7,Audrey Cooper,audflexbutok,,,,,,,,,,,,,,,BS,Undegraduate,3,Audrey.G.Cooper@ttu.edu,Audrey Cooper.png,
+7,Audrey Cooper,audflexbutok,6,4,,,,,,,,,,,,,BS,Undegraduate,3,Audrey.G.Cooper@ttu.edu,Audrey Cooper.png,
 8,Bao Dien Quoc Nguyen,ndqbao,,,,,,,,,,,,,,,PhD,PhD,2,Bao.D.Nguyen@ttu.edu,BaoNguyen.jpg,
-9,Benjamin Paul,26685,,,,,,,,,,,,,,,MSCS,Graduate,5,Benjamin.Paul@ttu.edu,,
+9,Benjamin Paul,26685,6,4,,,,,,,,,,,,,MSCS,Graduate,5,Benjamin.Paul@ttu.edu,,
 10,Breanae Campbell,XMA584,,,,,,,,,,,,,,,BS,Undegraduate,4,Breanae.Campbell-Rivera@ttu.edu,Breanae.jpg,
 11,Brian Catter,Brian,5.5,3.5,,,,,,,,,,,,,BS,Undegraduate,4,Brian.Catter@ttu.edu,Brian.jpg,
 12,Brighan Schwind,Chazz,5.5,3.5,,,,,,,,,,,,,BS,Undegraduate,6,Brighan.Schwind@ttu.edu,Brighan.jpg,
@@ -23,13 +23,13 @@ id,Fullname,Nickname,StudentTalk,StudentReport,P1_code,P1_talk,P1_report,P1_surv
 22,Domingo Jesus Cook,MinecraftSteve,,,,,,,,,,,,,,,BS,Undegraduate,5,Domingo.Cook@ttu.edu,Domingo Jesus Cook.jpg,https://dj9123.github.io/
 23,Durga Prasad Ganta,DP,,,,,,,,,,,,,,,MSCS,Graduate,3,DurgaPrasad.Ganta@ttu.edu,Durga.jpg,
 24,Ebubechukwu Joel Anaghara,Joel,,,,,,,,,,,,,,,BS,Undegraduate,3,J.Anaghara@ttu.edu,Joel Anaghara.PNG,
-25,Evan Kyle Boone,EvanB,,,,,,,,,,,,,,,BS,Undegraduate,3,Evan.Boone@ttu.edu,EvanBoone.jpg,https://github.com/EvanBooneTTU
+25,Evan Kyle Boone,EvanB,5.5,3.5,,,,,,,,,,,,,BS,Undegraduate,3,Evan.Boone@ttu.edu,EvanBoone.jpg,https://github.com/EvanBooneTTU
 26,Evin Pavlovsky,Evin Pavlovsky,,,,,,,,,,,,,,,BS,Undegraduate,5,Evin.V.Pavlovsky@ttu.edu,Evin.png,
 27,Faus Palting,DaveP,6,4,,,,,,,,,,,,,BS,Undegraduate,3,Faus.D.Palting@ttu.edu,Faus Palting.PNG,
 28,Jacob Finley Crawford,Jacob,,,,,,,,,,,,,,,BS,Undegraduate,4,Jacob.Crawford@ttu.edu,Jacob Finley Crawford.jpg,
-29,Jake Gonzalez,Vito,,,,,,,,,,,,,,,PhD,PhD,3,Jake.Gonzalez@ttu.edu,Jake.jpg,https://github.com/JakeTTU
+29,Jake Gonzalez,Vito,5,4,,,,,,,,,,,,,PhD,PhD,3,Jake.Gonzalez@ttu.edu,Jake.jpg,https://github.com/JakeTTU
 30,Jalen Flores,JJ,,,,,,,,,,,,,,,BS,Undegraduate,3,Jalen.Flores@ttu.edu,Jalen Flores.jpg,
-31,Joey Maureen Gloria,chi,,,,,,,,,,,,,,,BS,Undegraduate,3,Joey-Maureen.Gloria@ttu.edu,Joey Maureen Gloria.png,https://maureengloria.com/
+31,Joey Maureen Gloria,chi,6,4,,,,,,,,,,,,,BS,Undegraduate,3,Joey-Maureen.Gloria@ttu.edu,Joey Maureen Gloria.png,https://maureengloria.com/
 32,John Valeriano,GulagGary,5.5,5,,,,,,,,,,,,,BS,Undegraduate,5,John-Wynne-Angelo.Valeriano@ttu.edu,Valeriano.jpg,https://jovaleri.github.io/resume.html
 33,Jordan Connor Cockrell,Jordan Connor Cockrell,,,,,,,,,,,,,,,BS,Undegraduate,5,Jordan.C.Cockrell@ttu.edu,Jordan.jpg,
 34,Jose Trevino,JT,,,,,,,,,,,,,,,BS,Undegraduate,4,J.Trevino@ttu.edu,Jose Trevino.jpg,
@@ -55,7 +55,7 @@ id,Fullname,Nickname,StudentTalk,StudentReport,P1_code,P1_talk,P1_report,P1_surv
 54,Ronak Joshi,Ronak,,,,,,,,,,,,,,,BS,Undegraduate,1,Ronak.Joshi@ttu.edu,Ronak Joshi.jpg,
 55,Ryan Browning,Cloud,,,,,,,,,,,,,,,BS,Undegraduate,1,Ryan.Browning@ttu.edu,Ryan Browning.jpg,https://github.com/SGO-Nova
 56,Saif Chowdhury,Saif Chowdhury,5.5,3.5,,,,,,,,,,,,,BS,Undegraduate,6,Saif.Chowdhury@ttu.edu,Saif Chowdhury.jpg,
-57,Schafer Cunningham,Animus,,,,,,,,,,,,,,,BS,Undegraduate,5,Schafer.Cunningham@ttu.edu,Schafer.jpg,https://www.linkedin.com/in/schafer-cunningham-261313170/
+57,Schafer Cunningham,Animus,5.5,4,,,,,,,,,,,,,BS,Undegraduate,5,Schafer.Cunningham@ttu.edu,Schafer.jpg,https://www.linkedin.com/in/schafer-cunningham-261313170/
 58,Shwetha Bali Yadav,Tinker Bell,,,,,,,,,,,,,,,MSCS,Graduate,6,Shwetha-Bali.Yadav@ttu.edu,Shwetha pic.jpg,
 59,Sourav Verma,Reese,,,,,,,,,,,,,,,MSCS,Graduate,6,Sourav.Verma@ttu.edu,Verma.png,
 60,Swathi Bali Yadav,Ariel,,,,,,,,,,,,,,,MSCS,Graduate,6,Swathi-Bali.Yadav@ttu.edu,swathi.jpeg,
