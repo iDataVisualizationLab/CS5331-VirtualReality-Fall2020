@@ -5,6 +5,47 @@
   <head>
     <title>Virtual Reality: Project 1</title>
       <link rel="shortcut icon" href="../styles/oculus.png">
+      <script src="https://d3js.org/d3.v6.min.js"></script>
+      <style>
+          .pluse-red .avatar{
+              box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+              transform: scale(1);
+              animation: pulse-red 2s infinite;
+          }
+          @keyframes pulse-red {
+              0% {
+                  transform: scale(0.95);
+                  box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+              }
+
+              70% {
+                  transform: scale(1);
+                  box-shadow: 0 0 0 20px rgba(255, 82, 82, 0);
+              }
+
+              100% {
+                  transform: scale(0.95);
+                  box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+              }
+          }
+          .pluse-red .name{
+              color: #d9290b;
+              font-weight: bold;
+          }
+          .pluse-red .name::after{
+              content: ' (Next presenter)  '
+          }
+          .avatar{
+              width: 64px;
+              height: 64px;
+              overflow: hidden;
+              left: 15px;
+              display: inline-block;
+              vertical-align: middle;
+              border-radius: 50%;
+              padding-right: 5px;
+          }
+      </style>
   </head>
   <body bgcolor="white" text="black">
    
@@ -281,6 +322,19 @@ An example github report can be found <a href="https://github.com/CreativeCoding
             </font>
         </li>
      <br>
+                <table id="currentTopic" style="width: 100%;table-layout: fixed" border="1" cellpadding="4" cellspacing="0">
+                    <thead >
+                    <tr bgcolor="#aaa">
+                        <td style="width: 30px">No</td>
+                        <td style="width: 200px">Student</td>
+                        <td style="width: 100px">Demo Link</td>
+                        <td style="width: 100px">Repository</td>
+                        <td style="width: 200px">Video</td>
+                        <td style="width: 120px">Note</td>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
      <div align="left"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="red" size="5">References from the previous class:</font></div>
         <li style="margin-left: 30px" >
@@ -302,6 +356,6 @@ An example github report can be found <a href="https://github.com/CreativeCoding
 
       <div align="right"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: Sep 28, 2020  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</font></div>
-     
+                <script src="p1.js"></script>
   </body>
 </html>
