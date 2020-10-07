@@ -1,5 +1,5 @@
 lastTime = new Date('8/30/2020');
-let key = ['id','name','demo','githubURL','screenshot'];
+let key = ['id','name','demo','githubURL','screenshot','note'];
 Promise.all([d3.csv('../grade/data/Students.csv')
 ,d3.csv('mongo-p1.csv')])
 .then(function(dataRaw){
