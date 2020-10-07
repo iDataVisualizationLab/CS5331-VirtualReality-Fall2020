@@ -1,5 +1,15 @@
 lastTime = new Date('8/30/2020');
 let key = ['id','name','demo','githubURL','screenshot','note'];
+function replaceString(key){
+    switch (key) {
+        case 'demo':
+            return 'demo link';
+        case 'githubURL':
+            return 'github link';
+        default:
+            return key;
+    }
+}
 Promise.all([d3.csv('../grade/data/Students.csv')
 ,d3.csv('mongo-p1.csv')])
 .then(function(dataRaw){
@@ -31,7 +41,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
     //adjust image link
     data.forEach(d=>d['screenshot']=d['screenshot']===''?'':`http://drive.google.com/uc?export=view&id=${d['screenshot'].split('id=')[1]}`)
 
-    data.forEach((d,i)=>d.ID=i+1)
+    data.forEach((d,i)=>d.ID=i+1);
     let dataCell = d3.select('#currentTopic tbody').selectAll('tr').data(data)
         .join('tr')
         .classed('pluse-red',d=>d.isHighlight)
@@ -46,7 +56,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
         .data(d=>d.value?[d]:[])
         .join('a')
         .attr('href',d=>d.data['Link']===''?'#':d.value)
-        .attr('target','_blank').text(d=>d.key)
+        .attr('target','_blank').text(d=>replaceString(d.key))
     dataCell
         .filter(d=>d.key==="name")
         .classed('name',true)
