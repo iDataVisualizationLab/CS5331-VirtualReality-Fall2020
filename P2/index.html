@@ -26,25 +26,25 @@
 
 
 <div align="left"><font style="font-family:
-        Helvetica,Arial,sans-serif;" color="black" size="5">Project 2: Water resources</font></div>
+        Helvetica,Arial,sans-serif;" color="black" size="5">Project 2: Student VR/AR/MR Game Competition</font></div>
 
 <div align="left"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="black" size="4">
     <ul>
         <li style="margin-left: 30px"> This project is <b>25%</b> of your final grade:<br>
-        <li style="margin-left: 80px"><b>15%</b> for design and implementation.</li>
-        <li style="margin-left: 80px"><b>5%</b> for in-class presentation.</li>
-        <li style="margin-left: 80px"><b>5%</b> for project report on Github.</li>
+        <li style="margin-left: 80px"><b>10%</b> for Game design (mid-P2 review).</li>
+        <li style="margin-left: 80px"><b>10%</b> for Game design and implementation (final submission).</li>
+        <li style="margin-left: 80px"><b>5%</b> for in-class presentation and Github report.</li>
         </li>
-        <li style="margin-left: 30px">Group registration <a href="https://forms.gle/VKG2devjiZ719faS9" target="_blank">click here</a> are due at Friday, October 16</li>
-        <li style="margin-left: 30px"> Project screenshot (a 1200 x 600 <b>jpg</b> image of your work which should be
-            named p2.&lt;your_last_name1&gt;&lt;your_last_name2&gt;.jpg, demo link, video link, and github link are due
-            at <font color="#e00">(will be decided later)</font>: <a href="https://forms.gle/DNs6zQ8era4tuWhy8" target="_blank">Google form link</a>. If you have any problems, please email TA at <b>ngan.v.t.nguyen@ttu.edu</b>.
-            <br>The presentation schedule should look like <a
-                    href="http://www.myweb.ttu.edu/tnhondan/CS5331/Presentations/index.html"> this</a>.
-        <li style="margin-left: 30px"> You can update your source code and project report until <font color="#e00">(will be decided later)</font>.<br>
+        <li style="margin-left: 30px">Group formation <a href="https://forms.gle/VKG2devjiZ719faS9" target="_blank">Submission</a> are due at 11:59pm <font color="#e00">Friday, Oct 16</font></li>
+        <li style="margin-left: 30px"> Project 2 mid-review is on <font color="#e00">Monday, Nov 2</font> (Designing, sketching, and reporting any group issues).</li>
+        <li style="margin-left: 30px"> Project screenshot (a 1200 x 800 <b>gif</b> image of your work which should be
+            named p2.&lt;your_last_name1&gt;&lt;your_last_name2&gt;.gif, demo link, Youtube video link, and github link are due
+            at 11:59 pm on <font color="#e00">Monday, Nov 23</font>: <a href="https://forms.gle/DNs6zQ8era4tuWhy8" target="_blank">Google form link</a>. If you have any problems, please email TA at <b>ngan.v.t.nguyen@ttu.edu</b>.
+            
+        <!--<li style="margin-left: 30px"> You can update your source code and project report until <font color="#e00">(will be decided later)</font>.<br> -->
         <li style="margin-left: 30px"> Each student needs to send a peer evaluation for other teammates by <font
-                color="#e00">(will be decided later)</font> to the TA: <b>ngan.v.t.nguyen@ttu.edu</b>. Forget submitting
+                color="#e00">Sunday, Nov 29</font> to the TA: <b>ngan.v.t.nguyen@ttu.edu</b>. Forget submitting
             the peer evaluation cost 5% of your total grade. This peer evaluation is significant to your individual
             project grade. One team member can get A, but another can get D or Fail (<b>team score is the average</b>).
             The peer evaluation contains:
@@ -55,241 +55,43 @@
         </li>
         <ul>
 </font></div>
-<center><img style="width: 80%;" src=" figures/DashboardDesign_Final.png" alt=""></center>
+<center><img style="width: 80%;" src=" figures/P2.png" alt=""></center>
 <hr style="width: 100%; height: 1px;">
 <div align="left"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="black" size="5">Project Description:</font></div>
 
 <font style="font-family:Helvetica;" color="black" size="4">
     <ul>
-        <li style="margin-left: 30px"> Project 2 has several options:</li>
+        <li style="margin-left: 30px"> Project 2 is based on the requriements of <a href="https://chi2021.acm.org/for-authors/students/student-game-competition">CHI 2021 Student Game Competition</a>. You should select to work on one of the 2 following tracks:</li>
         <ol>
             <!--Option 1 -->
             <li>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option1">The AR
-                    watershed game
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option1"><b>Track 1: Innovative Interfaces</b>
                 </button>
                 <div id="option1" class="collapse">
-                    The virtual watershed game is coupled with an Augmented Reality (AR) app. The app is loosely modeled
-                    after Pokémon GO, an app-based AR game that most students are familiar with. The AR app asks the
-                    students to identify natural and engineered features such as culverts, embankments, detention and
-                    retention basins, and discharge channels within their watersheds. Students identify these features
-                    in the “real-world” and learn about their role in maintaining sustainable water resources (both
-                    quality and quantity) within their watersheds while earning coins for use in the VR game. The
-                    scoreboard of top players will also be provided to interconnect students involving in the same tasks
-                    in real time.
-                    <br>
-                    The data contains
-                    <ul>
-                        <li style="margin-left: 30px"> Latitude and longitude</li>
-                        <li style="margin-left: 30px"> An Image of the site (e.g., <a
-                                href="http://vanderkrogt.net/statues/object.php?webpage=ST&record=ustx51">Pfluger
-                            Fountain</a>)
-                        </li>
-                        <li style="margin-left: 30px"> and a description (what it is and what purpose does it serve)
-                        </li>
-                    </ul>
-                    The example data is available <a href="data/WaterBodies.docx">here</a>. Students are also required
-                    to collect more water features on campus for their project.
-
-                    <br> When users move close to the (GPS) location, scan a pattern sticked at the location, capture
-                    the image similar to the stored site image (image recognition), etc. --> A sound track is played to
-                    notify users (that they are close to a water feature). A multiple choice question will popup. Users
-                    gain points for correct answers.
-                    <br>
-                    After that, the AR contents will appear. The displyed AR contents could be<br>
-                    <ul>
-                        <li style="margin-left: 30px"> The description of water feature (users can interact and explore
-                            further, such as <a
-                                    href="http://vanderkrogt.net/statues/object.php?webpage=ST&record=ustx51"> the
-                                Pfluger Fountain html</a>)
-                        </li>
-                        <li style="margin-left: 30px"> The functional AR model</li>
-                        <li style="margin-left: 30px"> The malfunctional AR model</li>
-                        <li style="margin-left: 30px"> Be creative! The main purpose is about education of water
-                            resources.
-                        </li>
-                    </ul>
+                     Games submitted to this category should be games that push the boundaries of current games and game interface practice. Example areas include the use of gesture, multi-touch, multi-screen or haptics; voice input; use of sensors such as breathing or heart rate; augmented reality games, mixed reality games, novel use of game AI and machine learning techniques, or explore novel, thought-provoking forms of interaction.<br>
+                     (Starting at 15:00)<br>
+                     <iframe width="1280" height="720" src="https://www.youtube.com/embed/YB-kfeNIPCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
 
                 <!--Option 2 -->
             <li>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option2">The VR
-                    watershed game
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option2"><b>Track 2: Transformative & Transgressive Play</b>
                 </button>
                 <div id="option2" class="collapse">
-                    <iframe width="1000" height="480" src="https://www.youtube.com/embed/ltKKNnWau8A" frameborder="0"
-                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <br>
-
-                    The watershed development and management game is envisioned as a "multiplayer" game modeled after
-                    the classic Monopoly and SimCity. Students are provided a fixed amount of coins and a distinct
-                    parcel of land (which is assigned randomly) on which they can either build or expand urban areas,
-                    grow crops or engage in industrial activities. All these activities release pollutants (biochemical
-                    oxygen demand (BOD) and nutrients) into streams and creeks. The release of these pollutants will
-                    affect the in-stream health which is measured by decreases in dissolved oxygen (DO) and increases in
-                    algae. Critical thresholds of DO and algae (cholorophyll-a) will be used to simulate catastrophic
-                    events such as fish kills and loss of riparian habitats. A set of compliance points (CP) are set up
-                    on the stream segment to monitor water quality in the stream. <br>
-
-                    The youtube video above gives an example but not how your game needs to progress. You may come up
-                    with more/different playing rules for this game. <br>
-
+                   This category attends to the expanding boundaries of play and game design with the emergence of independent games, art games, and political games as well as gamified/playbourised systems that explore the role of play in non-gaming settings. For example, games now play an increasingly important role in areas like education, healthcare, safety, urban planning, sustainability, and other economic, cultural, and societal sectors. Games submitted to this category should draw on these expanding boundaries of game design to create innovative gameplay for non-gaming settings, and critically reflect on challenges. <br>
                 </div>
-            </li>
-            <li>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option3">The water
-                    elevation
-                </button>
-                <div id="option3" class="collapse">
-                    Source of Elevation Data:
-                    <ul>
-                        <li style="margin-left: 30px"><a href="https://viewer.nationalmap.gov/basic/">USGS
-                            nationalmap.gov</a></li>
-                        <li style="margin-left: 30px"><a href="https://terrain.party/">terrain.party</a> --> <font
-                                color="#0a0">Vinh will show in his Unity demo today </font> (March 6). More details in
-                            <a href="http://myweb.ttu.edu/vinhtngu/contents/2017/VAMRE/SetupVRUnity.pdf">Vinh's
-                                paper. </a></li>
-                        <li style="margin-left: 30px"><a
-                                href="https://drive.google.com/open?id=1QZkop1Vl17tabTXLwWEYegCt9uq5Vr4r">Demo Project
-                            2</a></li>
-                    </ul>
-
-                    More data of underground water:
-                    <ul>
-                        <li style="margin-left: 30px"><a
-                                href="https://github.com/iDataVisualizationLab/SaturatedThickness/blob/master/docs/data/well_data_full.csv">Well
-                            location and historical data</a></li>
-                        <li style="margin-left: 30px"><a
-                                href="https://github.com/iDataVisualizationLab/SaturatedThickness/blob/master/docs/data/ascii_2013all.csv">Raster
-                            data</a>.
-                        </li>
-                        <li style="margin-left: 30px"> More details in <a
-                                href="https://github.com/iDataVisualizationLab/SaturatedThickness/blob/master/files/STOAViz.pdf">our
-                            paper. </a></li>
-                    </ul>
-
-                    Precipitation data:
-                    <ul>
-                        <li style="margin-left: 30px"> NOAA - National Climate Data Center (NCDC) is the primary source
-                            of precipitation data in the US
-                        </li>
-                        <li style="margin-left: 30px"> USGS and many other (local) agencies also collect precipitation
-                            data - Texas Agrilife extension
-                        </li>
-                        <li style="margin-left: 30px"> Longer-term gridded precipitation data for both the US and
-                            global:
-                        </li>
-                        <ul>
-                            <li style="margin-left: 30px"><a href="http://prism.oregonstate.edu/">PRISM</a></li>
-                            <li style="margin-left: 30px"><a
-                                    href="https://www.esrl.noaa.gov/psd/data/gridded/tables/precipitation.html">CPC
-                                gridded data</a></li>
-                            <li style="margin-left: 30px"><a href="http://www.cru.uea.ac.uk/data">Climate Research
-                                Unit</a> global data
-                            </li>
-                            <li style="margin-left: 30px"> Radar (NEXRAD) data is also available from NCDC.</li>
-
-                        </ul>
-                    </ul>
-
-
-                    Here are examples in <a href="https://threejs.org/">ThreeJS</a> and javascipt:
-                    <ul>
-                        <li style="margin-left: 30px"><a href="https://threejs.org/examples/webgl_physics_terrain.html">Ammo.js
-                            physics terrain heightfield demo</a></li>
-                        <li style="margin-left: 30px"><a href="https://codepen.io/kevinnewcombe/pen/XMVoKv/">Elevation
-                            map</a> by Kevin Newcombe
-                        </li>
-                        <li style="margin-left: 30px"> NASA satellite imagery and elevation data to create a <a
-                                href="https://github.com/datadesk/vr-interactives-three-js">3-D rendering of the Gale
-                            Crater</a> on Mars.
-                        </li>
-                        <li style="margin-left: 30px">http://david.li/fluid/</li>
-                        <li style="margin-left: 30px"> http://dust.awevation.com/</li>
-                        <li style="margin-left: 30px"> https://jayweeks.com/water-underground/</li>
-                        <li style="margin-left: 30px"> http://codeflow.org/webgl/craftscape/</li>
-                        <li style="margin-left: 30px">https://github.com/mraad/space-time-ripple</li>
-                    </ul>
-
-                </div>
-            </li>
-            <li>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option4">Flooding
-                    evacuation
-                </button>
-                <div id="option4" class="collapse">
-                    VR can provide an immersive learning tool to help communities prepare for flooding and make the
-                    right evacuation decision.
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/NBAymUO-vU0" frameborder="0"
-                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </li>
-
-            <li>
-                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option5">Your
-                    suggestions
-                </button>
-                <div id="option5" class="collapse">
-                    Here is Scott Blechman and Benjamin Fox Bolduc proposal. This proposal has been approved and can not
-                    be replicated:
-                    <br>
-                    <font color="#0a0"> The project will be an AR app on the iPhone, a game playable using the Texas
-                        Tech campus. We will load a topography/elevation map of the campus onto the scene, and fill it
-                        with virtual water over the course of a couple of minutes. The player will need to use this time
-                        to safely make it to higher ground, avoiding as much water as possible. The player will receive
-                        points for successfully evacuating, and points will be reduced for entering potentially
-                        dangerous situations such as crossing flooded roads. Scores will be synced to a cloud server and
-                        associated with anonymous IDs, though the IDs can be replaced by player names if they so
-                        choose.</font>
-                </div>
-            </li>
+            </li>     
         </ol>
 
-
-        <br>
-        <li style="margin-left: 30px"> Project 2 is a group (of 2 or 3 students) project, exceptions are allowed.
-            Students select their group member and the topic (from the list above). If you can't, Tommy will assign your
-            group. As soon as you have found your group, please send the TA by <font color="#e00">11am Thursday, March
-                8</font>.
+        <li style="margin-left: 30px">
+        MPORTANT NOTE: It is not mandatory to have a completely playable game in order to participate in this competition. We are also encouraging innovative ideas, speculative/provocative game designs and early prototypes of the game if authors could demonstrate why their game/idea is innovative and how it could advance the current state-of-the-art. Students submitting speculative and early prototypes should, however, explain the rationale behind their game design with clear positioning within the literature, reasons for not presenting a complete game (e.g., technology is not yet there, need for massive resources or investment), research aims, and envisioned impact in the Extended Abstract document. Speculative submissions have to be supplemented with a Wizard of Oz demonstration of gameplay.
+       </li>
+        <li style="margin-left: 30px"> Project 2 is a group (of 3 or 4 students) project, exceptions are allowed with reasonable justification.
+            Students select their group member and the topic (from the list above). If you can't, the professor will assign your
+            group. Team formation is due at 11:59pm <font color="#e00">Friday, Oct 16</font>.
         </li>
-
-
-        <!--
-              <li style="margin-left: 30px">
-                To help in planning your dream house, you will be given  a <a href="https://alex-nguyen.github.io/CS5331001-Virtual-Reality/index.html">3D model of the TTU Computer Science VR showroom </a> and redecorate it to turn it into your ideal home. The sample project to get you started can be found <a href="https://github.com/Alex-Nguyen/CS5331001-Virtual-Reality" target="_blank">here</a>.
-            </li>
-
-                <li style="margin-left: 30px">
-                    Space must include several chairs/sofas, tables, wall decorations, and be decorated in some kind of a consistent style.
-                    You should be able to walk around the house.
-                </li>
-
-
-
-                <font style="font-family:Helvetica;" color="black" size="4">
-                    For a <b>C</b>, you need to:
-                    <ul>
-                        <li> Customize the TTU Computer Science VR showroom into your dream house with your own style of floor and ceiling</li>
-                        <li> Have at least unique 10 models at appropriate locations</li>
-                        <li> Have appropriate lighting. Do not give me a dark screen.</li>
-                    </ul>
-                    For a <b>B</b>, you need to:
-                    <ul>
-                        <li> Add an additional 5 unique models</li>
-                        <li> Give the user control over the lighting</li>
-                        <li> You should be able to navigate around the space</li>
-                    </ul>
-                    For a <b>A</b>, you need to:
-                    <ul>
-                        <li> Interact with certain objects: Click to trigger a sound track or a song, OR</li>
-                        <li> Add one dynamic object (moving model, such as a dog or an avatar)</li>
-                    </ul>
-                </font>
-        -->
-
-        <!--  <li style="margin-left: 30px"> Students are provided 2 datasets: The <a href="http://en.wikinews.org/wiki/Main_Page">Wikinews</a> data (roughly <a href="data/wikinews.tsv">3.3M</a>) contains 11,267 articles and the <a href="http://www.huffingtonpost.com/">Huffington Post</a> data (roughly <a href="data/huffington.tsv">29.4M</a>) contains 75,293 political blogs. Students are required to demonstrate their web applications on both datasets.</li>-->
     </ul>
 </font>
 
@@ -336,7 +138,7 @@
 
     <li style="margin-left: 30px">
         <font style="font-family:Helvetica;" size="4">
-            We will conduct P2 midterm updates for this project (<font color="#e00">Mar 29</font>). Don't wait until the
+            We will conduct P2 midterm updates for this project (<font color="#e00">Monday Nov 2</font>). Don't wait until the
             last week to implement your project. Especially, don't update your codes in the last minutes.
 
         </font>
@@ -384,12 +186,6 @@
 <div align="left"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="black" size="5">Project report on Github (readme file):</font></div>
 <ul>
-    <li style="margin-left: 30px">
-        <font style="font-family:Helvetica;" color="black" size="4">
-            See example here: <a href="https://github.com/swoldemi/VR-Project-1">Simon's Project 1 report</a>
-        </font>
-    </li>
-
     <li style="margin-left: 30px">
         <font style="font-family:Helvetica;" color="black" size="4">
             Create a 3-minute video showing the use of your application with your voice over. That video should appear
@@ -473,33 +269,10 @@ An example github report can be found <a href="https://github.com/CreativeCoding
     </li>
 </ul>
 
+
 <hr style="width: 100%; height: 1px;">
-<div id="students">
-    <div>Group Assigned</div>
-    <table style="width:98%;" border="1" cellpadding="3" cellspacing="0" id="tbl_assiged">
-        <tr bgcolor="#aaa">
-            <td>Team</td>
-            <td width="15%">Members</td>
-            <td width="50%">Abstract</td>
-            <td>Screenshot</td>
-            <td>GitHub</td>
-            <td>Presented Date</td>
-            <td>Evaluation link</td>
-            <td>Result</td>
-        </tr>
-    </table>
-    <hr style="width: 100%; height: 1px;">
-    <!--<div>Group NOT Assigned</div>-->
-    <!--<table style="width:98%;" border="1" cellpadding="3" cellspacing="0" id="tbl_unassiged">-->
-    <!--<tr bgcolor="#aaa">-->
-    <!--<td>No</td>-->
-    <!--<td>Students</td>-->
-    <!--<td>Note</td>-->
-    <!--</tr>-->
-    <!--</table>-->
-</div>
 <div align="right"><font style="font-family:
-        Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: April 23, 2018 &nbsp; &nbsp; &nbsp;
+        Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: Oct 12, 2020 &nbsp; &nbsp; &nbsp;
     &nbsp; &nbsp;</font></div>
 <script>
     //         d3.csv('P2.csv', function (data) {
