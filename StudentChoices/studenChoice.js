@@ -27,7 +27,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
 
 
     //sort by presentation day
-    data.sort((a,b)=>a.date-b.date);
+    data.sort((a,b)=>a.id-b.id);
     //adjust image link
     data.forEach(d=>d['Image']=d['Image']===''?'':`http://drive.google.com/uc?export=view&id=${d['Image'].split('id=')[1]}`)
 

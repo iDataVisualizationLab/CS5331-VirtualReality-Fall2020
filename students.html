@@ -51,7 +51,7 @@
            var tr = document.createElement("tr");
 
            var index = document.createElement('td')
-           var index_text = document.createTextNode(i + 1);
+           var index_text = document.createTextNode(t.id);
            index.appendChild(index_text);
 
            var photocontainertd = document.createElement("td");
@@ -101,7 +101,7 @@
          }
 
          d3.csv('grade/data/Students.csv',function (data) {
-           data.sort((a,b)=>a.id-b.id);
+           data=data.filter(d=>+d.onclass).sort((a,b)=>a.id-b.id);
             data.forEach(function (t,i) {
               let tableid = Math.floor(i/15);
               let table = document.getElementById("targettable"+tableid);
