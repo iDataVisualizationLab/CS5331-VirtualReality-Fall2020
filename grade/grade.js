@@ -883,7 +883,7 @@ function tickedStudentChoice() {
 function tickedP1() {
     for (var i=0;i<nodesP1.length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
-            nodesP1[i].x = width*0.63;
+            nodesP1[i].x = width*0.75;
             nodesP1[i].y = yP1(nodesP1[i].P1_code+nodesP1[i].P1_talk+nodesP1[i].P1_report);
         }
         else{
@@ -917,7 +917,7 @@ function tickedP1() {
 function tickedP2() {
     for (var i=0;i<nodesP2.length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
-            nodesP2[i].x = width*0.8;
+            nodesP2[i].x = width*0.9;
             var yy = nodesP2[i].P2_code+nodesP2[i].P2_talk+nodesP2[i].P2_report
                 +nodesP2[i].P2_review;
             nodesP2[i].y = yP1(yy);  // 35% compared to 20%
