@@ -989,14 +989,15 @@ function showP1(){
         }
 
         // Draw title ************
-        svg.append("text").attr('class','titleScore').text('Student Choice').attr('text-anchor','middle')
-            .attr('y',20)
+        svg.append("text").attr('class','titleScore').text('Student Choice')
+            .attr('text-anchor','middle')
+            .attr('y',30)
             .attr('x',simulations['StudentChoice'].gridValue*width)
         svg.append("text").attr('class','titleScore').text('Project 1').attr('text-anchor','middle')
-            .attr('y',20)
+            .attr('y',30)
             .attr('x',simulations['P1'].gridValue*width)
         svg.append("text").attr('class','titleScore').text('Project 2').attr('text-anchor','middle')
-            .attr('y',20)
+            .attr('y',30)
             .attr('x',simulations['P2'].gridValue*width)
         // Draw grade axis ***********
         for (var i=0; i<aGrades.length-1;i++){
