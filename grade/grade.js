@@ -1219,6 +1219,17 @@ function textContribution(index){
             .text("SC Report: "+nodesCollection["StudentChoice"][index].studentReport+"%");
     }
 
+    // p1 peer-peer review
+
+    svg.append("text")
+        .attr("class", "textStudentReport")
+        .style("font-size", "13px")
+        .attr("text-anchor", "left")
+        .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
+        .attr("fill", "#000")
+        .attr("x", radius+nodes[index].x)
+        .attr("y", nodes[index].y+55)
+        .text("P1 feedback: "+nodesP1[index].P1_survey+"%");
 
     svg.append("text")
         .attr("class", "textFinal")
@@ -1227,17 +1238,8 @@ function textContribution(index){
         .style("text-shadow", "1px 1px 0 rgba(0, 0, 0")
         .attr("fill", "#f00")
         .attr("x", radius+nodes[index].x)
-        .attr("y", nodes[index].y+55)
-        .text("Final grade: "+nodes[index].finalLetter);
-    svg.append("text")
-        .attr("class", "textFinal")
-        .style("font-size", "14px")
-        .attr("text-anchor", "left")
-        .style("text-shadow", "1px 1px 0 rgba(0, 0, 0")
-        .attr("fill", "#a00")
-        .attr("x", radius+nodes[index].x+60)
-        .attr("y", nodes[index].y+70)
-        .text(nodes[index].finalScore+"%");
+        .attr("y", nodes[index].y+75)
+        .text("Final grade: "+nodes[index].finalScore+"%"+' '+nodes[index].finalLetter);
 }
 
 function textP1(index){
