@@ -10,15 +10,52 @@
     <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $(function () {
             $(document).tooltip();
         });
     </script>
-    <style type="text/css">
+    <style>
+        .pluse-red .avatar{
+            box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+            transform: scale(1);
+            animation: pulse-red 2s infinite;
+        }
+        @keyframes pulse-red {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+            }
 
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 20px rgba(255, 82, 82, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+            }
+        }
+        .pluse-red .name{
+            color: #d9290b;
+            font-weight: bold;
+        }
+        .pluse-red .name::after{
+            content: ' (Next presenter)  '
+        }
+        .avatar{
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            left: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            border:1px solid #ddd
+        }
     </style>
 
 </head>
@@ -280,7 +317,7 @@ An example github report can be found <a href="https://github.com/CreativeCoding
     <tr bgcolor="#aaa">
         <td style="width: 30px">No</td>
         <td style="width: 200px">Name</td>
-        <td style="width: 200px">Image</td>
+        <td style="width: 200px">Game topic</td>
         <td style="width: 100px">Demo Link</td>
         <td style="width: 100px">Repository</td>
         <td style="width: 200px">Video</td>
@@ -294,88 +331,7 @@ An example github report can be found <a href="https://github.com/CreativeCoding
 <div align="right"><font style="font-family:
         Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: Oct 12, 2020 &nbsp; &nbsp; &nbsp;
     &nbsp; &nbsp;</font></div>
-<script>
-    //         d3.csv('P2.csv', function (data) {
-    //
-    //             var grouped_filer = d3.nest().key(function (d) {
-    //                 return d.Group;
-    //             }).entries(data);
-    //
-    //             grouped_filer.forEach(function (d) {
-    //                 d.position = +d.key;
-    //             })
-    //             grouped_filer =grouped_filer.sort(function (a,b) { return d3.ascending(a.position,b.position) })
-    //             console.log(grouped_filer)
-    //             grouped_filer.forEach(function (group, index) {
-    //                 if(group.key ==""){
-    //                     // group.values.forEach(function (student,i) {
-    //                     //     $('#tbl_unassiged').append('<tr><td>'+(i+1)+'</td> <td >'+student.Student+'</td> <td>unassingned</td></tr>');
-    //                     // })
-    //
-    //                 }else {
-    //                     var students =[];
-    //                     var Githublink="";
-    //                     group.values.forEach(function (student) {
-    //                        students.push(student.Student);
-    //                        if(student.Github !=""){
-    //                            if(Githublink==""){
-    //                                Githublink='<a href='+student.Github+'>Link</a>';
-    //                            }
-    //                        }
-    //                     });
-    //                     console.log(group)
-    //                     $('#tbl_assiged').append('<tr><td align="center" >'+group.key+'</td><td>'+students.join(', ')+'</td><td>'+group.values[0].Abstract.replace(/'/g, '')+'</td><td>'+Githublink+'</td></tr>')
-    //                 }
-    //             })
-    //         })
-    function init() {
-        d3.csv('P2Group.csv', function (rawdata) {
-            rawdata.forEach(function (t) {
-                t.order = +t.order;
-                t.group = +t.group;
-            });
-            var localdata = rawdata.sort(function (a, b) {
-                return a.order - b.order;
-            });
-            localdata.forEach(function (row, index) {
-                $('#tbl_assiged').append('<tr><td align="center" >' + row.group + '</td><td>' + row.names + '</td><td>' + row.abstract + '</td><td><img style="width:250px;height: 200px" src="' + row.thumbnail + '" ></td><td><a href="' + row.github + '" target="_blank">Link</a> </td>' +
-                    '<td>' + row.presented_date + '</td>' +
-                    '<td><a href="' + row.evaluation_link + '">Evaluate</a> </td> <td><a href="'+row.response+'">Result</a></td></tr>')
-            });
-//                 var grouped_filer = d3.nest().key(function (d) {
-//                     return d.Group;
-//                 }).entries(data);
-//
-//                 grouped_filer.forEach(function (d) {
-//                     d.position = +d.key;
-//                 })
-//                 grouped_filer =grouped_filer.sort(function (a,b) { return d3.ascending(a.position,b.position) })
-//                 console.log(grouped_filer)
-//                 grouped_filer.forEach(function (group, index) {
-//                     if(group.key ==""){
-//                         // group.values.forEach(function (student,i) {
-//                         //     $('#tbl_unassiged').append('<tr><td>'+(i+1)+'</td> <td >'+student.Student+'</td> <td>unassingned</td></tr>');
-//                         // })
-//
-//                     }else {
-//                         var students =[];
-//                         var Githublink="";
-//                         group.values.forEach(function (student) {
-//                             students.push(student.Student);
-//                             if(student.Github !=""){
-//                                 if(Githublink==""){
-//                                     Githublink='<a href='+student.Github+'>Link</a>';
-//                                 }
-//                             }
-//                         });
-//                         console.log(group)
-//                         $('#tbl_assiged').append('<tr><td align="center" >'+group.key+'</td><td>'+students.join(', ')+'</td><td>'+group.values[0].Abstract.replace(/'/g, '')+'</td><td>'+Githublink+'</td></tr>')
-//                     }
-//                 })
-        })
-    }
 
-    init();
-</script>
+<script src="p2.js"></script>
 </body>
 </html>
