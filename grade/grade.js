@@ -1246,7 +1246,7 @@ function textP1(index){
     svg.append("text")
         .attr("class", "textP1")
         .style("font-size", "13px")
-        .attr("text-anchor", "middle")
+        .attr("text-anchor", "start")
         .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
         .attr("fill", "#000")
         .attr("x", radius+nodesP1[index].x)
@@ -1255,10 +1255,10 @@ function textP1(index){
     svg.append("text")
         .attr("class", "textP1")
         .style("font-size", "13px")
-        .attr("text-anchor", "middle")
+        .attr("text-anchor", "start")
         .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
         .attr("fill", "#000")
-        .attr("x", radius+nodesP1[index].x+26)
+        .attr("x", radius+nodesP1[index].x)
         .attr("y", nodesP1[index].y+3)
         .text("Presentation: "+(nodesP1[index].P1_talk+nodesP1[index].P1_report)+"%");
 
