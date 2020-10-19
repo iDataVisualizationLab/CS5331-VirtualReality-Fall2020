@@ -59,13 +59,14 @@ Promise.all([d3.csv('../grade/data/Students.csv')
             .attr('href',d=>d.data['Link']===''?'#':d.value)
             .attr('target','_blank').text(d=>replaceString(d.key))
         dataCell
+            .filter(d=>d.key==="id")
+            .classed('name',true)
+            .html(d=>`${d.value}. <span style="font-weight: bold">${d.data.name}</span>`)
+        dataCell
             .filter(d=>d.key==="name")
             .classed('name',true)
-            .html(d=>`<span style="font-weight: bold">${d.value}</span>
-            <br>
-            <div style="margin-left: 5px">
-            ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname}`).join('<br>')}
-            </div>`)
+            .html(d=>`
+            ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname}`).join('<br>')}`)
         dataCell
             .filter(d=>d.key==="screenshot")
             .text(()=>'')
