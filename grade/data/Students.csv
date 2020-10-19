@@ -36,17 +36,17 @@ id,Fullname,Nickname,onclass,StudentTalk,StudentReport,P1_code,P1_talk,P1_report
 35,Joshua M. Fryar,Pav,1,,,,,,0,,,,,,,,,BS,Undegraduate,5,Pavilion.Fryar@ttu.edu,Joshua.jpg,
 36,Joshua Williams,jw,1,,,14,5,3.5,2,,,,,,,,,MSCS,Graduate,4,Josh.Williams@ttu.edu,Joshua Williams.jpg,https://github.com/trombonetopickwithyou
 37,Junwoo Jang,Junwoo Jang,1,5,3.5,,,,0,,,,,,,,,BS,Undegraduate,7,Junwoo.Jang@ttu.edu,junwoo.jpg,http://www.myweb.ttu.edu/junjang/
-38,Karishma Garikapalli,GK,1,,,,,,1,,,,,,,,,MSCS,Graduate,4,Karishma.Garikapalli@ttu.edu,Karishma Garikapalli.jpeg,
+38,Karishma Garikapalli,GK,1,,,13,5,3,1,,,,,,,,,MSCS,Graduate,4,Karishma.Garikapalli@ttu.edu,Karishma Garikapalli.jpeg,
 39,Krishana Gyanwali,Krishana,1,,,,,,0,,,,,,,,,MSCS,Graduate,8,Krishana.Gyanwali@ttu.edu,Krishana.jpg,https://github.com/kgyanwal
 40,Luis Eduardo Sandoval,Luis,1,,,13,5,3.5,1,,,,,,,,,BS,Undegraduate,4,Luis.E.Sandoval@ttu.edu,Luis Eduardo Sandoval.png,
 41,Luke McDougal,RedBear,1,,,,,,1,,,,,,,,,BS,Undegraduate,4,Luke.Mcdougal@ttu.edu,luke.jpg,https://github.com/lukemcdougalttu
 42,Madhuri Gangadharan,Maddy,1,,,12,4.5,3,0,,,,,,,,,MSCS,Graduate,5,mgangadh@ttu.edu,Madhuri.JPG,https://github.com/Madhuri-Gangadharan
-43,Malathi Kadipikonda,Malathi,1,,,,,,0,,,,,,,,,MSCS,Graduate,4,mkadipik@ttu.edu,malathi.jpg,
+43,Malathi Kadipikonda,Malathi,1,,,9,4,3,0,,,,,,,,,MSCS,Graduate,4,mkadipik@ttu.edu,malathi.jpg,
 44,Morgan Fisher,Mnfisher93,1,,,,,,0,,,,,,,,,BS,Undegraduate,3,Mn.Fisher@ttu.edu,Morgan.jpeg,
 45,Moses Park,Moses Park,1,,,,,,0,,,,,,,,,BS,Undegraduate,3,Moses.Park@ttu.edu,Moses Park.jpeg,
 46,Ngan V.T. Nguyen,lucy,1,,,,,,0,,,,,,,,,PhD,PhD,3,Ngan.V.T.Nguyen@ttu.edu,Ngan.jpg,
 47,Nicholas Lovera,BloothHunder,1,,,11,4.5,3.5,0,,,,,,,,,BS,Undegraduate,5,Nicholas.Lovera@ttu.edu,Nicholas Lovera.JPG,https://github.com/NickLovera
-48,Nikhila Ratakonda,Nikki,1,,,,,,0,,,,,,,,,MSCS,Graduate,3,Nikhila.Ratakonda@ttu.edu,Nikhila Ratakonda.jpg,
+48,Nikhila Ratakonda,Nikki,1,,,13,5,2,0,,,,,,,,,MSCS,Graduate,3,Nikhila.Ratakonda@ttu.edu,Nikhila Ratakonda.jpg,
 49,Parker Smyrl,Bard,1,6,4,,,,0,,,,,,,,,BS,Undegraduate,8,Parker.Smyrl@ttu.edu,Parker.jpg,
 50,Rahil Bhavesh Patel,Rahil Patel,1,6,5,15,5,5,1,,,,,,,,,BS,Undegraduate,3,Rahil.Patel@ttu.edu,RahilPatel_ProfilePicture.jpg,
 51,Rishabh Tewari,Bnuuy,1,,,10,4,4,2,,,,,,,,,BS,Undegraduate,5,Rishabh.Tewari@ttu.edu,Rishabh.jpg,https://freeshabh.github.io/blog/
@@ -61,9 +61,9 @@ id,Fullname,Nickname,onclass,StudentTalk,StudentReport,P1_code,P1_talk,P1_report
 60,Swathi Bali Yadav,Ariel,1,,,,,,0,,,,,,,,,MSCS,Graduate,6,Swathi-Bali.Yadav@ttu.edu,swathi.jpeg,
 61,Trevor Pike,Trevor Pike,1,5.5,3.5,,,,2,,,,,,,,,BS,Undegraduate,3,Trevor.Pike@ttu.edu,Trevor.jpg,
 62,Tyler McQuagge,t620,1,,,13,4.5,4,0,,,,,,,,,BS,Undegraduate,3,Tyler.Mcquagge@ttu.edu,Tyler.jpg,
-63,Vaishnavee Sharma,Sharma,1,,,,,,1,,,,,,,,,MSCS,Graduate,5,Vaishnavee.Sharma@ttu.edu,Vaishnavee Sharma.jpg,
+63,Vaishnavee Sharma,Sharma,1,,,14,5,3,1,,,,,,,,,MSCS,Graduate,5,Vaishnavee.Sharma@ttu.edu,Vaishnavee Sharma.jpg,
 64,Vamsidhar Reddy Poothi,VR,1,,,12,4,2.5,0,,,,,,,,,MSCS,Graduate,3,Vamsidhar-Reddy.Poothi@ttu.edu,Vamsidhar Reddy Poothi.JPG,
-65,Xavier Sherman Jenkins,Xavy,1,,,,,,0,,,,,,,,,BS,Undegraduate,3,Xavier.Jenkins@ttu.edu,Xavier.jpg,
+65,Xavier Sherman Jenkins,Xavy,1,,,12,4.5,3,0,,,,,,,,,BS,Undegraduate,3,Xavier.Jenkins@ttu.edu,Xavier.jpg,
 66,Ynigo Lorenzo Miguel Vitto Reyes,Miggy,0,,,,,,0,,,,,,,,,BS,Undegraduate,3,Ynigo.Reyes@ttu.edu,Reyes_Ynigo_Miggy_May13.jpg,
 67,Yuanxu Xu,Yuanxu Xu,1,,,,,,0,,,,,,,,,MSCS,Graduate,5,Yuanxu.Xu@ttu.edu,Yuanxu.JPG,
 68,Zoya Shaikh,Zoya,1,,,12,4,3.5,2,,,,,,,,,MSCS,Graduate,4,Zoya.Shaikh@ttu.edu,Zoya.JPG,

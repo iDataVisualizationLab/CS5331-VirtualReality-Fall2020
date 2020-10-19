@@ -51,11 +51,12 @@ d3.csv("data/Students.csv", function(error, data_) {
 
 // Force-directed layout
 var simulations = {};
-['general',"StudentChoice",'P1','P2'].forEach(function(k){
+['general',"StudentChoice",'P1','P2'].forEach(function(k,i){
     simulations[k] = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d) { return d.id; }))
         .force("link", d3.forceLink().distance(1).strength(1))
         .force("charge", d3.forceManyBody().strength(-0.1));
+    simulations[k].gridValue = [0.6+(i-1)*0.15]
 });
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 var radius = 8;
@@ -987,7 +988,7 @@ function showP1(){
                 .attr("fill-opacity",1);
         }
 
-
+        // Draw title ************
 
         // Draw grade axis ***********
         for (var i=0; i<aGrades.length-1;i++){
