@@ -850,7 +850,7 @@ function ticked() {
 function tickedStudentChoice() {
     for (var i=0;i<nodesCollection["StudentChoice"].length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
-            nodesCollection["StudentChoice"][i].x = width*0.6;
+            nodesCollection["StudentChoice"][i].x = width*simulations['StudentChoice'].gridValue;
             nodesCollection["StudentChoice"][i].y = yP1(Math.min((nodesCollection["StudentChoice"][i].studentReport+nodesCollection["StudentChoice"][i].studentTalk)/10*25,aGrades[0]));
         }
         else{
@@ -884,7 +884,7 @@ function tickedStudentChoice() {
 function tickedP1() {
     for (var i=0;i<nodesP1.length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
-            nodesP1[i].x = width*0.75;
+            nodesP1[i].x = width*simulations['P1'].gridValue;
             nodesP1[i].y = yP1(nodesP1[i].P1_code+nodesP1[i].P1_talk+nodesP1[i].P1_report);
         }
         else{
@@ -918,7 +918,7 @@ function tickedP1() {
 function tickedP2() {
     for (var i=0;i<nodesP2.length;i=i+2){
         if (document.getElementById("checkboxP1").checked){
-            nodesP2[i].x = width*0.9;
+            nodesP2[i].x = width*simulations['P2'].gridValue;
             var yy = nodesP2[i].P2_code+nodesP2[i].P2_talk+nodesP2[i].P2_report
                 +nodesP2[i].P2_review;
             nodesP2[i].y = yP1(yy);  // 35% compared to 20%
@@ -989,7 +989,15 @@ function showP1(){
         }
 
         // Draw title ************
-
+        svg.append("text").attr('class','titleScore').text('Student Choice').attr('text-anchor','middle')
+            .attr('y',20)
+            .attr('x',simulations['StudentChoice'].gridValue*width)
+        svg.append("text").attr('class','titleScore').text('Project 1').attr('text-anchor','middle')
+            .attr('y',20)
+            .attr('x',simulations['P1'].gridValue*width)
+        svg.append("text").attr('class','titleScore').text('Project 2').attr('text-anchor','middle')
+            .attr('y',20)
+            .attr('x',simulations['P2'].gridValue*width)
         // Draw grade axis ***********
         for (var i=0; i<aGrades.length-1;i++){
             svg.append("line")
@@ -1045,6 +1053,7 @@ function showP1(){
 }
 
 function fadeP1(){
+    svg.selectAll('.titleScore').remove();
     svg.selectAll(".xAxis").remove();
     svg.selectAll(".legendLine10")
         .attr("stroke-opacity", 1);
