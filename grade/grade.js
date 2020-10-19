@@ -1251,7 +1251,7 @@ function textP1(index){
         .attr("fill", "#000")
         .attr("x", radius+nodesP1[index].x)
         .attr("y", nodesP1[index].y-12)
-        .text("Code: "+nodesP1[index].P1_code+"%");
+        .text("Implementation: "+nodesP1[index].P1_code+"%");
     svg.append("text")
         .attr("class", "textP1")
         .style("font-size", "13px")
@@ -1260,26 +1260,8 @@ function textP1(index){
         .attr("fill", "#000")
         .attr("x", radius+nodesP1[index].x+26)
         .attr("y", nodesP1[index].y+3)
-        .text("Talk: "+nodesP1[index].P1_talk+"%");
-    svg.append("text")
-        .attr("class", "textP1")
-        .style("font-size", "13px")
-        .attr("text-anchor", "middle")
-        .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
-        .attr("fill", "#000")
-        .attr("x", radius+nodesP1[index].x)
-        .attr("y", nodesP1[index].y+18)
-        .text("Report: "+nodesP1[index].P1_report+"%");
+        .text("Presentation: "+(nodesP1[index].P1_talk+nodesP1[index].P1_report)+"%");
 
-    svg.append("text")
-        .attr("class", "textP1")
-        .style("font-size", "13px")
-        .attr("text-anchor", "middle")
-        .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
-        .attr("fill", "#000")
-        .attr("x", radius+nodesP1[index].x)
-        .attr("y", nodesP1[index].y+33)
-        .text("P1 Survey: "+nodesP1[index].P1_survey+"%");
 
     // Project 2
     svg.append("text")
