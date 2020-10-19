@@ -66,7 +66,7 @@ Promise.all([d3.csv('../grade/data/Students.csv')
             .filter(d=>d.key==="name")
             .classed('name',true)
             .html(d=>`
-            ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname}`).join('<br>')}`)
+            ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname} `).join('<br>')}`)
         dataCell
             .filter(d=>d.key==="screenshot")
             .text(()=>'')
