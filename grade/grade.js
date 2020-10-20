@@ -83,14 +83,15 @@ var startDate = new Date("8/24/2020");
 var today = d3.timeDay(Math.min(new Date(),new Date("12/11/2020")));
 
 function getCategoty(str){
-    if (str==="PhD")
-        return 3;
-    else if (new RegExp(/MSSE/g).test(str))
-        return 2;
-    else if (new RegExp(/MSCS/g).test(str))
-        return 1;
-    else
-        return 0;
+    // if (str==="PhD")
+    //     return 3;
+    // else if (new RegExp(/MSSE/g).test(str))
+    //     return 2;
+    // else if (new RegExp(/MSCS/g).test(str))
+    //     return 1;
+    // else
+    //     return 0;
+    return 0
 }
 var data = {};
 
@@ -99,12 +100,13 @@ var data = {};
 function main(){
     d3.csv("data/participation.csv", function(error, data_) {
         today = d3.max(d3.keys(data_[0]).filter(d=>+new Date(d)),d=>+new Date(d));
-        data_.forEach(function(d) {
+        data_.filter(d=>data2[d.Email].onclass=='1').forEach(function(d) {
             data[d.Email] = {array:d3.entries(d).filter(d=>+new Date(d.key)).filter(d=>d.value!=="").map(object=>{
                 return {date: new Date(object.key),score:+object.value}
             })};
             data[d.Email].array = [{date: startDate,score:0},...data[d.Email].array]
             // data[d.Email].array.push({date:today,score:0})
+            data2[d.Email].Program = ''
 
             data[d.Email].array.name = data2[d.Email]['Fullname'];
             data[d.Email].array.studentTalk = +data2[d.Email].StudentTalk;
