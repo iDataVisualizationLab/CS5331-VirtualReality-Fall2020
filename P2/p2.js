@@ -10,7 +10,7 @@ function replaceString(key){
             return key;
     }
 }
-Promise.all([d3.csv('../grade/data/Students.csv')
+Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
     ,d3.csv('P2_group.csv')])
     .then(function(dataRaw){
         // date for highlight

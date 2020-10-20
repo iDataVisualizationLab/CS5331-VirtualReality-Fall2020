@@ -39,7 +39,7 @@ var valueline = d3.line()
 // Student info data  
 var data2 = {};
 var groupCount = [{id:0},{id:1},{id:2},{id:3}];
-d3.csv("data/Students.csv", function(error, data_) {
+d3.json("https://cs5331-vr-fall202.herokuapp.com/students", function(error, data_) {
     data_.forEach(function(d) {
         if (data2[d.Email]==undefined)
             data2[d.Email] = {};
