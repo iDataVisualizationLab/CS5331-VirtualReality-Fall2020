@@ -66,7 +66,9 @@ Promise.all([d3.csv('../grade/data/Students.csv')
             .filter(d=>d.key==="name")
             .classed('name',true)
             .html(d=>`
-            ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname} `).join('<br>')}`)
+            ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname} 
+<span style="display: none" class="p${d.data.members[i]}">${people[d.data.members[i]].email}</span>
+ <button onclick="copyToCLipboard('.p${d.data.members[i]}')"></button>`).join('<br>')}`)
         dataCell
             .filter(d=>d.key==="screenshot")
             .text(()=>'')
@@ -83,4 +85,20 @@ Promise.all([d3.csv('../grade/data/Students.csv')
                 // return d.value===''?"https://via.placeholder.com/300x200":d.value;
                 return d.value;
             })
+
     });
+function copyToCLipboard(nodeClass){
+        var emailLink = document.querySelector(nodeClass);
+        var range = document.createRange();
+        range.selectNode(emailLink);
+        window.getSelection().addRange(range);
+        // Now that we've selected the anchor text, execute the copy command
+    try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copy email command was ' + msg);
+    } catch(err) {
+        console.log('Oops, unable to copy');
+    }
+    window.getSelection().removeAllRanges();
+}
