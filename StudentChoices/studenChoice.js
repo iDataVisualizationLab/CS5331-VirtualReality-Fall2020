@@ -1,6 +1,6 @@
 lastTime = new Date('8/30/2020');
 let key = ['ID','Timestamp','Your name','Program','Your topic','Schedule','Image'];
-Promise.all([d3.csv('../grade/data/Students.csv')
+Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
 ,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
 .then(function(dataRaw){
     // date for highlight
