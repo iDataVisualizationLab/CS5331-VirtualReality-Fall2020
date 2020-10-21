@@ -89,7 +89,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             })
         clipboardDemos = new ClipboardJS('.copybtn');
         clipboardDemos.on('success',function(e){e.clearSelection();
-        d3.select(e.trigger).attr('data-original-title','Copied');
+        d3.select(e.trigger).attr('data-original-title','Copied!');
         $(e.trigger).tooltip('show');
             d3.select(e.trigger).attr('data-original-title','Copy to clipboard');
         });
