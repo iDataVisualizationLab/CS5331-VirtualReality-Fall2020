@@ -68,7 +68,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             .classed('name',true)
             .html(d=>`
             ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname} 
- <button type="button" class="btn btn-primary copybtn btn-sm" data-toggle="tooltip" title="Copy to clipboard"  data-clipboard-text="${people[d.data.members[i]].Email}"><svg width=".8em" height=".8em" viewBox="0 0 1024 896" class="bi bi-bookmarks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+ <button type="button" class="btn btn-outline-primary copybtn btn-sm" data-toggle="tooltip" title="Copy to clipboard"  data-clipboard-text="${people[d.data.members[i]].Email}"><svg width=".8em" height=".8em" viewBox="0 0 1024 896" class="bi bi-bookmarks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path xmlns="http://www.w3.org/2000/svg" d="M128 768h256v64H128v-64z m320-384H128v64h320v-64z m128 192V448L384 640l192 192V704h320V576H576z m-288-64H128v64h160v-64zM128 704h160v-64H128v64z m576 64h64v128c-1 18-7 33-19 45s-27 18-45 19H64c-35 0-64-29-64-64V192c0-35 29-64 64-64h192C256 57 313 0 384 0s128 57 128 128h192c35 0 64 29 64 64v320h-64V320H64v576h640V768zM128 256h512c0-35-29-64-64-64h-64c-35 0-64-29-64-64s-29-64-64-64-64 29-64 64-29 64-64 64h-64c-35 0-64 29-64 64z"/>
 </svg></button>`).join('<br>')}`)
         dataCell
