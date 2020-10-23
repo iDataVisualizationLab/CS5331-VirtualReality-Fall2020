@@ -1197,40 +1197,40 @@ function textContribution(index){
         .attr("y", nodes[index].y+3)
         .text("Participation: "+nodes[index].score+"%");
 
-    if (nodesCollection["StudentChoice"][index].studentTalk>0){
-        svg.append("text")
-            .attr("class", "textStudentTalk")
-            .style("font-size", "13px")
-            .attr("text-anchor", "left")
-            .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
-            .attr("fill", "#000")
-            .attr("x", radius+nodes[index].x)
-            .attr("y", nodes[index].y+20)
-            .text("SC Talk: "+nodesCollection["StudentChoice"][index].studentTalk+"%");
-    }
-    else{
-        svg.append("text")
-            .attr("class", "textStudentTalk")
-            .style("font-size", "13px")
-            .attr("text-anchor", "left")
-            .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
-            .attr("fill", "#00f")
-            .attr("x", radius+nodes[index].x)
-            .attr("y", nodes[index].y+20)
-            .text("SC Talk: not yet presented");
-
-    }
-    if (nodesCollection["StudentChoice"][index].studentReport>=0){
-        svg.append("text")
-            .attr("class", "textStudentReport")
-            .style("font-size", "13px")
-            .attr("text-anchor", "left")
-            .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
-            .attr("fill", "#000")
-            .attr("x", radius+nodes[index].x)
-            .attr("y", nodes[index].y+35)
-            .text("SC Report: "+nodesCollection["StudentChoice"][index].studentReport+"%");
-    }
+    // if (nodesCollection["StudentChoice"][index].studentTalk>0){
+    //     svg.append("text")
+    //         .attr("class", "textStudentTalk")
+    //         .style("font-size", "13px")
+    //         .attr("text-anchor", "left")
+    //         .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
+    //         .attr("fill", "#000")
+    //         .attr("x", radius+nodes[index].x)
+    //         .attr("y", nodes[index].y+20)
+    //         .text("SC Talk: "+nodesCollection["StudentChoice"][index].studentTalk+"%");
+    // }
+    // else{
+    //     svg.append("text")
+    //         .attr("class", "textStudentTalk")
+    //         .style("font-size", "13px")
+    //         .attr("text-anchor", "left")
+    //         .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
+    //         .attr("fill", "#00f")
+    //         .attr("x", radius+nodes[index].x)
+    //         .attr("y", nodes[index].y+20)
+    //         .text("SC Talk: not yet presented");
+    //
+    // }
+    // if (nodesCollection["StudentChoice"][index].studentReport>=0){
+    //     svg.append("text")
+    //         .attr("class", "textStudentReport")
+    //         .style("font-size", "13px")
+    //         .attr("text-anchor", "left")
+    //         .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
+    //         .attr("fill", "#000")
+    //         .attr("x", radius+nodes[index].x)
+    //         .attr("y", nodes[index].y+35)
+    //         .text("SC Report: "+nodesCollection["StudentChoice"][index].studentReport+"%");
+    // }
 
     // p1 peer-peer review
 
@@ -1241,7 +1241,7 @@ function textContribution(index){
         .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
         .attr("fill", "#000")
         .attr("x", radius+nodes[index].x)
-        .attr("y", nodes[index].y+55)
+        .attr("y", nodes[index].y+20)
         .text("P1 feedback: "+nodesP1[index].P1_survey+"%");
 
     svg.append("text")
@@ -1251,11 +1251,36 @@ function textContribution(index){
         .style("text-shadow", "1px 1px 0 rgba(0, 0, 0")
         .attr("fill", "#f00")
         .attr("x", radius+nodes[index].x)
-        .attr("y", nodes[index].y+75)
+        .attr("y", nodes[index].y+35)
         .text("Final grade: "+nodes[index].finalScore+"%"+' '+nodes[index].finalLetter);
 }
 
 function textP1(index){
+    // Student Choice
+    if (nodesCollection["StudentChoice"][index].studentTalk>0){
+        svg.append("text")
+            .attr("class", "textStudentTalk")
+            .style("font-size", "13px")
+            .attr("text-anchor", "left")
+            .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
+            .attr("fill", "#000")
+            .attr("x", radius+nodesCollection['StudentChoice'][index].x)
+            .attr("y", nodesCollection['StudentChoice'][index].y-12)
+            .text("SC Talk: "+nodesCollection["StudentChoice"][index].studentTalk+"%");
+    }
+    if (nodesCollection["StudentChoice"][index].studentReport>=0){
+        svg.append("text")
+            .attr("class", "textStudentReport")
+            .style("font-size", "13px")
+            .attr("text-anchor", "left")
+            .style("text-shadow", "1px 1px 0 rgba(200, 200, 200, 0.9")
+            .attr("fill", "#000")
+            .attr("x", radius+nodesCollection['StudentChoice'][index].x)
+            .attr("y", nodesCollection['StudentChoice'][index].y+3)
+            .text("SC Report: "+nodesCollection["StudentChoice"][index].studentReport+"%");
+    }
+
+    // Project 1
     svg.append("text")
         .attr("class", "textP1")
         .style("font-size", "13px")
