@@ -1273,7 +1273,7 @@ function textP1(index){
         .attr("fill", "#000")
         .attr("x", radius+nodesP1[index].x)
         .attr("y", nodesP1[index].y+3)
-        .text("Presentation: "+(nodesP1[index].P1_talk+nodesP1[index].P1_report)+"%");
+        .text(" Presentation&Report: "+(nodesP1[index].P1_talk+nodesP1[index].P1_report)+"%");
 
 
     // Project 2
