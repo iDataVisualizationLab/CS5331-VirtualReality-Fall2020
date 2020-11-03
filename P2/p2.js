@@ -1,5 +1,5 @@
 lastTime = new Date('8/30/2020');
-let key = ['id','name','abstract','demo','githubURL','screenshot','note'];
+let key = ['id','name','abstract','url','githubURL','screenshot','note'];
 function replaceString(key){
     switch (key) {
         case 'demo':
