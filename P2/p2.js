@@ -4,6 +4,8 @@ function replaceString(key){
     switch (key) {
         case 'demo':
             return 'demo link';
+        case 'url':
+            return 'demo url';
         case 'githubURL':
             return 'github link';
         default:
@@ -52,7 +54,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
             .join('td')
             .text(d=>d.value);
-        dataCell .filter(d=>(d.key==="demo" ||d.key==='githubURL')&&d.value!=='')
+        dataCell .filter(d=>(d.key==="demo" || d.key==="url" ||d.key==='githubURL')&&d.value!=='')
             .text(()=>'')
             .selectAll('a')
             .data(d=>d.value?[d]:[])
