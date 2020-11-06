@@ -99,7 +99,7 @@
            table.appendChild(tr);
          }
 
-         d3.csv("https://cs5331-vr-fall202.herokuapp.com/students",function (data) {
+         d3.json("https://cs5331-vr-fall202.herokuapp.com/students",function (data) {
            data=data.filter(d=>+d.onclass).sort((a,b)=>a.id-b.id);
             data.forEach(function (t,i) {
               let tableid = Math.floor(i/15);
