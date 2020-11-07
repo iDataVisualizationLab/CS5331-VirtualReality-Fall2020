@@ -128,7 +128,7 @@
         g.select('.xlabel').attr('x',x.range()[1]/2).attr('y',y.range()[0]+40);
         g.select('.ylabel').attr('dx',-y.range()[0]/2).attr('dy',-40).attr('transform',`rotate(-90)`);
         g.select('g.axisy')
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y).tickFormat(formatTick));
         let format = (d)=>{
             const s = d3.format('.1f')(d);
             if(s!=='NaN')
@@ -141,6 +141,9 @@
         d3.select('#p2').text(format(json.p2));
         function convert(s) {
             return s!==''?+s:undefined;
+        }
+        function formatTick(d) {
+            return d+'%';
         }
     }
 </script>
