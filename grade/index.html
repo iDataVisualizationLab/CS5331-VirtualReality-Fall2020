@@ -10,7 +10,8 @@
 </head>
 <body>
 <div class="container" id="container">
-    <div class="card" id="signin">
+    <div class="card shadow" id="signin">
+        <div class="card-body">
         <form action="https://cs5331-vr-fall202.herokuapp.com/scores" method="get" name="showgrade">
             <h1>Input your Nickname</h1>
             <input id="name" name="nickname" type="text" placeholder="Nickname" />
@@ -18,8 +19,10 @@
             <br>
             <button type="submit">Show grade</button>
         </form>
+        </div>
     </div>
-    <div class="card hide" id="grade">
+    <div class="card hide shadow" id="grade">
+        <div class="card-body">
         <div class="center">
             <svg width="400" height="300"></svg>
             <table class="table table-striped table-bordered">
@@ -47,6 +50,7 @@
             </svg> Back</button>
 
         </div>
+        </div>
     </div>
 </div>
 <script>
@@ -71,7 +75,7 @@
     function draw(json){
         const width = 400;
         const height = 300;
-        const margin = {left:40,right:10,bottom:50,top:10}
+        const margin = {left:60,right:10,bottom:50,top:10}
         let sum = 0;
         json.array = json.array.filter(d=>{
             d.date=new Date(d.date);
@@ -101,16 +105,28 @@
             .attr('transform',`translate(${margin.left},${margin.top})`)
             g.append('g').attr('class','axisx').attr('transform',`translate(0,${height-margin.top-margin.bottom})`);
             g.append('g').attr('class','axisy');
+            g.append('text').text('Participations in final grade (%)')
+                .attr('text-anchor','middle')
+                .attr('class','ylabel')
+                .attr('font-weight','bold')
+                .attr('font-size','13');
+            g.append('text').text('Date')
+                .attr('text-anchor','middle')
+                .attr('class','xlabel')
+                .attr('font-weight','bold')
+                .attr('font-size','13');
         }
         let x = d3.scaleTime().domain(d3.extent(json.array,d=>d.date)).range([0,width-margin.left-margin.right]);
         let y = d3.scaleLinear().domain([0,25]).range([height-margin.top-margin.bottom,0]);
-        debugger
         g.selectAll('path.grade').data([json.array])
         .join('path').attr('d',d3.line().curve(d3.curveBasis).x(d=>x(d.date)).y(d=>y(d.scoreSum)))
         .attr('fill','none')
         .attr('stroke','steelblue')
         g.select('g.axisx')
-        .call(d3.axisBottom(x))
+        .call(d3.axisBottom(x));
+
+        g.select('.xlabel').attr('x',x.range()[1]/2).attr('y',y.range()[0]+40);
+        g.select('.ylabel').attr('dx',-y.range()[0]/2).attr('dy',-40).attr('transform',`rotate(-90)`);
         g.select('g.axisy')
         .call(d3.axisLeft(y));
         let format = (d)=>{
