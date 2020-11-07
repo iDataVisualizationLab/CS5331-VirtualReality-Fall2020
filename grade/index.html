@@ -51,6 +51,10 @@
                         <th scope="row">Project 2</th>
                         <td id="p2"></td>
                     </tr>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td id="total"></td>
+                    </tr>
                 </tbody>
             </table>
             </div>
@@ -106,9 +110,11 @@
         json.info['P2_feedback'] = convert(json.info['P2_feedback']);
         json.info['P2_talk'] = convert(json.info['P2_talk']);
 
+        json.participant = json.array[json.array.length-1].scoreSum;
         json.sc = json.info['StudentReport']===undefined?'---':(+json.info['StudentReport']+json.info['StudentTalk'])
         json.p1 = json.info['P1_code']===undefined?'---':(+json.info['P1_code']+json.info['P1_report']+json.info['P1_survey']+json.info['P1_talk']);
         json.p2  = json.info['P2_code']===undefined?'---':(+json.info['P2_code']+json.info['P2_report']+json.info['P2_feedback']+json.info['P2_talk']);
+        json.total =  json.participant+(+json.sc||0)+ (+json.p1||0)+ (+json.p2||0)
 
         const svg = d3.select('#grade svg');
         let g = svg.select('g.content');
@@ -145,13 +151,14 @@
         let format = (d)=>{
             const s = d3.format('.1f')(d);
             if(s!=='NaN')
-                return s;
+                return s+'%';
             return d
         };
         d3.select('#Participant').text(format(json.array[json.array.length-1].scoreSum));
         d3.select('#sc').text(format(json.sc));
         d3.select('#p1').text(format(json.p1));
         d3.select('#p2').text(format(json.p2));
+        d3.select('#total').text(format(json.total));
         function convert(s) {
             return s!==''?+s:undefined;
         }

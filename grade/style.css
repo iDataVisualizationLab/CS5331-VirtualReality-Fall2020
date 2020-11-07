@@ -269,7 +269,7 @@ table tr th{
 }
 table{
     max-width: 400px;
-    font-size: 100%;
+    font-size: 14px;
 }
 
 .is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip {
