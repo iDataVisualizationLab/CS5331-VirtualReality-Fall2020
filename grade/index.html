@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grade</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="../slider/js/jquery.js"></script>
+</head>
+<body>
+<div class="container" id="container">
+    <div class="form-container sign-in-container">
+        <form action="https://cs5331-vr-fall202.herokuapp.com/students/list" method="get" name="showgrade">
+            <h1>Input your Nickname</h1>
+            <input id="name" name="nickname" type="text" placeholder="Nickname" />
+            <span>Forgot your Nickname? Email TA <span class="email">Ngan.V.T.Nguyen@ttu.edu</span></span>
+            <br>
+            <button type="submit">Show grade</button>
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('form[name=showgrade]').submit(function(){
+            console.log($(this).serialize())
+            $.get($(this).attr('action'), $(this).serialize(), function(json) {
+                console.log(json);
+            }, 'json');
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
