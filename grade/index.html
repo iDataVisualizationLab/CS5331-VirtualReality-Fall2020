@@ -12,9 +12,16 @@
 <div class="container" id="container">
     <div class="card shadow" id="signin">
         <div class="card-body">
-        <form action="https://cs5331-vr-fall202.herokuapp.com/scores" method="get" name="showgrade">
+        <form action="https://cs5331-vr-fall202.herokuapp.com/scores" method="get" name="showgrade" class="needs-validation" novalidate>
             <h1>Input your Nickname</h1>
-            <input id="name" name="nickname" type="text" placeholder="Nickname" />
+            <div class="form-row justify-content-md-center">
+                <div class="col col-lg-5">
+                    <input id="name" name="nickname" type="text" class="form-control" placeholder="Nickname" />
+                    <div class="invalid-tooltip">
+                        Please provide a valid nickname.
+                    </div>
+                </div>
+            </div>
             <span>Forgot your Nickname? Email TA <span class="email">Ngan.V.T.Nguyen@ttu.edu</span></span>
             <br>
             <button type="submit">Show grade</button>
@@ -58,16 +65,19 @@
         $('form[name=showgrade]').submit(function(){
             console.log($(this).serialize())
             $.get($(this).attr('action'), $(this).serialize(), function(json) {
+                d3.select('#name').classed('is-invalid',false);
                 d3.select('#signin').classed('hide',true);
                 d3.select('#grade').classed('hide',false);
                 draw(json);
 
             }, 'json').fail(function(xhr, status, error) {
                 console.log({xhr, status, error});
+                d3.select('#name').classed('is-invalid',true)
             });
             return false;
         });
     });
+    d3.select('#name').on('change',function(){d3.select(this).classed('is-invalid',false);})
     d3.select('#back').on('click',function(){
         d3.select('#signin').classed('hide',false);
         d3.select('#grade').classed('hide',true);
@@ -120,6 +130,7 @@
         let y = d3.scaleLinear().domain([0,25]).range([height-margin.top-margin.bottom,0]);
         g.selectAll('path.grade').data([json.array])
         .join('path').attr('d',d3.line().curve(d3.curveBasis).x(d=>x(d.date)).y(d=>y(d.scoreSum)))
+        .attr('class','grade')
         .attr('fill','none')
         .attr('stroke','steelblue')
         g.select('g.axisx')
