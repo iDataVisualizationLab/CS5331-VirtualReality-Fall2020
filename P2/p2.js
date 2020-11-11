@@ -41,7 +41,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             d['Student Image']= d.members.map(id=>'../photos/'+(people[id]||{})['Photoname']);});
 
         debugger
-        let comments = d3.nest().key(d=>d.presenter_id).map(dataRaw[2].filter(d=>d.comment!=="" && (!new RegExp(/hardship/i).test(d.comment))))
+        let comments = d3.nest().key(d=>d.presenter_id).map(dataRaw[2].filter(d=>d.comment!=="" && (!new RegExp(/hardship|same question/i).test(d.comment))))
 
         //sort by presentation day
         data.sort((a,b)=>a.date-b.date);
