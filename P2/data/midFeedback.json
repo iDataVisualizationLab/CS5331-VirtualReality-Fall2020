@@ -966,12 +966,6 @@
   "comment": "11: How difficult is it to track the level of sound produced by the user?"
 },{
   "_id": {
-    "$oid": "5fa0868d2f3cbb00171c9d66"
-  },
-  "presenter_id": "4",
-  "comment": "Great job !!"
-},{
-  "_id": {
     "$oid": "5fa0868e2f3cbb00171c9d67"
   },
   "presenter_id": "4",
@@ -2608,18 +2602,6 @@
   },
   "presenter_id": "11",
   "comment": ""
-},{
-  "_id": {
-    "$oid": "5fa9bd5169c2aa00176ccf7f"
-  },
-  "presenter_id": "11",
-  "comment": "Great!"
-},{
-  "_id": {
-    "$oid": "5fa9bd5a69c2aa00176ccf80"
-  },
-  "presenter_id": "11",
-  "comment": "Great!"
 },{
   "_id": {
     "$oid": "5fa9bd5b69c2aa00176ccf81"

@@ -65,7 +65,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             .html(d=>d.value);
         dataCell .filter(d=>(d.key.map || d.key==="demo" || d.key==="url" ||d.key==='githubURL')&&d.value!=='')
             .text(()=>'')
-            .html(d=>(d.key.map?d.value:[d.value]).map((v,i)=>`
+            .html(d=>(d.key.map?d.value:[d.value]).filter(v=>v!=='').map((v,i)=>`
             <a href="${v!==''?v:'#'}" target="_blank">${replaceString(d.key[i])}</a>
             `).join(', '))
 
