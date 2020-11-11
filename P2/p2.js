@@ -1,5 +1,6 @@
 lastTime = new Date('8/30/2020');
-let key = ['id','name','abstract','url','githubURL','screenshot','note'];
+// let key = ['id','name','abstract',['url','githubURL'],'comment','screenshot','note'];
+let key = ['id','name','abstract',['url','githubURL'],'comment','note'];
 function replaceString(key){
     switch (key) {
         case 'demo':
@@ -14,19 +15,19 @@ function replaceString(key){
 }
 
 Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
-    ,d3.csv('P2_group.csv')])
+    ,d3.csv('P2_group.csv'),d3.json('data/midFeedback.json')])
     .then(function(dataRaw){
         // date for highlight
         let limit_time = new Date();
 
         let data = dataRaw[1];
-        debugger
+
         let notPresentyet = data.filter(d=>(d.date=new Date(d['Schedule']+' 16:55'), d.date>=limit_time));
         let thresholdDate = new Date(+d3.min(notPresentyet,d=>d.date));
         console.log(thresholdDate)
 
         thresholdDate.setHours(16);
-        debugger
+
         notPresentyet.filter(d=>d.date<=thresholdDate).forEach(d=>d.isHighlight = true);
 
         let dataPeople = dataRaw[0].filter(d=>+d.onclass);
@@ -39,28 +40,35 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             d.members = d.members.split(',');
             d['Student Image']= d.members.map(id=>'../photos/'+(people[id]||{})['Photoname']);});
 
+        debugger
+        let comments = d3.nest().key(d=>d.presenter_id).map(dataRaw[2].filter(d=>d.comment!==""))
 
         //sort by presentation day
         data.sort((a,b)=>a.date-b.date);
         //adjust image link
         data.forEach(d=>d['screenshot']=d['screenshot']===''?'':`http://drive.google.com/uc?export=view&id=${d['screenshot'].split('id=')[1]}`)
 
-        data.forEach((d,i)=>d.ID=i+1);
+        data.forEach((d,i)=>{
+            d.ID=i+1;
+            d.abstract = `<div style="max-height: 220px; overflow-y: auto">${d.abstract}</div>`
+            d.comment = '<div style="max-height: 220px; overflow-y: auto">'+(comments.get(d.ID)??[]).map(d=>d.comment).join('<br></br>')+'</div>';
+        });
+
+
         let dataCell = d3.select('#currentTopic tbody').selectAll('tr').data(data)
             .join('tr')
             .classed('pluse-red',d=>d.isHighlight)
             // .style('background-color',d=>d.url!==''?null:'#ffc4c4')
             .selectAll('td')
-            .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
+            .data(d=>key.map(k=>({key:k, value:k.map?k.map(e=>e[k]): d[k], data:d})))
             .join('td')
-            .text(d=>d.value);
-        dataCell .filter(d=>(d.key==="demo" || d.key==="url" ||d.key==='githubURL')&&d.value!=='')
+            .html(d=>d.value);
+        dataCell .filter(d=>(d.key.map || d.key==="demo" || d.key==="url" ||d.key==='githubURL')&&d.value!=='')
             .text(()=>'')
-            .selectAll('a')
-            .data(d=>d.value?[d]:[])
-            .join('a')
-            .attr('href',d=>d.data['Link']===''?'#':d.value)
-            .attr('target','_blank').text(d=>replaceString(d.key))
+            .html(d=>(d.key.map?d.value:[d.value]).map((v,i)=>`
+            <a href="${v!==''?v:'#'}" target="_blank">${replaceString(d.key[i])}</a>
+            `).join(', '))
+
         dataCell
             .filter(d=>d.key==="id")
             .classed('name',true)

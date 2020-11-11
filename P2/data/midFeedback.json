@@ -1,0 +1,4615 @@
+[{
+  "_id": {
+    "$oid": "5fa082c32f3cbb00171c9cc5"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082cc2f3cbb00171c9cc6"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082d02f3cbb00171c9cc7"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082d62f3cbb00171c9cc8"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082dc2f3cbb00171c9cc9"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082e32f3cbb00171c9cca"
+  },
+  "presenter_id": "1",
+  "comment": "What was the most hardship making this game?"
+},{
+  "_id": {
+    "$oid": "5fa082e72f3cbb00171c9ccb"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082ee2f3cbb00171c9ccc"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa082ef2f3cbb00171c9ccd"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa083082f3cbb00171c9cce"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa083122f3cbb00171c9ccf"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa083132f3cbb00171c9cd0"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa083142f3cbb00171c9cd1"
+  },
+  "presenter_id": "1",
+  "comment": "How will the player move around?"
+},{
+  "_id": {
+    "$oid": "5fa083162f3cbb00171c9cd2"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa083172f3cbb00171c9cd3"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0831b2f3cbb00171c9cd4"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0831f2f3cbb00171c9cd5"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa083232f3cbb00171c9cd6"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0832a2f3cbb00171c9cd7"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0832b2f3cbb00171c9cd8"
+  },
+  "presenter_id": "1",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084122f3cbb00171c9cd9"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0841a2f3cbb00171c9cda"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084232f3cbb00171c9cdb"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084262f3cbb00171c9cdc"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0842d2f3cbb00171c9cdd"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084372f3cbb00171c9cde"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084382f3cbb00171c9cdf"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084382f3cbb00171c9ce0"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084392f3cbb00171c9ce1"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0843c2f3cbb00171c9ce2"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0843d2f3cbb00171c9ce3"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0843d2f3cbb00171c9ce4"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0843f2f3cbb00171c9ce5"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084422f3cbb00171c9ce6"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084432f3cbb00171c9ce7"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084442f3cbb00171c9ce8"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084462f3cbb00171c9ce9"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084472f3cbb00171c9cea"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084472f3cbb00171c9ceb"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084482f3cbb00171c9cec"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0844d2f3cbb00171c9ced"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0844e2f3cbb00171c9cee"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0844e2f3cbb00171c9cef"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0844f2f3cbb00171c9cf0"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084532f3cbb00171c9cf1"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084572f3cbb00171c9cf2"
+  },
+  "presenter_id": "2",
+  "comment": "Do the pedestrians have a pre determined path or a more randomized general direction path?"
+},{
+  "_id": {
+    "$oid": "5fa084582f3cbb00171c9cf3"
+  },
+  "presenter_id": "2",
+  "comment": "How do you avoid getting COVID from pedestrians?"
+},{
+  "_id": {
+    "$oid": "5fa084612f3cbb00171c9cf4"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084612f3cbb00171c9cf5"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084662f3cbb00171c9cf6"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0846a2f3cbb00171c9cf7"
+  },
+  "presenter_id": "2",
+  "comment": "Do the pedestrians have a pre determined path or a more randomized general direction path?"
+},{
+  "_id": {
+    "$oid": "5fa0846b2f3cbb00171c9cf8"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084722f3cbb00171c9cf9"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084722f3cbb00171c9cfa"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084732f3cbb00171c9cfb"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084772f3cbb00171c9cfc"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0847a2f3cbb00171c9cfd"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0847b2f3cbb00171c9cfe"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0847b2f3cbb00171c9cff"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0847e2f3cbb00171c9d00"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0847f2f3cbb00171c9d01"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084832f3cbb00171c9d02"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084882f3cbb00171c9d03"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0848c2f3cbb00171c9d04"
+  },
+  "presenter_id": "2",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa084912f3cbb00171c9d05"
+  },
+  "presenter_id": "2",
+  "comment": "How will the player move around?"
+},{
+  "_id": {
+    "$oid": "5fa084992f3cbb00171c9d06"
+  },
+  "presenter_id": "2",
+  "comment": "Biggest challenges you think you face"
+},{
+  "_id": {
+    "$oid": "5fa085082f3cbb00171c9d07"
+  },
+  "presenter_id": "3",
+  "comment": "Confusing geometry can give people headaches in vr. How will you design the labyrinths to avoid this?"
+},{
+  "_id": {
+    "$oid": "5fa0850c2f3cbb00171c9d08"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0850f2f3cbb00171c9d09"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085182f3cbb00171c9d0a"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0851a2f3cbb00171c9d0b"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0851f2f3cbb00171c9d0c"
+  },
+  "presenter_id": "3",
+  "comment": "Confusing geometry can give people headaches in vr. How will you design the labyrinths to avoid this?"
+},{
+  "_id": {
+    "$oid": "5fa085232f3cbb00171c9d0d"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085262f3cbb00171c9d0e"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085272f3cbb00171c9d0f"
+  },
+  "presenter_id": "3",
+  "comment": "Will multiplayer become a challenge for you to develop?"
+},{
+  "_id": {
+    "$oid": "5fa0852a2f3cbb00171c9d10"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0852c2f3cbb00171c9d11"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085302f3cbb00171c9d12"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085312f3cbb00171c9d13"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085322f3cbb00171c9d14"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085332f3cbb00171c9d15"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085382f3cbb00171c9d16"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085392f3cbb00171c9d17"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0853a2f3cbb00171c9d18"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0853c2f3cbb00171c9d19"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0853d2f3cbb00171c9d1a"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085462f3cbb00171c9d1b"
+  },
+  "presenter_id": "3",
+  "comment": "Confusing geometry can give people headaches in vr. How will you design the labyrinths to avoid this?"
+},{
+  "_id": {
+    "$oid": "5fa085462f3cbb00171c9d1c"
+  },
+  "presenter_id": "3",
+  "comment": "Would the two player aspect of the game require two sets of headsets/controllers in order to use?"
+},{
+  "_id": {
+    "$oid": "5fa085462f3cbb00171c9d1d"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085482f3cbb00171c9d1e"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0854a2f3cbb00171c9d1f"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0854b2f3cbb00171c9d20"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0854b2f3cbb00171c9d21"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0854d2f3cbb00171c9d22"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0854f2f3cbb00171c9d23"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085522f3cbb00171c9d24"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085542f3cbb00171c9d25"
+  },
+  "presenter_id": "3",
+  "comment": "How will two players play at once?"
+},{
+  "_id": {
+    "$oid": "5fa085552f3cbb00171c9d26"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085552f3cbb00171c9d27"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0855c2f3cbb00171c9d28"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085622f3cbb00171c9d29"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085632f3cbb00171c9d2a"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085632f3cbb00171c9d2b"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085632f3cbb00171c9d2c"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085652f3cbb00171c9d2d"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085662f3cbb00171c9d2e"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085672f3cbb00171c9d2f"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085672f3cbb00171c9d30"
+  },
+  "presenter_id": "3",
+  "comment": "Will you be creating the 3D models and environment yourself or will you be grabbing models from another location? "
+},{
+  "_id": {
+    "$oid": "5fa0856b2f3cbb00171c9d31"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0856c2f3cbb00171c9d32"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0856e2f3cbb00171c9d33"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0856e2f3cbb00171c9d34"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0856f2f3cbb00171c9d35"
+  },
+  "presenter_id": "3",
+  "comment": "How are you going to implement thwe voice control?\n"
+},{
+  "_id": {
+    "$oid": "5fa085702f3cbb00171c9d36"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085712f3cbb00171c9d37"
+  },
+  "presenter_id": "3",
+  "comment": "How will two players play at once?"
+},{
+  "_id": {
+    "$oid": "5fa085722f3cbb00171c9d38"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085732f3cbb00171c9d39"
+  },
+  "presenter_id": "3",
+  "comment": "Will you be creating the 3D models and environment yourself or will you be grabbing models from another location? "
+},{
+  "_id": {
+    "$oid": "5fa085792f3cbb00171c9d3a"
+  },
+  "presenter_id": "3",
+  "comment": "How are you going to implement thwe voice control?\n"
+},{
+  "_id": {
+    "$oid": "5fa0857b2f3cbb00171c9d3b"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085812f3cbb00171c9d3c"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085862f3cbb00171c9d3d"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa085892f3cbb00171c9d3e"
+  },
+  "presenter_id": "3",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086452f3cbb00171c9d3f"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0864c2f3cbb00171c9d40"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0864c2f3cbb00171c9d41"
+  },
+  "presenter_id": "4",
+  "comment": "Amazing idea. Will there be some sort of bar or sound meter to tell you how much energy you've \"charged up\"?"
+},{
+  "_id": {
+    "$oid": "5fa0864d2f3cbb00171c9d42"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0864e2f3cbb00171c9d43"
+  },
+  "presenter_id": "4",
+  "comment": "What VR hardware will you use for the game?"
+},{
+  "_id": {
+    "$oid": "5fa086512f3cbb00171c9d44"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086552f3cbb00171c9d45"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086582f3cbb00171c9d46"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086582f3cbb00171c9d47"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086592f3cbb00171c9d48"
+  },
+  "presenter_id": "4",
+  "comment": "How does the intensity of the noises you make affect the game in terms of different people and their differing volumes?"
+},{
+  "_id": {
+    "$oid": "5fa0865a2f3cbb00171c9d49"
+  },
+  "presenter_id": "4",
+  "comment": "How are you going to deal with the power bar for each shot?"
+},{
+  "_id": {
+    "$oid": "5fa0865a2f3cbb00171c9d4a"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0865b2f3cbb00171c9d4b"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0865f2f3cbb00171c9d4c"
+  },
+  "presenter_id": "4",
+  "comment": "How hard do you think the physics engine will be implemented on the game? "
+},{
+  "_id": {
+    "$oid": "5fa086602f3cbb00171c9d4d"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086612f3cbb00171c9d4e"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086612f3cbb00171c9d4f"
+  },
+  "presenter_id": "4",
+  "comment": "What VR hardware will you use for the game?"
+},{
+  "_id": {
+    "$oid": "5fa086632f3cbb00171c9d50"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086632f3cbb00171c9d51"
+  },
+  "presenter_id": "4",
+  "comment": "This is a really cool idea!  I'd play it"
+},{
+  "_id": {
+    "$oid": "5fa086652f3cbb00171c9d52"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086672f3cbb00171c9d53"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0866d2f3cbb00171c9d54"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0866e2f3cbb00171c9d55"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086732f3cbb00171c9d56"
+  },
+  "presenter_id": "4",
+  "comment": "Will there be any accessibility settings for people who are mute?"
+},{
+  "_id": {
+    "$oid": "5fa086792f3cbb00171c9d57"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0867a2f3cbb00171c9d58"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0867c2f3cbb00171c9d59"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0867d2f3cbb00171c9d5a"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0867d2f3cbb00171c9d5b"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086832f3cbb00171c9d5c"
+  },
+  "presenter_id": "4",
+  "comment": "Will there be any accessibility settings for people who are mute?"
+},{
+  "_id": {
+    "$oid": "5fa086842f3cbb00171c9d5d"
+  },
+  "presenter_id": "4",
+  "comment": "How hard do you think the physics engine will be implemented on the game? "
+},{
+  "_id": {
+    "$oid": "5fa086852f3cbb00171c9d5e"
+  },
+  "presenter_id": "4",
+  "comment": "Could this game strain the voice of a player as they try to have a harder shot by screaming?\n\nGood job!"
+},{
+  "_id": {
+    "$oid": "5fa086852f3cbb00171c9d5f"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086862f3cbb00171c9d60"
+  },
+  "presenter_id": "4",
+  "comment": "How are you going to deal with the power bar for each shot?"
+},{
+  "_id": {
+    "$oid": "5fa086872f3cbb00171c9d61"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086882f3cbb00171c9d62"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086892f3cbb00171c9d63"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0868b2f3cbb00171c9d64"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0868d2f3cbb00171c9d65"
+  },
+  "presenter_id": "4",
+  "comment": "11: How difficult is it to track the level of sound produced by the user?"
+},{
+  "_id": {
+    "$oid": "5fa0868d2f3cbb00171c9d66"
+  },
+  "presenter_id": "4",
+  "comment": "Great job !!"
+},{
+  "_id": {
+    "$oid": "5fa0868e2f3cbb00171c9d67"
+  },
+  "presenter_id": "4",
+  "comment": "Biggest challenges you think you face"
+},{
+  "_id": {
+    "$oid": "5fa086912f3cbb00171c9d68"
+  },
+  "presenter_id": "4",
+  "comment": "Will there be any accessibility settings for people who are mute?"
+},{
+  "_id": {
+    "$oid": "5fa086952f3cbb00171c9d69"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086972f3cbb00171c9d6a"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086982f3cbb00171c9d6b"
+  },
+  "presenter_id": "4",
+  "comment": "I love the idea"
+},{
+  "_id": {
+    "$oid": "5fa0869a2f3cbb00171c9d6c"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0869c2f3cbb00171c9d6d"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0869e2f3cbb00171c9d6e"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086a02f3cbb00171c9d6f"
+  },
+  "presenter_id": "4",
+  "comment": "Could this game strain the voice of a player as they try to have a harder shot by screaming?\n\nGood job!"
+},{
+  "_id": {
+    "$oid": "5fa086a42f3cbb00171c9d70"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086a42f3cbb00171c9d71"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086a52f3cbb00171c9d72"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086a52f3cbb00171c9d73"
+  },
+  "presenter_id": "4",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa086a92f3cbb00171c9d74"
+  },
+  "presenter_id": "4",
+  "comment": "What VR hardware will you use for the game?"
+},{
+  "_id": {
+    "$oid": "5fa086ae2f3cbb00171c9d75"
+  },
+  "presenter_id": "4",
+  "comment": "Could this game strain the voice of a player as they try to have a harder shot by screaming?\n\nGood job!"
+},{
+  "_id": {
+    "$oid": "5fa086af2f3cbb00171c9d76"
+  },
+  "presenter_id": "4",
+  "comment": "60. Amazing Idea"
+},{
+  "_id": {
+    "$oid": "5fa087472f3cbb00171c9d77"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087492f3cbb00171c9d78"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087522f3cbb00171c9d79"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087542f3cbb00171c9d7a"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087572f3cbb00171c9d7b"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087632f3cbb00171c9d7c"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087642f3cbb00171c9d7d"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087642f3cbb00171c9d7e"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087682f3cbb00171c9d7f"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0876a2f3cbb00171c9d80"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0876c2f3cbb00171c9d81"
+  },
+  "presenter_id": "5",
+  "comment": "What is the range of recipes? Also how would you judge correctness?"
+},{
+  "_id": {
+    "$oid": "5fa0876d2f3cbb00171c9d82"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0876e2f3cbb00171c9d83"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0876e2f3cbb00171c9d84"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087712f3cbb00171c9d85"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087722f3cbb00171c9d86"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087762f3cbb00171c9d87"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087792f3cbb00171c9d88"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0877e2f3cbb00171c9d89"
+  },
+  "presenter_id": "5",
+  "comment": "How are you guys going to implement the game?"
+},{
+  "_id": {
+    "$oid": "5fa0877f2f3cbb00171c9d8a"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087822f3cbb00171c9d8b"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087872f3cbb00171c9d8c"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0878b2f3cbb00171c9d8d"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0878d2f3cbb00171c9d8e"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0878e2f3cbb00171c9d8f"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0878f2f3cbb00171c9d90"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087952f3cbb00171c9d91"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087962f3cbb00171c9d92"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087992f3cbb00171c9d93"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0879a2f3cbb00171c9d94"
+  },
+  "presenter_id": "5",
+  "comment": "A voice narration talking to the person would be a funny and great way for the instructions. Also add a book with the words too"
+},{
+  "_id": {
+    "$oid": "5fa0879b2f3cbb00171c9d95"
+  },
+  "presenter_id": "5",
+  "comment": "What is the range of recipes? Also how would you judge correctness?"
+},{
+  "_id": {
+    "$oid": "5fa0879b2f3cbb00171c9d96"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0879c2f3cbb00171c9d97"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087a12f3cbb00171c9d98"
+  },
+  "presenter_id": "5",
+  "comment": "How many recipes and ingredients are you planning on adding? Also, how about floating instructions with a timer for each step? "
+},{
+  "_id": {
+    "$oid": "5fa087a42f3cbb00171c9d99"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087a62f3cbb00171c9d9a"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087a72f3cbb00171c9d9b"
+  },
+  "presenter_id": "5",
+  "comment": "Nice drawing, will you have like a ruined dish, if they screwed up a dish? over cooking? Could use a questline for cooking. Like how you had user input."
+},{
+  "_id": {
+    "$oid": "5fa087a82f3cbb00171c9d9c"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087a92f3cbb00171c9d9d"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087b12f3cbb00171c9d9e"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087b12f3cbb00171c9d9f"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087b22f3cbb00171c9da0"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087b42f3cbb00171c9da1"
+  },
+  "presenter_id": "5",
+  "comment": "Definitely keep the menu on the screen!"
+},{
+  "_id": {
+    "$oid": "5fa087b62f3cbb00171c9da2"
+  },
+  "presenter_id": "5",
+  "comment": "I think y'all nailed it!!!!!!!"
+},{
+  "_id": {
+    "$oid": "5fa087b92f3cbb00171c9da3"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087ba2f3cbb00171c9da4"
+  },
+  "presenter_id": "5",
+  "comment": "Nice drawing, will you have like a ruined dish, if they screwed up a dish? over cooking? Could use a questline for cooking. Like how you had user input."
+},{
+  "_id": {
+    "$oid": "5fa087ba2f3cbb00171c9da5"
+  },
+  "presenter_id": "5",
+  "comment": "Definitely keep the menu on the screen!"
+},{
+  "_id": {
+    "$oid": "5fa087c02f3cbb00171c9da6"
+  },
+  "presenter_id": "5",
+  "comment": "A voice narration talking to the person would be a funny and great way for the instructions. Also add a book with the words too"
+},{
+  "_id": {
+    "$oid": "5fa087c62f3cbb00171c9da7"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa087c82f3cbb00171c9da8"
+  },
+  "presenter_id": "5",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0883c2f3cbb00171c9da9"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088412f3cbb00171c9daa"
+  },
+  "presenter_id": "6",
+  "comment": "The character should be a Bee so the name can be BeeAMAZEd."
+},{
+  "_id": {
+    "$oid": "5fa088482f3cbb00171c9dab"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0884a2f3cbb00171c9dac"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0884c2f3cbb00171c9dad"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0884f2f3cbb00171c9dae"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088522f3cbb00171c9daf"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088552f3cbb00171c9db0"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088582f3cbb00171c9db1"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088592f3cbb00171c9db2"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0885f2f3cbb00171c9db3"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088622f3cbb00171c9db4"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088642f3cbb00171c9db5"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088672f3cbb00171c9db6"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088682f3cbb00171c9db7"
+  },
+  "presenter_id": "6",
+  "comment": "Well there be a difficulty meter. Easy, medium, hard? If so how will that change the difficulty?"
+},{
+  "_id": {
+    "$oid": "5fa088692f3cbb00171c9db8"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0886f2f3cbb00171c9db9"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088702f3cbb00171c9dba"
+  },
+  "presenter_id": "6",
+  "comment": "The character should be a Bee so the name can be BeeAMAZEd."
+},{
+  "_id": {
+    "$oid": "5fa088732f3cbb00171c9dbb"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088752f3cbb00171c9dbc"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088752f3cbb00171c9dbd"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088762f3cbb00171c9dbe"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088782f3cbb00171c9dbf"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088792f3cbb00171c9dc0"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0887d2f3cbb00171c9dc1"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0887d2f3cbb00171c9dc2"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088862f3cbb00171c9dc3"
+  },
+  "presenter_id": "6",
+  "comment": "What do you think will be is the hardest feature to implement? "
+},{
+  "_id": {
+    "$oid": "5fa088952f3cbb00171c9dc4"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088962f3cbb00171c9dc5"
+  },
+  "presenter_id": "6",
+  "comment": "#14. what can we do with the equipment? and What is the power up for?"
+},{
+  "_id": {
+    "$oid": "5fa0889a2f3cbb00171c9dc6"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0889a2f3cbb00171c9dc7"
+  },
+  "presenter_id": "6",
+  "comment": "How would the autonomous enemy affect gameplay, since it's a maze with puzzles and minigames? Would it become frustrating if too many encounters with it occur while doing a task?"
+},{
+  "_id": {
+    "$oid": "5fa0889b2f3cbb00171c9dc8"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa0889f2f3cbb00171c9dc9"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088a32f3cbb00171c9dca"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088a32f3cbb00171c9dcb"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088a32f3cbb00171c9dcc"
+  },
+  "presenter_id": "6",
+  "comment": "How would the autonomous enemy affect gameplay, since it's a maze with puzzles and minigames? Would it become frustrating if too many encounters with it occur while doing a task?"
+},{
+  "_id": {
+    "$oid": "5fa088a52f3cbb00171c9dcd"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088ae2f3cbb00171c9dce"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088af2f3cbb00171c9dcf"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088b62f3cbb00171c9dd0"
+  },
+  "presenter_id": "6",
+  "comment": "What was the most hardship making this game?"
+},{
+  "_id": {
+    "$oid": "5fa088b72f3cbb00171c9dd1"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088b82f3cbb00171c9dd2"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088ba2f3cbb00171c9dd3"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa088bf2f3cbb00171c9dd4"
+  },
+  "presenter_id": "6",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08a94e2c47300174af36b"
+  },
+  "presenter_id": "8",
+  "comment": "How will the player interact with the game?"
+},{
+  "_id": {
+    "$oid": "5fa08a98e2c47300174af36c"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08a9ce2c47300174af36d"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08a9ee2c47300174af36e"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08aa8e2c47300174af36f"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08aace2c47300174af370"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ab8e2c47300174af371"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ab8e2c47300174af372"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08abbe2c47300174af373"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ac1e2c47300174af374"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ac2e2c47300174af375"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ac4e2c47300174af376"
+  },
+  "presenter_id": "8",
+  "comment": "What was the biggest hardship making in this project?"
+},{
+  "_id": {
+    "$oid": "5fa08acae2c47300174af377"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08acbe2c47300174af378"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08adae2c47300174af379"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08adee2c47300174af37a"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ae2e2c47300174af37b"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ae8e2c47300174af37c"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ae8e2c47300174af37d"
+  },
+  "presenter_id": "8",
+  "comment": "Would you also consider tests and conditions such as construction and detours that change road signs and rules?"
+},{
+  "_id": {
+    "$oid": "5fa08aebe2c47300174af37e"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08aede2c47300174af37f"
+  },
+  "presenter_id": "8",
+  "comment": "There are a lot of traffic signs and rules, how would you account for every single one? Also, how would you account for unstated rules?"
+},{
+  "_id": {
+    "$oid": "5fa08aeee2c47300174af380"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08af1e2c47300174af381"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08af5e2c47300174af382"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08af6e2c47300174af383"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08af8e2c47300174af384"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08af8e2c47300174af385"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08af8e2c47300174af386"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08afce2c47300174af387"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08afce2c47300174af388"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08afde2c47300174af389"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08afee2c47300174af38a"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08afee2c47300174af38b"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b00e2c47300174af38c"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b00e2c47300174af38d"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b02e2c47300174af38e"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b08e2c47300174af38f"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b0fe2c47300174af390"
+  },
+  "presenter_id": "8",
+  "comment": "Would you also consider tests and conditions such as construction and detours that change road signs and rules?"
+},{
+  "_id": {
+    "$oid": "5fa08b11e2c47300174af391"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b14e2c47300174af392"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08b16e2c47300174af393"
+  },
+  "presenter_id": "8",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ba2e2c47300174af394"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ba9e2c47300174af395"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bb2e2c47300174af396"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bc0e2c47300174af397"
+  },
+  "presenter_id": "9",
+  "comment": "Is the game AR or VR? What was the reason behind using AR or VR?"
+},{
+  "_id": {
+    "$oid": "5fa08bc6e2c47300174af398"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bcbe2c47300174af399"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bcde2c47300174af39a"
+  },
+  "presenter_id": "9",
+  "comment": "Is there a way to receive like a contract to allow them to gain more money? So like quests to allow them to expand the city?"
+},{
+  "_id": {
+    "$oid": "5fa08bcde2c47300174af39b"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bcfe2c47300174af39c"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bcfe2c47300174af39d"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bcfe2c47300174af39e"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bcfe2c47300174af39f"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd0e2c47300174af3a0"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd1e2c47300174af3a1"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd1e2c47300174af3a2"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd2e2c47300174af3a3"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd2e2c47300174af3a4"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd4e2c47300174af3a5"
+  },
+  "presenter_id": "9",
+  "comment": "Is there a way to receive like a contract to allow them to gain more money? So like quests to allow them to expand the city?"
+},{
+  "_id": {
+    "$oid": "5fa08bd5e2c47300174af3a6"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd5e2c47300174af3a7"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd6e2c47300174af3a8"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd6e2c47300174af3a9"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd7e2c47300174af3aa"
+  },
+  "presenter_id": "9",
+  "comment": "Every city has specific rules for building buildings, how would you implement this?"
+},{
+  "_id": {
+    "$oid": "5fa08bd8e2c47300174af3ab"
+  },
+  "presenter_id": "9",
+  "comment": "What was the biggest hardship making in this project?"
+},{
+  "_id": {
+    "$oid": "5fa08bd9e2c47300174af3ac"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bd9e2c47300174af3ad"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bdae2c47300174af3ae"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bdbe2c47300174af3af"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bdce2c47300174af3b0"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bdde2c47300174af3b1"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08be2e2c47300174af3b2"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08be7e2c47300174af3b3"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08be9e2c47300174af3b4"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08be9e2c47300174af3b5"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08beae2c47300174af3b6"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bebe2c47300174af3b7"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bede2c47300174af3b8"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bf1e2c47300174af3b9"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bf9e2c47300174af3ba"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08bfbe2c47300174af3bb"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c04e2c47300174af3bc"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c07e2c47300174af3bd"
+  },
+  "presenter_id": "9",
+  "comment": "Every city has specific rules for building buildings, how would you implement this?"
+},{
+  "_id": {
+    "$oid": "5fa08c0ce2c47300174af3be"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c0ee2c47300174af3bf"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c0fe2c47300174af3c0"
+  },
+  "presenter_id": "9",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c8fe2c47300174af3c1"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c97e2c47300174af3c2"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c97e2c47300174af3c3"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c9be2c47300174af3c4"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08c9ce2c47300174af3c5"
+  },
+  "presenter_id": "10",
+  "comment": "Is the purpose of the game education/awareness?"
+},{
+  "_id": {
+    "$oid": "5fa08ca0e2c47300174af3c6"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ca4e2c47300174af3c7"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cb4e2c47300174af3c8"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cb7e2c47300174af3c9"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cb9e2c47300174af3ca"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cbfe2c47300174af3cb"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cc3e2c47300174af3cc"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cc4e2c47300174af3cd"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cc9e2c47300174af3ce"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ccde2c47300174af3cf"
+  },
+  "presenter_id": "10",
+  "comment": "Is it AR or vR?"
+},{
+  "_id": {
+    "$oid": "5fa08cd5e2c47300174af3d0"
+  },
+  "presenter_id": "10",
+  "comment": "This seems like a large implementation for VR. How would the user interact with the world (walking, etc)?"
+},{
+  "_id": {
+    "$oid": "5fa08cd8e2c47300174af3d1"
+  },
+  "presenter_id": "10",
+  "comment": "This seems like a large implementation for VR. How would the user interact with the world (walking, etc)?"
+},{
+  "_id": {
+    "$oid": "5fa08cdfe2c47300174af3d2"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cdfe2c47300174af3d3"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ce3e2c47300174af3d4"
+  },
+  "presenter_id": "10",
+  "comment": "11:  How does the gameplay look?"
+},{
+  "_id": {
+    "$oid": "5fa08ce5e2c47300174af3d5"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ce5e2c47300174af3d6"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ce7e2c47300174af3d7"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08ceae2c47300174af3d8"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cefe2c47300174af3d9"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cf3e2c47300174af3da"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cf3e2c47300174af3db"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cf4e2c47300174af3dc"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cf7e2c47300174af3dd"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cf8e2c47300174af3de"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08cf8e2c47300174af3df"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08d00e2c47300174af3e0"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08d04e2c47300174af3e1"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08d06e2c47300174af3e2"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa08d08e2c47300174af3e3"
+  },
+  "presenter_id": "10",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcd969c2aa00176ccf55"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcde69c2aa00176ccf56"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcdf69c2aa00176ccf57"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bce069c2aa00176ccf58"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bce669c2aa00176ccf59"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bce669c2aa00176ccf5a"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcf169c2aa00176ccf5b"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcf969c2aa00176ccf5c"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcfc69c2aa00176ccf5d"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bcfd69c2aa00176ccf5e"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd0369c2aa00176ccf5f"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd0369c2aa00176ccf60"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd0669c2aa00176ccf61"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd0d69c2aa00176ccf62"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1269c2aa00176ccf63"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1369c2aa00176ccf64"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1869c2aa00176ccf65"
+  },
+  "presenter_id": "11",
+  "comment": "Why we need to resemble the bone?"
+},{
+  "_id": {
+    "$oid": "5fa9bd1869c2aa00176ccf66"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1a69c2aa00176ccf67"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1a69c2aa00176ccf68"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1b69c2aa00176ccf69"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1d69c2aa00176ccf6a"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1f69c2aa00176ccf6b"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd1f69c2aa00176ccf6c"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2269c2aa00176ccf6d"
+  },
+  "presenter_id": "11",
+  "comment": "are there any small bones that may be hard to correctly place?"
+},{
+  "_id": {
+    "$oid": "5fa9bd2469c2aa00176ccf6e"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2469c2aa00176ccf6f"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2569c2aa00176ccf70"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2669c2aa00176ccf71"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2869c2aa00176ccf72"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2969c2aa00176ccf73"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2b69c2aa00176ccf74"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd2b69c2aa00176ccf75"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd3069c2aa00176ccf76"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd3d69c2aa00176ccf77"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd3d69c2aa00176ccf78"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd3e69c2aa00176ccf79"
+  },
+  "presenter_id": "11",
+  "comment": "What instructions for building the skeleton are available? As I'm aware there's more than 200+ bones."
+},{
+  "_id": {
+    "$oid": "5fa9bd4469c2aa00176ccf7a"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd4469c2aa00176ccf7b"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd4769c2aa00176ccf7c"
+  },
+  "presenter_id": "11",
+  "comment": "If you are making the bones in blender how hard will it be to make each bone?"
+},{
+  "_id": {
+    "$oid": "5fa9bd4a69c2aa00176ccf7d"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd4d69c2aa00176ccf7e"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd5169c2aa00176ccf7f"
+  },
+  "presenter_id": "11",
+  "comment": "Great!"
+},{
+  "_id": {
+    "$oid": "5fa9bd5a69c2aa00176ccf80"
+  },
+  "presenter_id": "11",
+  "comment": "Great!"
+},{
+  "_id": {
+    "$oid": "5fa9bd5b69c2aa00176ccf81"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd5f69c2aa00176ccf82"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd5f69c2aa00176ccf83"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bd6069c2aa00176ccf84"
+  },
+  "presenter_id": "11",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be3069c2aa00176ccf85"
+  },
+  "presenter_id": "12",
+  "comment": "What was the biggest hardship in making this project?"
+},{
+  "_id": {
+    "$oid": "5fa9be3069c2aa00176ccf86"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be3c69c2aa00176ccf87"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be3d69c2aa00176ccf88"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be3d69c2aa00176ccf89"
+  },
+  "presenter_id": "12",
+  "comment": "If I were to import this into VR, how would this effect the gameplay?"
+},{
+  "_id": {
+    "$oid": "5fa9be4069c2aa00176ccf8a"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be4369c2aa00176ccf8b"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be4469c2aa00176ccf8c"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be4469c2aa00176ccf8d"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be4769c2aa00176ccf8e"
+  },
+  "presenter_id": "12",
+  "comment": "How do you plan on implementing the VR?"
+},{
+  "_id": {
+    "$oid": "5fa9be4969c2aa00176ccf8f"
+  },
+  "presenter_id": "12",
+  "comment": "How will this be 3-D?"
+},{
+  "_id": {
+    "$oid": "5fa9be4e69c2aa00176ccf90"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5369c2aa00176ccf91"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5869c2aa00176ccf92"
+  },
+  "presenter_id": "12",
+  "comment": "I'm a bit confused, is this game a 2D vr game? Or is it first person based?"
+},{
+  "_id": {
+    "$oid": "5fa9be5869c2aa00176ccf93"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5969c2aa00176ccf94"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5a69c2aa00176ccf95"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5a69c2aa00176ccf96"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5a69c2aa00176ccf97"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5b69c2aa00176ccf98"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5d69c2aa00176ccf99"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5e69c2aa00176ccf9a"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be5f69c2aa00176ccf9b"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6069c2aa00176ccf9c"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6169c2aa00176ccf9d"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6369c2aa00176ccf9e"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6469c2aa00176ccf9f"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6569c2aa00176ccfa0"
+  },
+  "presenter_id": "12",
+  "comment": "How much movement do the enemies have?"
+},{
+  "_id": {
+    "$oid": "5fa9be6769c2aa00176ccfa1"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6b69c2aa00176ccfa2"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6c69c2aa00176ccfa3"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be6c69c2aa00176ccfa4"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7069c2aa00176ccfa5"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7169c2aa00176ccfa6"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7169c2aa00176ccfa7"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7569c2aa00176ccfa8"
+  },
+  "presenter_id": "12",
+  "comment": "how many total levels are you planning on building, 1...10? will they all be similar to make it easier?"
+},{
+  "_id": {
+    "$oid": "5fa9be7569c2aa00176ccfa9"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7769c2aa00176ccfaa"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7769c2aa00176ccfab"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7869c2aa00176ccfac"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7869c2aa00176ccfad"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7969c2aa00176ccfae"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7a69c2aa00176ccfaf"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be7b69c2aa00176ccfb0"
+  },
+  "presenter_id": "12",
+  "comment": "will this be VR at all?"
+},{
+  "_id": {
+    "$oid": "5fa9be7f69c2aa00176ccfb1"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be8569c2aa00176ccfb2"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be8769c2aa00176ccfb3"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be8869c2aa00176ccfb4"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be8d69c2aa00176ccfb5"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be9069c2aa00176ccfb6"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be9869c2aa00176ccfb7"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9be9a69c2aa00176ccfb8"
+  },
+  "presenter_id": "12",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf3969c2aa00176ccfb9"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf3e69c2aa00176ccfba"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf3f69c2aa00176ccfbb"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf4769c2aa00176ccfbc"
+  },
+  "presenter_id": "13",
+  "comment": "What was the biggest hardship in making this project?"
+},{
+  "_id": {
+    "$oid": "5fa9bf4c69c2aa00176ccfbd"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf5069c2aa00176ccfbe"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf5369c2aa00176ccfbf"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf5769c2aa00176ccfc0"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf5969c2aa00176ccfc1"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf5a69c2aa00176ccfc2"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6069c2aa00176ccfc3"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6369c2aa00176ccfc4"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6469c2aa00176ccfc5"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6869c2aa00176ccfc6"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6869c2aa00176ccfc7"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6c69c2aa00176ccfc8"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6d69c2aa00176ccfc9"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf6d69c2aa00176ccfca"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf7269c2aa00176ccfcb"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf7469c2aa00176ccfcc"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf7569c2aa00176ccfcd"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf7569c2aa00176ccfce"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf7569c2aa00176ccfcf"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf7d69c2aa00176ccfd0"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8569c2aa00176ccfd1"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8669c2aa00176ccfd2"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8669c2aa00176ccfd3"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8769c2aa00176ccfd4"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8869c2aa00176ccfd5"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8969c2aa00176ccfd6"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8a69c2aa00176ccfd7"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8a69c2aa00176ccfd8"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8a69c2aa00176ccfd9"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8b69c2aa00176ccfda"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf8c69c2aa00176ccfdb"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf9069c2aa00176ccfdc"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf9969c2aa00176ccfdd"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bf9f69c2aa00176ccfde"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfa069c2aa00176ccfdf"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfa469c2aa00176ccfe0"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfa569c2aa00176ccfe1"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfa769c2aa00176ccfe2"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfb269c2aa00176ccfe3"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfb669c2aa00176ccfe4"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfb669c2aa00176ccfe5"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfb769c2aa00176ccfe6"
+  },
+  "presenter_id": "13",
+  "comment": "How will you be implementing movement?"
+},{
+  "_id": {
+    "$oid": "5fa9bfbb69c2aa00176ccfe7"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9bfbd69c2aa00176ccfe8"
+  },
+  "presenter_id": "13",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c05e69c2aa00176ccfe9"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c06069c2aa00176ccfea"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c07269c2aa00176ccfeb"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c07f69c2aa00176ccfec"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c07f69c2aa00176ccfed"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c08569c2aa00176ccfee"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c08e69c2aa00176ccfef"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c09669c2aa00176ccff0"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c09c69c2aa00176ccff1"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c09c69c2aa00176ccff2"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c09f69c2aa00176ccff3"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0a069c2aa00176ccff4"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0a169c2aa00176ccff5"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0a269c2aa00176ccff6"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0a369c2aa00176ccff7"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0a969c2aa00176ccff8"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0ab69c2aa00176ccff9"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0b069c2aa00176ccffa"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0b269c2aa00176ccffb"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0b269c2aa00176ccffc"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0b369c2aa00176ccffd"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0bd69c2aa00176ccffe"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0c069c2aa00176ccfff"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0c169c2aa00176cd000"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0c169c2aa00176cd001"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0c269c2aa00176cd002"
+  },
+  "presenter_id": "14",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0d369c2aa00176cd003"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0d869c2aa00176cd004"
+  },
+  "presenter_id": "15",
+  "comment": "How would interaction work?"
+},{
+  "_id": {
+    "$oid": "5fa9c0ed69c2aa00176cd005"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c0f369c2aa00176cd006"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c18a69c2aa00176cd007"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c19969c2aa00176cd008"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c19d69c2aa00176cd009"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c19e69c2aa00176cd00a"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c19e69c2aa00176cd00b"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1a069c2aa00176cd00c"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1a469c2aa00176cd00d"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1a569c2aa00176cd00e"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1ad69c2aa00176cd00f"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1b069c2aa00176cd010"
+  },
+  "presenter_id": "15",
+  "comment": "What was the biggest hardship in making this project?"
+},{
+  "_id": {
+    "$oid": "5fa9c1b069c2aa00176cd011"
+  },
+  "presenter_id": "15",
+  "comment": "What was the biggest hardship in making this project?"
+},{
+  "_id": {
+    "$oid": "5fa9c1b069c2aa00176cd012"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1b369c2aa00176cd013"
+  },
+  "presenter_id": "15",
+  "comment": "How big are you planning to make the game world?"
+},{
+  "_id": {
+    "$oid": "5fa9c1b469c2aa00176cd014"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1b569c2aa00176cd015"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1b669c2aa00176cd016"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1b669c2aa00176cd017"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1bb69c2aa00176cd018"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1bb69c2aa00176cd019"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1bc69c2aa00176cd01a"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1bd69c2aa00176cd01b"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1c269c2aa00176cd01c"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1c669c2aa00176cd01d"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1ca69c2aa00176cd01e"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1ca69c2aa00176cd01f"
+  },
+  "presenter_id": "15",
+  "comment": "is this similar to minecraft?"
+},{
+  "_id": {
+    "$oid": "5fa9c1ca69c2aa00176cd020"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1cd69c2aa00176cd021"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1d669c2aa00176cd022"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1da69c2aa00176cd023"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1da69c2aa00176cd024"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1df69c2aa00176cd025"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1e269c2aa00176cd026"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1e569c2aa00176cd027"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1e669c2aa00176cd028"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1e869c2aa00176cd029"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1ec69c2aa00176cd02a"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1ee69c2aa00176cd02b"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c1f869c2aa00176cd02c"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c20469c2aa00176cd02d"
+  },
+  "presenter_id": "15",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c27869c2aa00176cd02e"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c27b69c2aa00176cd02f"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c28a69c2aa00176cd030"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c29069c2aa00176cd031"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c29969c2aa00176cd032"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c29c69c2aa00176cd033"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c29f69c2aa00176cd034"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2a269c2aa00176cd035"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2a469c2aa00176cd036"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2ac69c2aa00176cd037"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2b069c2aa00176cd038"
+  },
+  "presenter_id": "16",
+  "comment": "How would the ongoing pandemic affect this type of game, especially if the playable locations API utilizes a public area."
+},{
+  "_id": {
+    "$oid": "5fa9c2b069c2aa00176cd039"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2b469c2aa00176cd03a"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2b469c2aa00176cd03b"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2b569c2aa00176cd03c"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2b669c2aa00176cd03d"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2b769c2aa00176cd03e"
+  },
+  "presenter_id": "16",
+  "comment": "How do you plan on implementing the gps feature? is it lubbock centered?"
+},{
+  "_id": {
+    "$oid": "5fa9c2b869c2aa00176cd03f"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2ba69c2aa00176cd040"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2bb69c2aa00176cd041"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2bd69c2aa00176cd042"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2bf69c2aa00176cd043"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2bf69c2aa00176cd044"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2c469c2aa00176cd045"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2c469c2aa00176cd046"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2cc69c2aa00176cd047"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2d069c2aa00176cd048"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2ee69c2aa00176cd049"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2f069c2aa00176cd04a"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2f369c2aa00176cd04b"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2f469c2aa00176cd04c"
+  },
+  "presenter_id": "16",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2fe69c2aa00176cd04d"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c2ff69c2aa00176cd04e"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c30169c2aa00176cd04f"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c30169c2aa00176cd050"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c30669c2aa00176cd051"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c36169c2aa00176cd052"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c36269c2aa00176cd053"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c37169c2aa00176cd054"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c37869c2aa00176cd055"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c38369c2aa00176cd056"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c38569c2aa00176cd057"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c38a69c2aa00176cd058"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c38c69c2aa00176cd059"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c38d69c2aa00176cd05a"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c39369c2aa00176cd05b"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c39369c2aa00176cd05c"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c39469c2aa00176cd05d"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c39969c2aa00176cd05e"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c39f69c2aa00176cd05f"
+  },
+  "presenter_id": "17",
+  "comment": "How would this implementation differ from something like 3DSEN which converts NES games into VR?"
+},{
+  "_id": {
+    "$oid": "5fa9c3a069c2aa00176cd060"
+  },
+  "presenter_id": "17",
+  "comment": "What was the biggest hardship in making this project?"
+},{
+  "_id": {
+    "$oid": "5fa9c3a269c2aa00176cd061"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3a469c2aa00176cd062"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3a769c2aa00176cd063"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3aa69c2aa00176cd064"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3aa69c2aa00176cd065"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3ad69c2aa00176cd066"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3b369c2aa00176cd067"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3b369c2aa00176cd068"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3b469c2aa00176cd069"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3b469c2aa00176cd06a"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3bb69c2aa00176cd06b"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3bc69c2aa00176cd06c"
+  },
+  "presenter_id": "17",
+  "comment": "could this create nausea?"
+},{
+  "_id": {
+    "$oid": "5fa9c3bc69c2aa00176cd06d"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3be69c2aa00176cd06e"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3bf69c2aa00176cd06f"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3c269c2aa00176cd070"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3c369c2aa00176cd071"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3c569c2aa00176cd072"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3c669c2aa00176cd073"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3cb69c2aa00176cd074"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3cb69c2aa00176cd075"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3d969c2aa00176cd076"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3de69c2aa00176cd077"
+  },
+  "presenter_id": "17",
+  "comment": "How do you plan to deal with scaling with this"
+},{
+  "_id": {
+    "$oid": "5fa9c3de69c2aa00176cd078"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3e569c2aa00176cd079"
+  },
+  "presenter_id": "17",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3ee69c2aa00176cd07a"
+  },
+  "presenter_id": "18",
+  "comment": "Can the player fall off of the platform?"
+},{
+  "_id": {
+    "$oid": "5fa9c3f069c2aa00176cd07b"
+  },
+  "presenter_id": "18",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3f669c2aa00176cd07c"
+  },
+  "presenter_id": "18",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c3f869c2aa00176cd07d"
+  },
+  "presenter_id": "18",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c41569c2aa00176cd07e"
+  },
+  "presenter_id": "18",
+  "comment": "we can fight the monkey?"
+},{
+  "_id": {
+    "$oid": "5fa9c46e69c2aa00176cd07f"
+  },
+  "presenter_id": "19",
+  "comment": "What was the biggest hardship in making this project?"
+},{
+  "_id": {
+    "$oid": "5fa9c48669c2aa00176cd080"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4a269c2aa00176cd081"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4b569c2aa00176cd082"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4b869c2aa00176cd083"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4bf69c2aa00176cd084"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4ce69c2aa00176cd085"
+  },
+  "presenter_id": "19",
+  "comment": "I ask the same question every time"
+},{
+  "_id": {
+    "$oid": "5fa9c4d669c2aa00176cd086"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4d869c2aa00176cd087"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4da69c2aa00176cd088"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4da69c2aa00176cd089"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4df69c2aa00176cd08a"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4f269c2aa00176cd08b"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4f869c2aa00176cd08c"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4f969c2aa00176cd08d"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c4fe69c2aa00176cd08e"
+  },
+  "presenter_id": "19",
+  "comment": "How would orientation work on this? "
+},{
+  "_id": {
+    "$oid": "5fa9c50169c2aa00176cd08f"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c51469c2aa00176cd090"
+  },
+  "presenter_id": "19",
+  "comment": "Big Chungus?"
+},{
+  "_id": {
+    "$oid": "5fa9c51569c2aa00176cd091"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c51969c2aa00176cd092"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c51e69c2aa00176cd093"
+  },
+  "presenter_id": "19",
+  "comment": "Will there be hand tracking?"
+},{
+  "_id": {
+    "$oid": "5fa9c52169c2aa00176cd094"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c52c69c2aa00176cd095"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53769c2aa00176cd096"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53a69c2aa00176cd097"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53b69c2aa00176cd098"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53c69c2aa00176cd099"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53c69c2aa00176cd09a"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53d69c2aa00176cd09b"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c53f69c2aa00176cd09c"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c54769c2aa00176cd09d"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c54a69c2aa00176cd09e"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c54c69c2aa00176cd09f"
+  },
+  "presenter_id": "19",
+  "comment": "isn't the appeal of rock climbing physical exertion? sorry if i missed it, but will the user just be waving their arms around?"
+},{
+  "_id": {
+    "$oid": "5fa9c54c69c2aa00176cd0a0"
+  },
+  "presenter_id": "19",
+  "comment": "isn't the appeal of rock climbing physical exertion? sorry if i missed it, but will the user just be waving their arms around?"
+},{
+  "_id": {
+    "$oid": "5fa9c55669c2aa00176cd0a1"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c55969c2aa00176cd0a2"
+  },
+  "presenter_id": "19",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c59d69c2aa00176cd0a3"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c59e69c2aa00176cd0a4"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5a469c2aa00176cd0a5"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5ae69c2aa00176cd0a6"
+  },
+  "presenter_id": "20",
+  "comment": "Hardships? Hardships? Hardships?"
+},{
+  "_id": {
+    "$oid": "5fa9c5ae69c2aa00176cd0a7"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5b169c2aa00176cd0a8"
+  },
+  "presenter_id": "20",
+  "comment": "I ask this same question every time ^^^^^^^^^^"
+},{
+  "_id": {
+    "$oid": "5fa9c5b569c2aa00176cd0a9"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5b569c2aa00176cd0aa"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5bd69c2aa00176cd0ab"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5c169c2aa00176cd0ac"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5d569c2aa00176cd0ad"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5e869c2aa00176cd0ae"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5eb69c2aa00176cd0af"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5ec69c2aa00176cd0b0"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5f569c2aa00176cd0b1"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5f769c2aa00176cd0b2"
+  },
+  "presenter_id": "20",
+  "comment": "is there gonna be a build time? if so how long will that take? Will you have to build it as well or will it auto build?"
+},{
+  "_id": {
+    "$oid": "5fa9c5f969c2aa00176cd0b3"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c5f969c2aa00176cd0b4"
+  },
+  "presenter_id": "20",
+  "comment": "What was the biggest hardship in this project?"
+},{
+  "_id": {
+    "$oid": "5fa9c5fe69c2aa00176cd0b5"
+  },
+  "presenter_id": "20",
+  "comment": "Do you only use the pickaxe?"
+},{
+  "_id": {
+    "$oid": "5fa9c60169c2aa00176cd0b6"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c60769c2aa00176cd0b7"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c60869c2aa00176cd0b8"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c60969c2aa00176cd0b9"
+  },
+  "presenter_id": "20",
+  "comment": "How long did this take to make?"
+},{
+  "_id": {
+    "$oid": "5fa9c60e69c2aa00176cd0ba"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61169c2aa00176cd0bb"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61169c2aa00176cd0bc"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61369c2aa00176cd0bd"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61469c2aa00176cd0be"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61469c2aa00176cd0bf"
+  },
+  "presenter_id": "20",
+  "comment": "60. Nice graphics"
+},{
+  "_id": {
+    "$oid": "5fa9c61769c2aa00176cd0c0"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61769c2aa00176cd0c1"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61a69c2aa00176cd0c2"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61c69c2aa00176cd0c3"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61d69c2aa00176cd0c4"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c61d69c2aa00176cd0c5"
+  },
+  "presenter_id": "20",
+  "comment": "Do you only use the pickaxe? oh nevermind"
+},{
+  "_id": {
+    "$oid": "5fa9c62269c2aa00176cd0c6"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c62c69c2aa00176cd0c7"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c63069c2aa00176cd0c8"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c63469c2aa00176cd0c9"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c64c69c2aa00176cd0ca"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c65669c2aa00176cd0cb"
+  },
+  "presenter_id": "20",
+  "comment": ""
+},{
+  "_id": {
+    "$oid": "5fa9c65a69c2aa00176cd0cc"
+  },
+  "presenter_id": "20",
+  "comment": ""
+}]
