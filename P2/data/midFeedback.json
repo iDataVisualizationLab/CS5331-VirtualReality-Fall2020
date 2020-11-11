@@ -4118,31 +4118,13 @@
   "_id": {
     "$oid": "5fa9c3ee69c2aa00176cd07a"
   },
-  "presenter_id": "18",
+  "presenter_id": "17",
   "comment": "Can the player fall off of the platform?"
-},{
-  "_id": {
-    "$oid": "5fa9c3f069c2aa00176cd07b"
-  },
-  "presenter_id": "18",
-  "comment": ""
-},{
-  "_id": {
-    "$oid": "5fa9c3f669c2aa00176cd07c"
-  },
-  "presenter_id": "18",
-  "comment": ""
-},{
-  "_id": {
-    "$oid": "5fa9c3f869c2aa00176cd07d"
-  },
-  "presenter_id": "18",
-  "comment": ""
 },{
   "_id": {
     "$oid": "5fa9c41569c2aa00176cd07e"
   },
-  "presenter_id": "18",
+  "presenter_id": "17",
   "comment": "we can fight the monkey?"
 },{
   "_id": {

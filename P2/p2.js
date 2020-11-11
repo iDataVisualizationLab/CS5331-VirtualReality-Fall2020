@@ -41,7 +41,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             d['Student Image']= d.members.map(id=>'../photos/'+(people[id]||{})['Photoname']);});
 
         debugger
-        let comments = d3.nest().key(d=>d.presenter_id).map(dataRaw[2].filter(d=>d.comment!==""))
+        let comments = d3.nest().key(d=>d.presenter_id).map(dataRaw[2].filter(d=>d.comment!=="" && (!new RegExp(/hardship/i).test(d.comment))))
 
         //sort by presentation day
         data.sort((a,b)=>a.date-b.date);
@@ -51,7 +51,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
         data.forEach((d,i)=>{
             d.ID=i+1;
             d.abstract = `<div style="max-height: 220px; overflow-y: auto">${d.abstract}</div>`
-            d.comment = '<div style="max-height: 220px; overflow-y: auto">'+(comments.get(d.ID)??[]).map(d=>d.comment).join('<br></br>')+'</div>';
+            d.comment = '<div style="max-height: 220px; overflow-y: auto">'+(comments.get(d.ID)??[]).map(d=>`<p>- ${d.comment}</p>`).join('')+'</div>';
         });
 
 
