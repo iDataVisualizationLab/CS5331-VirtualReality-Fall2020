@@ -60,7 +60,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             .classed('pluse-red',d=>d.isHighlight)
             // .style('background-color',d=>d.url!==''?null:'#ffc4c4')
             .selectAll('td')
-            .data(d=>key.map(k=>({key:k, value:k.map?k.map(e=>e[k]): d[k], data:d})))
+            .data(d=>key.map(k=>({key:k, value:k.map?k.map(e=>d[e]): d[k], data:d})))
             .join('td')
             .html(d=>d.value);
         dataCell .filter(d=>(d.key.map || d.key==="demo" || d.key==="url" ||d.key==='githubURL')&&d.value!=='')
