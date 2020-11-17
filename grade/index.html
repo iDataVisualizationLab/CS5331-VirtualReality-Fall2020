@@ -109,11 +109,13 @@
         json.info['P2_report'] = convert(json.info['P2_report']);
         json.info['P2_feedback'] = convert(json.info['P2_feedback']);
         json.info['P2_talk'] = convert(json.info['P2_talk']);
+        json.info['P2_review'] = convert(json.info['P2_review']);
 
         json.participant = json.array[json.array.length-1].scoreSum;
         json.sc = json.info['StudentReport']===undefined?'---':(+json.info['StudentReport']+json.info['StudentTalk'])
         json.p1 = json.info['P1_code']===undefined?'---':(+json.info['P1_code']+json.info['P1_report']+json.info['P1_survey']+json.info['P1_talk']);
-        json.p2  = json.info['P2_code']===undefined?'---':(+json.info['P2_code']+json.info['P2_report']+json.info['P2_feedback']+json.info['P2_talk']);
+        json.p2  = d3.sum([+json.info['P2_code'],+json.info['P2_report'],+json.info['P2_feedback'],+json.info['P2_talk'],+json.info['P2_review']]);
+        json.p2  = json.p2 ===0?'---':json.p2;
         json.total =  json.participant+(+json.sc||0)+ (+json.p1||0)+ (+json.p2||0)
 
         const svg = d3.select('#grade svg');
