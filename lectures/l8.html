@@ -1,0 +1,516 @@
+<!-- Adapted from https://www.evl.uic.edu/aej/424/ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Virtual Reality</title>
+    <link rel="shortcut icon" href="../styles/oculus.png">
+    <style>
+        body {
+            font-size: 1.25em;
+        }
+    </style>
+</head>
+<body bgcolor="white" text="black">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Introduction:</font></div>
+
+
+<li style="margin-left: 30px">
+    In VR, positional tracking is an essential technology that allows a device to estimate its position relative to the environment around it.<br>
+    It uses a combination of <i>hardware and software</i> to achieve the detection of its absolute position. Why both <i>hardware and software</i>?<br>
+    <a href="https://venturebeat.com/2019/05/05/how-virtual-reality-positional-tracking-works/view-all/"> Positional tracking track movement with Three vs. Six degrees of freedom? </a>
+    (<a href="https://xinreality.com/wiki/Degrees_of_freedom">6DOF</a>).
+</li>
+
+<li style="margin-left: 30px">
+Ideally we would track the users eyes directly. While that is possible, it is cumbersome, and not overly necessary.
+    Instead of tracking the viewer's eyes directly, we track the position and orientation of the user's head.
+    From this we determine the position and orientation of the user's two eyes.<br>
+</li>
+
+<li style="margin-left: 30px">
+
+Positional tracking brings various benefits to the VR experience. The primary purpose of tracking is to update the visual display based on the viewers head position and orientation (<b> Position tracking is important for Navigation and Interaction in the VR environment</b>):
+    It can change the viewpoint of the user to reflect different actions like jumping, ducking, or leaning forward; allow for an exact representation of the user’s hands and other objects in the virtual environment; increase the connection between the physical and virtual world by, for example, using hand position to move virtual objects by touch; and detect gestures by analyzing position over time.
+</li>
+<li style="margin-left: 30px">
+    From users' perspective, we want to
+    <ol>
+        <li>Track the user's hand(s), fingers, legs, or other interface devices. <i>Which one in the student choice presentations? </i> </li>
+        <li>Be able to move freely with few encumbrances (tracking to be as 'invisible' as possible to the user).</li>
+        <li>Have minimal delay between movement of an object (including the head and hand) </li>
+        <li>Want tracking to be accurate (1mm and 1 degree) </li>
+        <li>Want larger tracking areas </li>
+    </ol>
+</li>
+
+
+<hr style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Inside Out vs. Outside In tracking?</font></div>
+
+<iframe width="1241" height="698" src="https://www.youtube.com/embed/J5oW7r-2dlM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+    <br><br>Oculus Insight VR Positional Tracking System (Sep 2018) <br>
+
+<iframe width="1241" height="698" src="https://www.youtube.com/embed/2jY3B_F3GZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+
+
+
+
+
+
+<hr
+        style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Methods of positional tracking:</font></div>
+
+<h3><font face="Helvetica, Arial, sans-serif">Electromagnetic - what
+    we used in the early to mid 1990s for VR<br>
+</font> </h3>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">Magnetic tracking relies on measuring the intensity of the magnetic field in various directions. There is typically a base station that generates AC, DC, or pulsed DC excitation. As the distance between the measurement point and base station increases, the strength of the magnetic field decreases. </font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">If the measurement point is rotated, the distribution of the magnetic field is changed across the various axes, allowing determination of the orientation as well. </font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">Magnetic tracking has been implemented in several products, such as the Razer Hydra.</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">advantages are:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">large tracking
+        volume (approx 10 feet / 3 meters) </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">no line-of-sight
+        restriction </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">sensors are small
+        and light </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">technology has been around for a while </font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">disadvantages are:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif"> interference from conductive materials (conductive objects on the floor above, or metal earings worn near sensor)<br>
+    </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">latency can be high
+        (0.1 seconds) </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">accuracy is low in
+        large volumes </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">somewhat expensive </font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">examples:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif"><a
+            href="http://www.polhemus.com/">Polhemus</a></font> </li>
+    <li><font face="Helvetica, Arial, sans-serif"><a
+            href="http://www.ascension-tech.com/">Ascension</a></font> </li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<h3><font face="Helvetica, Arial, sans-serif"><img
+        src="https://www.evl.uic.edu/aej/428/pics/wand24.jpg" alt="" height="500"
+        border="0"></font></h3>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<h3>
+
+
+    <hr> </h3>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<h3><font face="Helvetica, Arial, sans-serif">Mechanical - still
+    around for haptics and applications that require very high
+    accuracy and very low latency<br>
+</font> </h3>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">rigid structures with
+    multiple joints. One end is fixed, the
+    other is the object being tracked</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">Could be tracking users
+    head, or their hand</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">physically measure the
+    rotation about joints in the armature to compute position and
+    orientation</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">structure is
+    counter-weighted - movements are slow and smooth</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">Knowing the length of
+    each joint and the rotation at each joint, location and
+    orientation of the end point is easy to compute.</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif"><img
+        src="https://www.evl.uic.edu/aej/428/pics/3_Phantoms.jpg" alt="" width="900" 
+        border="0"></font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">uses:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">BOOMs, Phantom</font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">advantages are:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">low latency </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">high accuracy </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">technology has been
+        around for a while </font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">disadvantages are:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">small volume </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">only track one
+        object at a time </font></li>
+</ul>
+<a href="https://polhemus.com/motion-tracking/hand-and-finger-trackers/?gclid=EAIaIQobChMIl6q5pojY7AIVE__jBx2kZwjWEAAYASAAEgJ5MvD_BwE">REAL-TIME HAND AND FINGER TRACKING</a>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<h3>
+    <hr> </h3>
+<font face="Helvetica, Arial, sans-serif"> </font>
+
+
+<h3><font face="Helvetica, Arial, sans-serif">Acoustic Tracking - used in the late 1990s for VR<br>
+</font> </h3>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">The measurement of the time it takes for a known acoustic signal to travel between an emitter and a receiver is known as acoustic tracking. Generally, several transmitters are placed in the tracked area and various receivers placed on the tracked objects. </font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">Each transmitter emits
+    ultrasonic pulses which are received by microphones on the
+    sensor (usually arranged in a triangle, <b>why?</b>). The distance between the receiver and transmitter is calculated by the amount of time the acoustic signal takes to reach the receiver.  </font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">The difference between the time of arrival of the acoustic signal to the multiple receivers will provide data about the orientation of the object relative to the transmitters.</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">Intersense, an American technology company, has developed successful acoustic tracking system</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">advantages are:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">high accuracy </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">transmitters are
+        small and light </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">simple </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">low cost </font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">disadvantages are:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">latency can be high
+    </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">small volume </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">requires
+        line-of-sight </font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">examples:</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">Logitech</font>
+    </li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<h3><font face="Helvetica, Arial, sans-serif"><img
+        src="https://www.evl.uic.edu/aej/428/pics/logitech.jpg" alt="" width="300" 
+        border="0"></font>
+    <hr> </h3>
+
+<h3>Optical Tracking - What pretty much everyone uses today for VR</h3>
+<p>There are several methods of optical tracking (LEDs or reflective materials are placed on the object to be tracked), all using various cameras to obtain positional information:</p>
+
+
+<p><strong>Optical Tracking With Markers</strong></p>
+<figure id="attachment_12616" style="max-width: 325px" class="wp-caption alignright"><a href="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2014/06/sensics-dSight-markers-01.jpg"><img class="wp-image-12616 size-medium" src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/cache/2014/06/sensics-dSight-markers-01/3035774071.jpg" alt="sensics-dSight-markers-01" width="325" height="284" /></a><figcaption class="wp-caption-text"><a href="http://sensics.com/head-mounted-displays/dsight-2x1080p-flat-panel-hmd/">Sensics dSight</a> fitted with IR markers</figcaption></figure>
+
+
+
+<p>In this approach, an object is fitted with markers that form a well-known pattern. A video camera or multiple video cameras constantly seek the markers and then use various algorithms such as the <a href="http://en.wikipedia.org/wiki/3D_pose_estimation">POSIT</a> algorithm to extract the position of the object from the markers. The algorithm matches the known marker position against what is being detected from the cameras and makes a determination on position and orientation. There is certainly some science to the number, location and arrangement of the markers. For instance, if we simply chose four markers that constitute the corners of a square, there would have been no way to determine if the object is positioned straight, is upside down or is rotated 90 degrees sideways, <b> explain?</b>. Such algorithms have to also contend with missing data in case one or more of the markers is outside the camera view or is temporarily obstructed, <b>suggestions?</b>..</p>
+
+<p>Markers can be passive or active. Active markers are typically IR lights that periodically flash. By synchronizing the time that they are on with the camera, <b>why do we need to synch?</b> it is easier to block out other IR lights in the tracking area. <br>Passive markers are <a href="http://en.wikipedia.org/wiki/Retroreflector">retro-reflectors</a>, reflecting the IR light back towards the light source. In the case if passive markers, the camera is equipped with an IR flash which is reflected off the markers. The below picture, for instance, shows such camera with built-in IR lighting. <br>
+<figure id="attachment_12617" style="max-width: 338px" class="wp-caption alignright"><a href="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2014/06/ART-camera.jpg"><img class="wp-image-12617 size-large" src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/cache/2014/06/ART-camera/4162638145.jpg" alt="ART-camera" width="338" height="336" /></a><figcaption class="wp-caption-text">Tracking camera from Advanced Research Tracking</figcaption></figure>
+
+ <br>The choice of active markers vs passive markers depends on many variables such as distance, type of surface, required viewing direction and more.</p>
+<p><strong>Optical Tracking with Visible Markers</strong></p>
+<figure id="attachment_12620" style="max-width: 300px" class="wp-caption alignright"><a href="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2014/06/fidu100_3001.gif"><img class="wp-image-12620 size-large" src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/cache/2014/06/fidu100_3001/333330661.png" alt="fidu100_3001" width="320" height="320" /></a><figcaption class="wp-caption-text">Optical marker (fiducial) by <a href="http://www.intersense.com/">Intersense</a></figcaption></figure>
+<p>Another variation of optical tracking is tracking visible markers which are predefined patterns such as the one on the right (part of an Intersense optical tracking system). The camera can recognize the existence of this marker and if multiple markers are placed in known positions, the position and orientation can be calculated.</p>
+<p>The markers can take various shapes and sizes. Sometimes, they look more like QR codes. Sometimes, they are circular as in this example. The key is to be able to create markers that would be quickly identified by the cameras in a computationally-efficient manner as well as be able to create a sufficiently large number of distinct markers.</p>
+
+<p><a href="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2014/06/ValveVRRoom.jpg"><img class="aligncenter size-large wp-image-12621" src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/cache/2014/06/ValveVRRoom/1829179633.jpg" alt="ValveVRRoom" width="700" height="395" /></a><br>A famous example of &#8220;markers gone wild&#8221; is the demonstration room at Valve Software. The walls and ceiling were covered with various markers. A prototype HMD was equipped with cameras that continuously sought the various markers. Such marker arrangement, while often not practical, gave accurate positional tracking within the confines of the room.</p>
+<br>
+<p><strong>Marker-less Tracking</strong></p>
+<p>If the geometry of the object is known (such as from a CAD model), it is possible to perform markerless tracking which continuously searches and compares the image with the known 3D model. For instance, such algorithm is being used below to track a box and then augment it with virtual objects. In this particular example, the object might be recognized by analyzing the real-time image for edges or color transitions and then matching these edges with the known model.</p>
+<p><iframe src="//www.youtube.com/embed/_Dln257k2Sc" width="480" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Even if the 3D model is not known, it might be possible to recognize more generic features of an object—such as a face or a body—and use them for continuous tracking, such as the video below. Did you use it somewhere?</p>
+<p><iframe src="//www.youtube.com/embed/acKTCF0sAfc" width="480" height="270" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+
+
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">advantages<br>
+</font> </p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">lightweight marker
+        balls can be added to many common objects</font></li>
+    <li><font face="Helvetica, Arial, sans-serif">high accuracy</font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">disadvantages<br>
+</font> </p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">can take a lot of
+        cameras to get high quality tracking in a large space (focal
+        length as well as field of view)</font></li>
+    <li><font face="Helvetica, Arial, sans-serif">requires line of
+        site to multiple cameras</font></li>
+    <li><font face="Helvetica, Arial, sans-serif">users need to make
+        sure they don't cover up the marker balls (cowboy hats, 80s
+        hair)<br>
+    </font> </li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">examples<br>
+</font> </p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<ul>
+    <li><font face="Helvetica, Arial, sans-serif">Vicon - <a
+            href="https://www.vicon.com/" target="_blank">https://www.vicon.com/</a><br>
+    </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">OptiTrack - <a
+            href="http://optitrack.com/" target="_blank">http://optitrack.com/</a><br>
+    </font></li>
+    <li><font face="Helvetica, Arial, sans-serif">&nbsp;A. R. T.
+        system from Germany - <a href="http://www.ar-tracking.de/">http://www.ar-tracking.de/</a></font></li>
+</ul>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p> <font face="Helvetica, Arial, sans-serif"><br>
+</font> </p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif">In CAVE2 we use a Vicon
+    optical camera tracking system.<br>
+</font> <font face="Helvetica, Arial, sans-serif"><br>
+</font> <font face="Helvetica, Arial, sans-serif"><img
+        src="https://www.evl.uic.edu/aej/428/pics/cave2glasses.JPG" alt="" width="600" height="393"><br>
+</font> </p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif"><img
+        src="https://www.evl.uic.edu/aej/428/pics/cave2wand.JPG" alt="" width="600" height="414"><br>
+</font> </p>
+
+<iframe width="1241" height="698" src="https://www.youtube.com/embed/yf0sllpZx3w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<hr width="100%" size="2"><font face="Helvetica, Arial, sans-serif"><br>
+    How the consumer headsets do it<br>
+    <br>
+    <b>VIVE</b> - two powered lighthouses at the high corners of the
+    tracked volume each sweeping a laser horizontally and another
+    vertically through the space which is read by the wired headset
+    (1000 hz) and the wireless controllers (360 hz) giving a general
+    accuracy of 3 mm.<br>
+    <iframe width="1200" height="800" src="https://www.youtube.com/embed/oqPaaMR4kY4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <b>Oculus</b> - wired Headset and the wireless Oculus touch
+    controllers have LEDs mounted all around them which are then
+    detected by (initially) a small sensor sitting on the desk/table
+    in front of you, and later two or three sensors to track a larger
+    space<br>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/abTo0JpjNyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <br>
+    <b>Playstation VR</b> - similarly has a wired headset and wired
+    controllers that makes use of the existing PlayStation move
+    controller infrastructure using the PlayStation Camera and LEDs on
+    the headset</font><br><br>
+
+    Read <a href="https://uploadvr.com/how-vr-tracking-works/">“Constellation” (Original Oculus Rift) vs. other devices</a> <br>
+
+
+<br>
+Demos of setting up tracking for:
+<br>
+ <a href="https://www.youtube.com/watch_popup?v=Ul_uNih7Oaw">HoloLens</a> 
+<br>
+<a href="https://www.youtube.com/watch_popup?v=rv6nVPPDmEI">VIVE</a>  
+<br>
+<a href="https://www.youtube.com/watch_popup?v=zh5ldprM5Mg">Quest</a>  
+<br>
+<a href="https://www.youtube.com/watch_popup?v=cNZaFEghTBU">OptiTrack</a> 
+<br>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<hr><font face="Helvetica, Arial, sans-serif"> </font>
+<h3><font face="Helvetica, Arial, sans-serif">Inertial - used for a
+    lot of current smartphone based experiences<br>
+</font> </h3>
+
+
+<figure id="attachment_12615" style="max-width: 180px" class="wp-caption alignright"><a href="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2014/06/7427165124_854d5d2ae6_m-1.jpg"><img class="size-large wp-image-12615" src="https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/cache/2014/06/7427165124_854d5d2ae6_m-1/1874960724.jpg" alt="Photo credit: Explodingfish" width="180" height="240" /></a><figcaption class="wp-caption-text">Photo credit: <a href="http://www.flickr.com/photos/36462710@N03/7427165124/">Explodingfish</a></figcaption></figure>
+<p>Self-contained: Inertial tracking uses accelerometers and gyroscopes. <br>Accelerometers measure linear acceleration. Since the derivative of position with respect to time is velocity and the derivative of velocity is acceleration, the output of the accelerometer can be integrated to find the velocity and then integrated again to find the position (more precisely, the position relative to some initial point)</p>
+<p>Gyroscopes to measure angular velocity. Gyroscopes are solid-state components based on <a href="http://en.wikipedia.org/wiki/Microelectromechanical_systems">MEMS</a> technology, but have the same operating principle as the mechanical gyro shown on the right. Just like in the case of the accelerometer, the angular velocity can be integrated to determine angular position (more precisely, the angular position relative to the initial point).</p>
+<p>The advantage of inertial tracking is that it is very inexpensive, can provide high update rates and low latency. However, the integration and double-integration lead to significant drift, especially as it relates to position information and thus it is hard to rely on inertial tracking to determine position.</p>
+
+
+
+<font face="Helvetica, Arial, sans-serif"> </font>
+<hr width="100%" size="2"><font face="Helvetica, Arial, sans-serif"><br>
+    <b>GPS</b> </font>
+<p><font face="Helvetica, Arial, sans-serif">For outdoors work GPS
+    can give the general location of the user (3 meter accuracy
+    horizontally in open field, much less as you get near
+    buildings). Vertical accuracy is more like 10 meters, so that is
+    not very useful right now. Newer constellations of satellites,
+    as well as ground based reference stations can substantially
+    improve on that accuracy.<br>
+
+<a href="https://www.researchgate.net/profile/Mariam_Elazab/publication/282359540/figure/fig2/AS:669975597547520@1536746038107/Trilateration-based-GPS-position-with-no-errors-in-satellites-signals.jpg">GPS position (from www.researchgate.net)</a>
+<img
+        src="https://www.researchgate.net/profile/Mariam_Elazab/publication/282359540/figure/fig2/AS:669975597547520@1536746038107/Trilateration-based-GPS-position-with-no-errors-in-satellites-signals.jpg" alt="" width="500" 
+        border="0">
+  
+</font></p>
+<p><font face="Helvetica, Arial, sans-serif">For better vertical
+    accuracy devices are now including barometers. These work pretty
+    well when calibrated to the local air pressure, which may be
+    constantly changing as the weather changes.<br>
+</font></p>
+
+<hr width="100%" size="2">
+<p><font face="Helvetica, Arial, sans-serif"><br>
+    <b>Fiducial Markers</b></font></p>
+<p><font face="Helvetica, Arial, sans-serif">A common way for camera
+    based AR systems to orient themselves is by using fiducial
+    markers. These could be pieces of paper held in front of a
+    camera where a 3D object suddenly appears on the paper (when
+    looking at the camera feed). They can also be placed on walls,
+    floors, ceilings so moving users with cameras can locate where
+    they are.<br>
+    <iframe width="1200" height="800" src="https://www.youtube.com/embed/7rtUv7cp2fo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<hr><font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif"><b>Combinations<br>
+</b></font></p>
+<p><font face="Helvetica, Arial, sans-serif">Combining multiple
+    forms of tracking is a very good way to improve tracking in
+    complex situations, just as our phones GPS based information is
+    improved if we also have the WiFi antennas working.<br>
+</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+<p><font face="Helvetica, Arial, sans-serif"><a
+        href="http://www.isense.com">Intersense</a> uses a combination
+    on Acoustic and Inertial. Inertial can deal with fast movements
+    and acoustic keeps the inertial from drifting</font></p>
+<font face="Helvetica, Arial, sans-serif"> </font>
+
+
+<hr width="100%" size="2">
+
+
+<p><strong> How to choose the best method?</strong></p>
+<p>There is no one right answer for the best tracking method. There are many factors to weigh:</p>
+<ul>
+    <li>Tracking accuracy required</li>
+    <li>Refresh rate required</li>
+    <li>Whether the objects to be tracked are well know or can change from time to time</li>
+    <li>Whether the objects to be tracked are rigid or flexible</li>
+    <li>The desired tracking area</li>
+    <li>Whether tracking needs to be indoor or also outdoor, where lighting conditions might be more challenging</li>
+    <li>Cost, power consumption and computational power available for tracking</li>
+</ul>
+
+<iframe width="1241" height="698" src="https://www.youtube.com/embed/uIHPPtPBgHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr width="100%" size="2"><font face="Helvetica, Arial, sans-serif"><br>
+    <b>References:</b> </font>
+<a href="https://xinreality.com/wiki/Positional_tracking">https://xinreality.com/wiki/Positional_tracking</a><br>
+<a href="https://www.nap.edu/read/4761/chapter/9#199">https://www.nap.edu/read/4761/chapter/9#199</a><br>
+<a href="https://www.nap.edu/read/4761/chapter/9#189">https://www.nap.edu/read/4761/chapter/9#189</a><br>
+<a href="https://www.roadtovr.com/overview-of-positional-tracking-technologies-virtual-reality/">https://www.roadtovr.com</a><br>
+Some contents on this page were adapted from <a href="https://xinreality.com/wiki/Positional_tracking"> online resources</a>
+</a> and Virtual and Augmented Reality class at UIC
+
+<hr
+        style="width: 100%; height: 1px;">
+ 
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Menus:</font></div> 
+
+
+Google Earth VR maps the controls to buttons on the controller with tooltips floating nearby - as the menu options change the tooltips change.<br>
+<img
+        src="https://www.evl.uic.edu/aej/428/pics/googleearthvrinterface.jpg" alt="" width="800" 
+        border="0"><br>
+  
+<iframe width="1138" height="640" src="https://www.youtube.com/embed/Fk_rLyeB8i8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br><br>
+Vanishing realms has a nice UI at the user's waist where you store keys and food and weapons and then to interact the user intersects that menu with one of the controllers as though you were reaching down to grab something off your belt.<br>
+<img
+        src="https://www.evl.uic.edu/aej/428/pics/vanishinginterface.png" alt="" width="800" 
+        border="0"><br>
+<iframe width="1672" height="856" src="https://www.youtube.com/embed/4nr98lHZj7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br><br>
+Tilt Brush has a nice 2-handed 3D UI where the multi-faceted menu appears in one hand and you select from it with the other hand. <br>
+
+<img
+        src="https://www.evl.uic.edu/aej/428/pics/tiltinterface.png" alt="" width="800" 
+        border="0"><br>
+<iframe width="1138" height="640" src="https://www.youtube.com/embed/3a6fmysCU1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br><br>
+Bridge Crew has a nice UI with (lots of) buttons that you have to 'press' with your virtual hands (controller) - including virtual overlay text to remind you which is which <br>
+
+<img src="https://www.evl.uic.edu/aej/428/pics/bridgecrewinterface.jpg" alt="" width="800" 
+        border="0"><br>
+ 
+ <iframe width="1138" height="640" src="https://www.youtube.com/embed/qcwirA895jg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+
+<br><br>
+
+
+
+
+<hr
+        style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Voice:</font></div> 
+
+One way to get around the complexity of the menus is to talk to the computer via a voice recognition system. <br>
+However, voice commands can also be hard to learn and remember.<br>
+The HoloLens makes effective use of voice to rapidly move through the menus without needing to look and pinch.<br>
+Many newer MHD support voice command. <br>
+
+ <iframe width="1198" height="674" src="https://www.youtube.com/embed/fUqnfywRBcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
+<hr
+        style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Gesture recognition :</font></div> 
+This also seems like a very natural interface. Gloves can be used to accurately track the position of the user's hand and fingers. <br>
+One issue here, as with voice, is how does the computer decide that you are gesturing to it and expect something to happen, as opposed to gesturing to yourself or another person. <br><br>
+   
+<hr
+        style="width: 100%; height: 1px;">
+<div align="left"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="5">Haptics:</font></div> 
+This also seems like a very natural interface. Gloves can be used to accurately track the position of the user's hand and fingers. <br>
+<iframe width="1198" height="674" src="https://www.youtube.com/embed/kj3RdeJUJos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr
+        style="width: 100%; height: 1px;">
+
+<div align="right"><font style="font-family:
+        Helvetica,Arial,sans-serif;" color="black" size="2">&copy; Last revised: Nov 14, 2020</font></div>
+
+</body>
+</html>
