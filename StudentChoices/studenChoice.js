@@ -1,7 +1,7 @@
 lastTime = new Date('8/30/2020');
 let key = ['ID','Timestamp','Your name','Program','Your topic','Schedule','Presentation video','Image'];
 Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
-,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
+,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv'),d3.json('https://cs5331-vr-fall202.herokuapp.com/scores/abovelimit?project=StudentChoice')])
 .then(function(dataRaw){
     // date for highlight
     let limit_time = new Date();
@@ -16,14 +16,22 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
     debugger
     notPresentyet.filter(d=>d.date<=thresholdDate).forEach(d=>d.isHighlight = true);
 
+    let highlightID = dataRaw[2];
     let dataPeople = dataRaw[0];
     let people={};
-    dataPeople.forEach(d=>people[d.Email.toLowerCase()]=d);
+    dataPeople.forEach(d=>{
+        people[d.Email.toLowerCase()]=d;
+        d.isabove10 = highlightID.find(id=>d.id===id);
+    });
     // Student miss profile
     // data.filter(d=>!people[d['Email Address'].toLowerCase()])
     //mapping people and presentation
-    data.forEach(d=>{d['Program'] = (people[d['Email Address'].toLowerCase()]||{Level:'--no data--'}).Level;
-    d['Student Image']= '../photos/'+(people[d['Email Address'].toLowerCase()]||{Level:'--no data--'})['Photoname'];});
+    data.forEach(d=>{
+        const p = people[d['Email Address'].toLowerCase()]||{};
+        d.isabove10 = p.isabove10;
+        d['Program'] = p.Level??'--no data--';
+        d['Student Image']= '../photos/'+p['Photoname'];
+    });
 
 
     //sort by presentation day
@@ -37,7 +45,10 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
     let dataCell = d3.select('#currentTopic tbody').selectAll('tr').data(data)
         .join('tr')
         .classed('pluse-red',d=>d.isHighlight)
-        .style('background-color',d=>approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4'))
+        .style('background-color',d=>{
+            if (d.isabove10)
+                return '#96c6ee';
+            return approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4')})
         .selectAll('td')
         .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
         .join('td')
