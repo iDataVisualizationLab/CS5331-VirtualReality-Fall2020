@@ -46,7 +46,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
         .join('tr')
         .classed('pluse-red',d=>d.isHighlight)
         .style('background-color',d=>{
-            if (d.isabove10)
+            if (d.isabove10 && d.ID!==44)
                 return '#96c6ee';
             // return approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4')
         })
