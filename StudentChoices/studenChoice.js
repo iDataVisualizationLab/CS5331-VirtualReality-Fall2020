@@ -1,5 +1,5 @@
 lastTime = new Date('8/30/2020');
-let key = ['ID','Timestamp','Your name','Program','Your topic','Schedule','Image'];
+let key = ['ID','Timestamp','Your name','Program','Your topic','Schedule','Presentation video','Image'];
 Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
 ,d3.csv('CS4331 and CS5331_ Student choice (Responses) - Form Responses 1.csv')])
 .then(function(dataRaw){
@@ -42,6 +42,10 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
         .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
         .join('td')
         .text(d=>d.value);
+
+    dataCell
+        .filter(d=>d.key==="Presentation video")
+        .html(d=>d.data['Presentation video']?`<a href="${d.value}">${d.data['Schedule']}</a> pass: ${d.data['Pass']} <br></br>${(new RegExp('skip').test(d.data['Presentation time'])?'':' at ')+d.data['Presentation time']}`:'')
     dataCell
         .filter(d=>d.key==="Your name")
         .classed('name',true)
