@@ -48,7 +48,8 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
         .style('background-color',d=>{
             if (d.isabove10)
                 return '#96c6ee';
-            return approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4')})
+            // return approve.test(d['Professor'])?interested_level(d['Interested level']):(d['Professor']==''?'#ddd':'#ffc4c4')
+        })
         .selectAll('td')
         .data(d=>key.map(k=>({key:k, value: d[k], data:d})))
         .join('td')
