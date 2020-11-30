@@ -75,7 +75,6 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
             .html(d=>`${d.value}. <span style="font-weight: bold">${d.data.name}</span>`)
         dataCell
             .filter(d=>d.key==="name")
-            .classed('name',true)
             .html(d=>`
             ${d.data['Student Image'].map((img,i)=>`<img class="avatar" src="${img}"></img> ${people[d.data.members[i]].Fullname} 
  <button type="button" class="btn btn-outline-primary copybtn btn-sm" data-toggle="tooltip" title="Copy to clipboard"  data-clipboard-text="${people[d.data.members[i]].Email}"><svg width=".8em" height=".8em" viewBox="0 0 1024 896" class="bi bi-bookmarks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
