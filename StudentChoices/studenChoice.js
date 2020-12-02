@@ -57,7 +57,7 @@ Promise.all([d3.json("https://cs5331-vr-fall202.herokuapp.com/students")
 
     dataCell
         .filter(d=>d.key==="Presentation video")
-        .html(d=>d.data['Presentation video']?`<a href="${d.value}">${d.data['Schedule']}</a> pass: ${d.data['Pass']} <br></br>${(new RegExp('skip').test(d.data['Presentation time'])?'':' at ')+d.data['Presentation time']}`:'')
+        .html(d=>d.data['Presentation video']?`<a target="_blank" href="${d.value}">${d.data['Schedule']}</a> pass: ${d.data['Pass']} <br></br>${(new RegExp('skip').test(d.data['Presentation time'])?'':' at ')+d.data['Presentation time']}`:'')
     dataCell
         .filter(d=>d.key==="Your name")
         .classed('name',true)
