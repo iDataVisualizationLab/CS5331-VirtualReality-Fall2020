@@ -122,7 +122,7 @@
         json.p2  = d3.sum([+json.info['P2_score']]);
         json.p2  = json.p2 ===0?'---':json.p2;
         json.p2_feedback  = (+json.info['P2_feeback']) ===0 ?'---':(+json.info['P2_feeback']);
-        json.total =  json.participant+(+json.sc||0)+ (+json.p1||0)+ (+json.p2||0)
+        json.total =  json.participant+(+json.sc||0)+ (+json.p1||0)+ (+json.p2||0) + (+json.p2_feedback||0)
 
         const svg = d3.select('#grade svg');
         let g = svg.select('g.content');
