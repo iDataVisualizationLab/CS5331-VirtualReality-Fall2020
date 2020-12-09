@@ -33,38 +33,72 @@
         <div class="center justify-content-md-center">
             <svg width="400" height="300"></svg>
             <div class="row justify-content-md-center">
-            <table class="table table-striped table-bordered">
-                <tbody>
-                    <tr>
-                        <th scope="row">Class Contribution</th>
-                        <td id="Participant"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Student choice</th>
-                        <td id="sc"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Project 1</th>
-                        <td id="p1"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Project 2</th>
-                        <td id="p2"></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Peer evaluation</th>
-                        <td id="p2FeedBack"></td>
-                    </tr>
-                    <tr class="table-success">
-                        <th scope="row">Total score</th>
-                        <td id="total"></td>
-                    </tr>
-                </tbody>
-            </table>
+                <table class="table table-striped table-bordered table-sm">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Class Contribution</th>
+                            <td id="Participant" width="100"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row justify-content-md-center">
+                <table class="table table-striped table-bordered table-sm">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Student choice</th>
+                            <td id="sc" width="100"></td>
+                        </tr>
+                        <tr class="text-success">
+                            <th scope="row">Student choice feed back</th>
+                            <td id="sc_back" width="100"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row justify-content-md-center">
+                <table class="table table-striped table-bordered table-sm">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Project 1</th>
+                            <td id="p1" width="100"></td>
+                        </tr>
+                        <tr class="text-success">
+                            <th scope="row">Project 1 feed back</th>
+                            <td id="p1_back" width="100"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row justify-content-md-center">
+                <table class="table table-striped table-bordered table-sm">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Project 2</th>
+                            <td id="p2" width="100"></td>
+                        </tr>
+                        <tr class="text-success">
+                            <th scope="row">Project 2 feed back</th>
+                            <td id="p2_back" width="100"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Peer evaluation</th>
+                            <td id="p2FeedBack" width="100"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    <!--                    <tr class="table-success">-->
+    <!--                        <th scope="row">Total score</th>-->
+    <!--                        <td id="total"></td>-->
+    <!--                    </tr>-->
+            <div class="row justify-content-md-center">
+                <span class="text-danger">Notice: The class contribution and feedback are capped at 20%</span>
             </div>
             <button type="submit" id="back"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg> Back</button>
+            </div>
 
         </div>
         </div>
@@ -117,12 +151,15 @@
         json.info['P2_review'] = convert(json.info['P2_review']);
 
         json.participant = json.array[json.array.length-1].scoreSum;
-        json.sc = json.info['StudentReport']===undefined?'---':(+json.info['StudentReport']+json.info['StudentTalk']+json.info['Student_survey'])
-        json.p1 = json.info['P1_code']===undefined?'---':(+json.info['P1_code']+json.info['P1_report']+json.info['P1_survey']+json.info['P1_talk']);
+        json.sc = json.info['StudentReport']===undefined?'---':(+json.info['StudentReport']+json.info['StudentTalk'])
+        json.sc_back  = json.info['Student_survey']===undefined?'---':+json.info['Student_survey'];
+        json.p1 = json.info['P1_code']===undefined?'---':(+json.info['P1_code']+json.info['P1_report']+json.info['P1_talk']);
+        json.p1_back  = json.info['P1_survey']===undefined?'---':+json.info['P1_survey'];
         json.p2  = d3.sum([+json.info['P2_score']]);
         json.p2  = json.p2 ===0?'---':json.p2;
+        json.p2_back  = json.info['P2_survey']===undefined?'---':+json.info['P2_survey'];
         json.p2_feedback  = (+json.info['P2_feeback']) ===0 ?'---':(+json.info['P2_feeback']);
-        json.total =  json.participant+(+json.sc||0)+ (+json.p1||0)+ (+json.p2||0) + (+json.p2_feedback||0)
+        json.total =  Math.min(20,json.participant+(+json.sc_back||0)+(+json.p1_back||0)+(+json.p2_back||0)) +(+json.sc||0)+ (+json.p1||0)+ (+json.p2||0) + (+json.p2_feedback||0)
 
         const svg = d3.select('#grade svg');
         let g = svg.select('g.content');
@@ -164,8 +201,11 @@
         };
         d3.select('#Participant').text(format(json.array[json.array.length-1].scoreSum));
         d3.select('#sc').text(format(json.sc));
+        d3.select('#sc_back').text(format(json.sc_back));
         d3.select('#p1').text(format(json.p1));
+        d3.select('#p1_back').text(format(json.p1_back));
         d3.select('#p2').text(format(json.p2));
+        d3.select('#p2_back').text(format(json.p2_back));
         d3.select('#p2FeedBack').text(format(json.p2_feedback));
         d3.select('#total').text(format(json.total));
         function convert(s) {
